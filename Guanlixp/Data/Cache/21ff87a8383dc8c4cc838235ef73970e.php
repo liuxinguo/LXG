@@ -1,0 +1,497 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<script type="text/javascript" charset="utf-8"  src="__ADMIN__/kindeditor/kindeditor.js"></script>
+<script type="text/javascript" charset="utf-8"  src="__ADMIN__/kindeditor/lang/zh_CN.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title><?php echo (L("welcome")); ?></title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl"><?php echo ($act_title); ?></h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i><?php echo (L("configuring_site")); ?></div>
+          <div class="cl"></div>
+        </div>
+<script  language="JavaScript">  
+<!--  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}
+
+function check(){
+    if(!trim($("#gamename").val())) {
+        alert("请输入游戏名称！");
+        $("#gamename").focus();
+        return false;
+    }
+    if(!trim($("#bs").val())) {
+        alert("请选择接口！");
+        $("#bs").focus();
+        return false;
+    }
+    if(!trim($("#tag").val())) {
+        alert("请输入游戏TAG标签！");
+        $("#tag").focus();
+        return false;
+    }
+    if(!trim($("#unit").val())) {
+        alert("请输入游戏单位！");
+        $("#unit").focus();
+        return false;
+    }
+    if(!trim($("#rate").val())) {
+        alert("请输入充值比率！");
+        $("#rate").focus();
+        return false;
+    }
+    if(trim($("#category").val()) == ""  || trim($("#category").val())== 0) {
+        alert("请选择游戏类型！");
+        $("#category").focus();
+        return false;
+    }
+    if(trim($("#statetype").val()) == "" || trim($("#statetype").val())== 0) {
+        alert("请选择状态类型！");
+        $("#statetype").focus();
+        return false;
+    }
+}
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+//初始化编辑
+var editor;
+KindEditor.ready(function(K) {
+            editor = K.create('#content', {
+            cssPath : '__ADMIN__/kindeditor/plugins/code/prettify.css',
+			themeType : 'simple',
+            uploadJson : '__ADMIN__/kindeditor/php/upload_json.php?dir=game',
+            fileManagerJson : '__ADMIN__/kindeditor/php/file_manager_json.php',
+            allowFileManager : true,
+                items : ['source','bold','italic','underline','fontname','fontsize','forecolor','hilitecolor','plug-align','plug-order','plug-indent','link']
+        });
+        //同步编辑器内容
+        K('#submit').click(function() {
+            var html;
+            // 取得HTML内容
+            html = editor.html();
+            // 同步数据后可以直接取得textarea的value
+            editor.sync();
+            html = K('#content').val(); // KindEditor Node API
+            // 设置HTML内容
+            editor.html(html);
+        });
+
+        //选择颜色
+        var colorpicker;
+        K('#colorpicker').bind('click', function(e) {
+                e.stopPropagation();
+                if (colorpicker) {
+                        colorpicker.remove();
+                        colorpicker = null;
+                        return;
+                }
+                var colorpickerPos = K('#colorpicker').pos();
+                colorpicker = K.colorpicker({
+                        x : colorpickerPos.x,
+                        y : colorpickerPos.y + K('#colorpicker').height(),
+                        z : 19811214,
+                        selectedColor : 'default',
+                        noColor : '无颜色',
+                        click : function(color) {
+                                K('#color').val(color);
+                                colorpicker.remove();
+                                colorpicker = null;
+                        }
+                });
+        });
+        K(document).click(function() {
+                if (colorpicker) {
+                        colorpicker.remove();
+                        colorpicker = null;
+                }
+        });
+        //选择图片
+        K('#imagegame').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picgame').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picgame').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagetop').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#pictop').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#pictop').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagebest').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picbest').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picbest').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imageindex').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picindex').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picindex').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imageispay').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picispay').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picispay').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagepay_ad').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picpay_ad').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picpay_ad').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imageicon').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#picicon').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#picicon').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagehz_ico').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#pichz_ico').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#pichz_ico').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagehz_game').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#pichz_game').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#pichz_game').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        //选择图片
+        K('#imagehz_index').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#pichz_index').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#pichz_index').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+
+	$.each($('input.filltag'), function(i,val){
+		$(val).attr('rel',$(val).val());
+	});
+});
+
+function changetag(obj){
+	var tag = obj.value;
+	$.each($('input.filltag'), function(i,val){
+		$(val).val($(val).attr('rel')+tag+'.jpg');
+	});
+}
+
+//-->
+</SCRIPT>
+<table class="table set_table">
+
+  <form action="__URL__/<?php echo ($act); ?>" method="post" name="Form1" onSubmit="return check()">
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">排序：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="sort" type="text" id="sort" size="50" value="<?php echo ($vo["sort"]); ?>"  class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">游戏名称：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="gamename" type="text" id="gamename" size="50" value=""  class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">TAG标签：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="tag" id="tag" type="text" class="inputclass" onChange="changetag(this);" value="">（游戏名称拼音的第一个字母）</td>
+  </tr>
+    <tr>
+    <td width="12%" height="30" align="right" valign="middle">混服接口：</td>
+    <td width="88%" valign="middle" class="huise_font">
+	<select name='bs' id="bs">
+        <option value='' >请选择混服接口</option>
+        <?php if(is_array($hun)): $i = 0; $__LIST__ = $hun;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hun): $mod = ($i % 2 );++$i;?><option value='<?php echo ($hun["bs"]); ?>'><?php echo ($hun["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+        </select>
+		</td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">混服编号：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="pic[gid]" id="picgid" type="text" class="inputclass" value="">（游戏混服的ID，用于充值。）</td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">游戏单位：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="unit" type="text" id="unit" size="50" value="" class="inputclass inputtitle"/> 如：元宝、金币</td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">充值比率：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="rate" type="text" id="rate" size="50" value="" class="inputclass inputtitle"/> 如：10、100</td>
+  </tr>
+      <tr>
+    <td width="12%" height="30" align="right" valign="middle">玩家数：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="wanjas" type="text" id="wanjas" size="50" value="5312" class="inputclass inputtitle"/> 
+    如：5000</td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">游戏类型：</td>
+    <td valign="middle" class="huise_font">
+        <select name='category' id="category">
+            <option value='0' selected='selected'>请选择游戏类型</option>
+            <option value='战争策略'>─战争策略─</option>
+            <option value='角色扮演'>─角色扮演─</option>
+            <option value='模拟经营'>─模拟经营─</option>
+            <option value='社区养成'>─社区养成─</option>
+            <option value='休闲竞技'>─休闲竞技─</option>
+            <option value='其他'>─其他─</option>
+        </select>
+        
+        &nbsp;&nbsp;状态类型：
+        <select name='statetype' id="statetype">
+            <option value='0' selected='selected'>请选择状态类型</option>
+            <option value='封测'>─封测─</option>
+            <option value='内测'>─内测─</option>
+            <option value='公测'>─公测─</option>
+            <option value='运营'>─运营─</option>
+        </select>
+          &nbsp;&nbsp;首字母：
+   	 <select name="szm"  size="1" id="szm">
+            <option value="1">ABC</option>
+            <option value="2">DEF</option>
+            <option value="3">GHI</option>
+            <option value="4">JKL</option>
+            <option value="5">MNO</option>
+            <option value="6">PQR</option>	
+            <option value="7">STU</option>
+            <option value="8">VWXYZ</option>
+	  </select>
+          &nbsp;&nbsp;打开方式：
+   	 <select name="target"  size="1" id="target">
+            <option value="_blank">_blank</option>
+            <option value="_new">_new</option>
+            <option value="_parent">_parent</option>
+            <option value="_self">_self</option>
+            <option value="_top">_top</option>
+	  </select>
+	  
+    </td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">自定义属性：</td>
+    <td valign="middle" class="huise_font">
+        <input class='np' type='checkbox' name='flags[]' id='flagst' value='t'>置顶[t]
+        <input class='np' type='checkbox' name='flags[]' id='flagsc' value='c'>推荐[c]
+        <input class='np' type='checkbox' name='flags[]' id='flagsh' value='h'>热门[h]
+        <input class='np' type='checkbox' name='flags[]' id='flagss' value='s'>测试[s]
+        <input class='np' type='checkbox' name='flags[]' id='flagsn' value='n'>新游[n]
+        <input class='np' type='checkbox' name='flags[]' id='flagsb' value='b'>加粗[b]
+        <input class='np' type='checkbox' name='flags[]' id='flagsr' value='r'>维护[r]</td>
+  </tr> 
+  <tr>
+    <td height="30" align="right" valign="middle">游戏图片：</td>
+    <td valign="middle" class="huise_font"><input name="pic[game]" id="picgame" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/b-"> &nbsp;<input type="button" id="imagegame" class="btn btn-inverse m1em_t" value="选择图片" />
+	我的地盘大图(168x188)[game]</td>
+  </tr>
+  
+  <tr>
+    <td height="30" align="right" valign="middle">置顶图片：</td>
+    <td valign="middle" class="huise_font"><input name="pic[top]" id="pictop" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/top/"> &nbsp;<input type="button" id="imagetop" class="btn btn-inverse m1em_t" value="选择图片" />
+	服务器列表选择页(745x270)[top]</td>
+  </tr>
+  
+   <tr>
+    <td height="30" align="right" valign="middle">推荐图片：</td>
+    <td valign="middle" class="huise_font"><input name="pic[best]" id="picbest" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/t-"> &nbsp;<input type="button" id="imagebest" class="btn btn-inverse m1em_t" value="选择图片" />
+	首页推荐大图(252x387)[best]</td>
+  </tr>
+  
+   <tr>
+    <td height="30" align="right" valign="middle">首页图片：</td>
+    <td valign="middle" class="huise_font"><input name="pic[index]" id="picindex" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/"> &nbsp;<input type="button" id="imageindex" class="btn btn-inverse m1em_t" value="选择图片" />
+	首页游戏图片(160x130)[index]</td>
+  </tr>
+  
+  <tr>
+    <td height="30" align="right" valign="middle">充值图片：</td>
+    <td valign="middle" class="huise_font"><input name="pic[pay]" id="picispay" type="text" size="50" class="inputclass inputtitle" value=""> &nbsp;<input type="button" id="imageispay" class="btn btn-inverse m1em_t" value="选择图片" />
+	[pay]
+	</td>
+  </tr>
+  
+  <tr>
+    <td height="30" align="right" valign="middle">充值广告：</td>
+    <td valign="middle" class="huise_font"><input name="pic[pay_ad]" id="picpay_ad" type="text" size="50" class="inputclass inputtitle" value=""> &nbsp;<input type="button" id="imagepay_ad" class="btn btn-inverse m1em_t" value="选择图片" />
+	[pay_ad]
+	</td>
+  </tr>
+    <tr>
+    <td height="30" align="right" valign="middle">小图标：</td>
+    <td valign="middle" class="huise_font"><input name="pic[icon]" id="picicon" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/ico/"> &nbsp;<input type="button" id="imageicon" class="btn btn-inverse m1em_t" value="选择图片" />
+	[icon]
+	</td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td height="30" align="right" valign="middle">盒子推荐图：</td>
+    <td valign="middle" class="huise_font"><input name="pic[hz_index]" id="pichz_index" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/hezi/"> &nbsp;<input type="button" id="imagehz_index" class="btn btn-inverse m1em_t" value="选择图片" />
+	游戏盒子图片（144x201）[hz_index] 
+	</td>
+  </tr>
+    <tr>
+    <td height="30" align="right" valign="middle">盒子内图：</td>
+    <td valign="middle" class="huise_font"><input name="pic[hz_game]" id="pichz_game" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/hezi/"> &nbsp;<input type="button" id="imagehz_game" class="btn btn-inverse m1em_t" value="选择图片" />
+	游戏盒子图片（262x222）[hz_game]
+	</td>
+  </tr>
+    <tr>
+    <td height="30" align="right" valign="middle">盒子小图标：</td>
+    <td valign="middle" class="huise_font"><input name="pic[hz_ico]" id="pichz_ico" type="text" size="50" class="inputclass inputtitle filltag" value="/Upload/game/gamepic/hezi/"> &nbsp;<input type="button" id="imagehz_ico" class="btn btn-inverse m1em_t" value="选择图片" />
+	 游戏盒子图片（70x63）[hz_ico]
+	</td>
+  </tr>
+
+  
+  
+  <tr>
+    <td height="30" align="right" valign="middle">官网地址：</td>
+    <td valign="middle" class="huise_font"><input name="website" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">论坛地址：</td>
+    <td valign="middle" class="huise_font"><input name="bbs" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">新手指南：</td>
+    <td valign="middle" class="huise_font"><input name="guide" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">新手卡：</td>
+    <td valign="middle" class="huise_font"><input name="card" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">客服地址：</td>
+    <td valign="middle" class="huise_font"><input name="kefu" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">活动标题：</td>
+    <td valign="middle" class="huise_font"><input name="extend[activitytitle]" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">活动地址：</td>
+    <td valign="middle" class="huise_font"><input name="extend[activityurl]" type="text" size="50" class="inputclass inputtitle" value=""></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">微端地址：</td>
+    <td valign="middle" class="huise_font"><input name="downurl" type="text" size="50" class="inputclass inputtitle" value="<?php echo ($vo["downurl"]); ?>"></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">游戏介绍：</td>
+    <td valign="middle" class="huise_font"><textarea id="content" name="content"  style="width:350px;height:150px;visibility:hidden;"></textarea></td>
+  </tr>
+<tr>
+    <td height="30" align="right" valign="middle">各类版号：</td>
+    <td valign="middle" class="huise_font">
+    <textarea name="icp" cols="120" rows="2"></textarea>用&lt;em&gt;|&lt;/em&gt;来分割</td>
+</tr>
+  <tr>
+    <td height="30" align="right" valign="middle">状态：</td>
+    <td valign="middle" class="huise_font">充值 <input type="checkbox" name="ispay" value="1" /> 显示 <input type="checkbox" name="isdisplay" value="1" /> 审核 <input type="checkbox" name="status" value="1" checked></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">添加日期：</td>
+    <td valign="middle" class="huise_font"><input name="addtime" type="text" id="addtime" size="20" value="<?php echo date('Y-m-d H:i:s');?>"  class="inputclass"/></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">推广页X Y：</td>
+    <td valign="middle" class="huise_font">X<input name="tuix" type="text" size="5" class="inputclass" value="">Y<input name="tuiy" type="text" size="5" class="inputclass" value=""></td>
+  </tr>
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle"><input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交"></td>
+  </tr>
+  </form>
+</table>
+
+        
+
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("<?php echo U('Index/copyright');?>");
+</script>
+
+</body>
+</html>

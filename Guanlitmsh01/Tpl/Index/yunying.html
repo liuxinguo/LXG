@@ -1,0 +1,124 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		 $(".sidebar_nav li span").click(
+		function(){
+			if($(this).next("ul").is(":hidden")) 
+				{	
+					$(".sidebar_nav li ul").slideUp(300);
+					$(this).next("ul").slideDown(300);
+				}
+			else
+				{
+					$(this).next("ul").slideUp(300);
+				};
+	});	
+	});
+</script>
+
+
+      <div class="content">
+        <div class="sidebar_nav">
+          <ul class="unstyled">
+          
+      
+
+            <li><span><a href="#"><i class="icon-file"></i>新闻管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+				 <li><a href="{:U('Setting/article')}" target="myframe"><i class="caret_left"></i>新闻管理</a></li>
+                 <li><a href="{:U('Setting/article_add')}" target="myframe"><i class="caret_left"></i>增加新闻</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li> 
+
+     
+
+            <li><span><a href="#"><i class="icon-th-large"></i>新手卡管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                 <li><a href="{:U('Setting/card_detail')}" target="myframe"><i class="caret_left"></i>新手卡列表</a></li>
+                 <li><a href="{:U('Setting/card_detail_add')}" target="myframe"><i class="caret_left"></i>添加新手卡类别</a></li>
+				 <li><a href="{:U('Setting/card_log')}" target="myframe"><i class="caret_left"></i>已发放列表</a></li>
+                 <li><a href="{:U('Setting/card_unused')}" target="myframe"><i class="caret_left"></i>库存列表</a></li>
+				 <li><a href="{:U('Setting/card_add')}" target="myframe"><i class="caret_left"></i>新手卡导入</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+
+			
+            <li><span><a href="#"><i class="icon-tasks"></i>综合管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/member',array('begintime'=>'2012-01-01','endtime'=>date('Y-m-d')))}" target="myframe"><i class="caret_left"></i>会员列表</a></li>
+				 <li><a href="{:U('Setting/friendlink')}" target="myframe"><i class="caret_left"></i>友情链接</a></li>
+		<!--	<li id="_MP143" class="sub_menu"><a href="javascript:_MP(143,'{:U('friendlink',array('status'=>0))}');" onclick="check_web(143);" hidefocus="true" style="outline:none;">未审核连接</a></li>
+			<li id="_MP144" class="sub_menu"><a href="javascript:_MP(144,'{:U('friendlink',array('status'=>1))}');" onclick="check_web(144);" hidefocus="true" style="outline:none;">已审核连接</a></li>	 -->	
+			    <li><a href="{:U('Setting/friendlink_add')}" target="myframe"><i class="caret_left"></i>添加友情链接</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+
+            <li><span><a href="#"><i class="icon-retweet"></i>数据管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/register_log',array('begintime'=>date('Y-m-d'),'endtime'=>date('Y-m-d')))}" target="myframe"><i class="caret_left"></i>今日注册</a></li>
+				 <li><a href="{:U('Setting/register_log',array('begintime'=>'2012-05-28','endtime'=>date('Y-m-d')))}" target="myframe"><i class="caret_left"></i>历史注册</a></li>
+                <li><a href="{:U('Setting/login_log',array('begintime'=>date('Y-m-d'),'endtime'=>date('Y-m-d')))}" target="myframe"><i class="caret_left"></i>今日登陆</a></li>
+				 <li><a href="{:U('Setting/login_log',array('begintime'=>'2012-05-28','endtime'=>date('Y-m-d')))}" target="myframe"><i class="caret_left"></i>历史登陆</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+            <li><span><a href="#"><i class="icon-book"></i>官网管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+				 <li><a href="{:U('Setting/gamezhuti')}" target="myframe"><i class="caret_left"></i>官网主题设置</a></li>
+                <li><a href="{:U('Setting/gamesitelist')}" target="myframe"><i class="caret_left"></i>官网管理</a></li>
+                <li><a href="{:U('Setting/gamesitelist_add')}" target="myframe"><i class="caret_left"></i>添加官网</a></li>
+				 <li><a href="{:U('Setting/gamepublish')}" target="myframe"><i class="caret_left"></i>官网新闻管理</a></li>
+			 	<li><a href="{:U('Setting/gamepublishadd')}" target="myframe"><i class="caret_left"></i>发布官网新闻</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+            <li><span><a href="#"><i class="icon-book"></i>SHOP商城管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+				 <li><a href="{:U('Setting/gamezhuti')}" target="myframe"><i class="caret_left"></i>实物管理</a></li>
+                <li><a href="{:U('Setting/gamesitelist')}" target="myframe"><i class="caret_left"></i>填加实物</a></li>
+                <li><a href="{:U('Setting/gamesitelist_add')}" target="myframe"><i class="caret_left"></i>虚拟物品管理</a></li>
+				 <li><a href="{:U('Setting/gamepublish')}" target="myframe"><i class="caret_left"></i>添加虚拟物品</a></li>
+			 	<li><a href="{:U('Setting/gamepublishadd')}" target="myframe"><i class="caret_left"></i>兑换记录</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+            <li><span><a href="#"><i class="icon-user"></i>CPS渠道管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/qudaotongji')}" target="myframe"><i class="caret_left"></i>渠道统合统计</a></li>
+				 <li><a href="{:U('Setting/qudao')}" target="myframe"><i class="caret_left"></i>渠道列表</a></li>
+				 <li><a href="{:U('Setting/qudao_add')}" target="myframe"><i class="caret_left"></i>添加渠道</a></li>
+				 <li><a href="{:U('Setting/qudao_genurl')}" target="myframe"><i class="caret_left"></i>推广链接</a></li>
+				 <li><a href="{:U('Setting/jiesuan')}" target="myframe"><i class="caret_left"></i>结算管理</a></li>
+				 <li><a href="{:U('Setting/jiesuangl')}" target="myframe"><i class="caret_left"></i>结算统计</a></li>				
+				  <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>      
+ 
+        <li><span><a href="#"><i class="icon-refresh"></i>混服管理</a></span>
+             	<ul class="unstyled hide">
+                	<li><a href="{:U('Hunfu/hunfu')}" target="myframe"><i class="caret_left"></i>混服商管理</a></li>
+                	<li><a href="{:U('Hunfu/login_log')}" target="myframe"><i class="caret_left"></i>登陆统计</a></li>
+                	<li><a href="{:U('Hunfu/register_log')}" target="myframe"><i class="caret_left"></i>注册统计</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_nei')}" target="myframe"><i class="caret_left"></i>直冲值统计</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_wai_log')}" target="myframe"><i class="caret_left"></i>第三方冲值日志</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_wai')}" target="myframe"><i class="caret_left"></i>第三方冲值统计</a></li>
+                	<li><a href="{:U('Hunfu/index')}" target="myframe"><i class="caret_left"></i>可微端游戏</a></li>
+                	<li><a href="{:U('Hunfu/index')}" target="myframe"><i class="caret_left"></i>微端审核</a></li>
+              	</ul>
+       </li>
+ 
+
+            
+          </ul>
+
+          
+        </div>
+        <!--end sidebar_nav--> 
+      </div>
+      <!--end Left content--> 

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<script type="text/javascript" charset="utf-8"  src="__ADMIN__/kindeditor/kindeditor.js"></script>
+<script type="text/javascript" charset="utf-8"  src="__ADMIN__/kindeditor/lang/zh_CN.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+<script  language="JavaScript">  
+<!--  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}  
+
+function check(){
+    if(!trim($("#tag").val())) {
+        alert("请输入标签！");
+        $("#tag").focus();
+        return false;
+    }
+    if(!trim($("#payname").val())) {
+        alert("请输入渠道名称！");
+        $("#payname").focus();
+        return false;
+    }
+    if(!trim($("#rebate").val())) {
+        alert("请输入折扣！");
+        $("#rebate").focus();
+        return false;
+    }
+}
+
+
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+//初始化编辑
+var editor;
+KindEditor.ready(function(K) {
+        editor = K.create('#content', {
+            cssPath : '__ADMIN__/kindeditor/plugins/code/prettify.css',
+			themeType : 'simple',
+            uploadJson : '__ADMIN__/kindeditor/php/upload_json.php?dir=paytype',
+            fileManagerJson : '__ADMIN__/kindeditor/php/file_manager_json.php',
+            allowFileManager : true,
+                items : ['source','bold','italic','underline','fontname','fontsize','forecolor','hilitecolor','plug-align','plug-order','plug-indent','link']
+        });
+        //同步编辑器内容
+        K('#submit').click(function() {
+            var html;
+            // 取得HTML内容
+            html = editor.html();
+            // 同步数据后可以直接取得textarea的value
+            editor.sync();
+            html = K('#content').val(); // KindEditor Node API
+            // 设置HTML内容
+            editor.html(html);
+        });
+        
+        //选择图片
+        K('#image').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#pic').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#pic').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+        
+        //选择图片
+        K('#imageicon').click(function() {
+                editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                                imageUrl : K('#icon').val(),
+                                clickFn : function(url, title, width, height, border, align) {
+                                        K('#icon').val(url);
+                                        editor.hideDialog();
+                                }
+                        });
+                });
+        });
+          
+});
+//-->
+</SCRIPT>
+  <table class="table set_table">
+
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">排序：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="sort" type="text" id="sort" size="50" class="inputclass inputtitle" value="{$vo.sort}" /></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">标签：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="tag" type="text" id="tag" size="50" class="inputclass inputtitle" value="{$vo.tag}" /></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">渠道名称：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="payname" type="text" id="payname" size="50" class="inputclass inputtitle" value="{$vo.payname}" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">图片：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="pic" type="text" id="pic" size="50" class="inputclass inputtitle" value="{$vo.pic}" /> &nbsp;<input type="button" class="btn btn-inverse m1em_t" id="image" value="选择图片" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">ICON图片：</td>
+    <td valign="middle" class="huise_font"><input name="icon" id="icon" type="text" size="50" class="inputclass inputtitle" value="{$vo.icon}" /> &nbsp;<input type="button" class="btn btn-inverse m1em_t" id="imageicon" value="选择图片" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">手续费：</td>
+    <td valign="middle" class="huise_font"><input name="fee" id="fee" type="text" size="50" class="inputclass inputtitle" value="{$vo.fee}" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">折扣：</td>
+    <td valign="middle" class="huise_font"><input name="rebate" id="rebate" type="text" size="50" class="inputclass inputtitle" value="{$vo.rebate}" /> (如: 无折扣写 100 九折 90 七五折 75)</td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">渠道描述：</td>
+    <td  valign="middle" class="huise_font"><textarea id="content" name="content" style="width:350px;height:150px;visibility:hidden;">{$vo.content}</textarea></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">状态：</td>
+    <td valign="middle" class="huise_font">
+        显示 <input type="checkbox" name="isdisplay" value="1" <if condition="$vo.isdisplay eq 1">checked</if>> 
+        审核 <input type="checkbox" name="status" value="1" <if condition="$vo.status eq 1">checked</if>></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">添加日期：</td>
+    <td valign="middle" class="huise_font"><input name="addtime" type="text" id="addtime" size="20" value="{$vo.addtime|date="Y-m-d H:i:s",###}"  class="inputclass"/></td>
+  </tr>
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle">
+        <input name="id" type="hidden" id="id" value="{$vo.id}"/>
+        <input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交">
+    </td>
+  </tr>
+  </form>
+</table>
+
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

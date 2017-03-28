@@ -1,0 +1,25 @@
+/*新闻公告*/
+.articleListLYn{font-size: 12px; width:400px;margin-top:-2px;position: relative;}
+.articleListLYn .newtabs{height: 40px;background:url(http://img.dwstatic.com/yytmld/builder/5747cb25c0e50a1c798b5b26/img/55632953c0e50aca688b486f.jpg) no-repeat;border-bottom: 0}
+.articleListLYn .newtabs p{float: left; width:72px;height: 40px;line-height: 40px;color:#7a83a2;font-size: 14px;text-align: center;cursor: pointer;}
+.articleListLYn .newtabs p.on{color:#eff0f4;height: 40px;width:72px;background-image:url(http://img.dwstatic.com/yytmld/builder/5747cb25c0e50a1c798b5b26/img/55632953c0e50aca688b4871.jpg);background-repeat:no-repeat;}
+.articleListLYn .newtabs p.tab01{background-position:0px 0px;}
+.articleListLYn .newtabs p.tab02{background-position:-72px 0px;}
+.articleListLYn .newtabs p.tab03{background-position:-144px 0px;}
+.articleListLYn .newtabs p.tab04{background-position:-216px 0px;}/*第4个tab宽度不一致，注意*/
+
+.articleListLYn .newcoms{height:162px;background:#4e6374;}
+.articleListLYn .newcom_more{width:18px;height:18px;position: absolute;top:13px;right:12px;background:url(http://img.dwstatic.com/yytmld/builder/5747cb25c0e50a1c798b5b26/img/55632953c0e50aca688b486d.png);background-repeat: no-repeat;}
+.articleListLYn .newcom_more:hover{color:#fff;}
+.articleListLYn .newcom_box{padding:8px 15px;}
+.articleListLYn .newcom_box .new_list{margin:0px;}
+.articleListLYn .newcom_box .new_list li{float:left;width:100%;line-height:24px;}
+
+.articleListLYn .newcom_box .new_list label{float:left;color:#ffd086;margin-right:5px;}
+.articleListLYn .newcom_box .new_list a{float: left; position:relative;color:#f1f1f1;width:290px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow：ellipsis;}
+.articleListLYn .newcom_box .new_list a span{width:0;position:absolute;left:0px;top:0px;display:block;overflow:hidden;
+	-webkit-transition:all .3s ease-in;
+-ms-transition:all .3s ease-in;}
+.articleListLYn .newcom_box .new_list a span em {font-style:normal;width:300px;color:#edc356;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow：ellipsis;display:block;}
+.articleListLYn .newcom_box .new_list a:hover span{width:300px;}
+.articleListLYn .newcom_box .new_list .new_date{color:#8c8f8f;float: right;}

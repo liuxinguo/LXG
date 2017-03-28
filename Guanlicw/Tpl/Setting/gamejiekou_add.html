@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$Think.lang.welcome}</title>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+
+
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>   
+          <div class="user_message fr"><i class="icon-wrench"></i>管理您的内容信息</div>
+          <div class="cl"></div>
+        </div>
+        <div class="minbox">
+        <table class="table set_table">
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">接口名称：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="name" type="text" id="name" size="50" value="{$vo.name}"  class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">标签：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="bs" id="bs" type="text" class="inputclass" value="{$vo.bs}"></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">UNID：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="unid" type="text" id="unid" size="50" value="{$vo.unid}" class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">登陆地址：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="loginurl" type="text" id="loginurl" size="50" value="{$vo.loginurl}" class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">冲值地址：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="payurl" type="text" id="payurl" size="50" value="{$vo.payurl}" class="inputclass inputtitle"/></td>
+  </tr>
+  
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">loginKEY：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="loginkey" type="text" id="loginkey" size="50" value="{$vo.loginkey}" class="inputclass inputtitle"/></td>
+  </tr>
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">payKEY：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="paykey" type="text" id="paykey" size="50" value="{$vo.paykey}" class="inputclass inputtitle"/></td>
+  </tr>
+    <tr>
+    <td width="12%" height="30" align="right" valign="middle">自定义属性1：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="key1" type="text" id="wanjas" size="50" value="{$vo.key1}" class="inputclass inputtitle"/></td>
+  </tr>
+  
+  <tr>
+    <td height="30" align="right" valign="middle">自定义属性2：</td>
+    <td valign="middle" class="huise_font"><input name="key2" type="text" size="50" class="inputclass inputtitle" value="{$vo.key2}"></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">自定义属性3：</td>
+    <td valign="middle" class="huise_font"><input name="key3" type="text" size="50" class="inputclass inputtitle" value="{$vo.key3}"></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">自定义属性4：</td>
+    <td valign="middle" class="huise_font"><input name="key4" type="text" size="50" class="inputclass inputtitle" value="{$vo.key4}"></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">自定义属性5：</td>
+    <td valign="middle" class="huise_font"><input name="key5" type="text" size="50" class="inputclass inputtitle" value="{$vo.key5}"></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">备注：</td>
+    <td valign="middle" class="huise_font"><textarea name="beizhu" cols="50" rows="3" class="inputclass inputtitle">{$vo.beizhu}</textarea></td>
+  </tr>
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle">
+    <input type="submit"  class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交">    </td>
+  </tr>
+  </form>
+</table>
+ <div class="copyright"></div>
+        </div>
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

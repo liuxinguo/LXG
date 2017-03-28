@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3> 
+		  <form action="{:U('jiesuan')}" name="Form2" method="post"> 
+          <div class="user_message fr"><i class="icon-wrench"></i><input type="text" class="inputclass" name="search" value="{$get.search}" /> <input type="submit" name="submit" value='搜 索' class="btn btn-primary btn-small" /></div>
+		  </form>
+          <div class="cl"></div>
+        </div>
+
+  <form action="{$act}" method="post" name="Form1">
+<table class="table table-bordered table-striped">
+<thead>
+  <tr >
+    <th width="4%" class="table-textcenter">渠道MID</th>
+    <th width="6%" class="table-textcenter">渠道名称</th>
+    <th width="4%" class="table-textcenter">比例</th>
+    <th width="8%" class="table-textcenter">总冲值</th>
+    <th width="8%" class="table-textcenter">总返利</th>
+    <th width="8%" class="table-textcenter">已冻结</th>
+    <th width="8%" class="table-textcenter">已结算</th>
+    <th width="8%" class="table-textcenter">可用余额</th>
+    <th width="8%" class="table-textcenter">编辑</th>
+  </tr>
+   </thead>
+  <volist name="list" id="vo">
+  <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';" height="25" >    
+
+    <td class="table-textcenter">{$vo.mid}</td>
+    <td align="center">{$vo.mname}</td>
+	<td class="table-textcenter">{$vo.bili}</td>
+    <td class="table-textcenter">{$vo.tong}</td>
+    <td class="table-textcenter">{$vo.fencheng}</td>
+    <td class="table-textcenter">{$vo.jump}</td>
+    <td class="table-textcenter">{$vo.fid}</td>
+    <td class="table-textcenter">{$vo.yu}</td>
+    <td class="table-textcenter"><a href="{:U('jiesuan_edit',array('id'=>$vo['id']))}">笔记</a></td>
+  </tr>
+  </volist>
+
+</table>
+  </form>
+  <div class="pagination-i">
+               {$ShowPage}
+            </div>
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿
+/*积分商城样式*/
+
+.cont{width: 1200px;overflow: hidden;margin: 8px auto;}
+
+/*登录框/轮播图*/
+.cont-integral{width: 100%;overflow: hidden;;}
+/*登录前*/
+.integral-log{width: 23%;border:1px solid #ccc;border-radius: 0 0 5px 5px;height: 333px;}
+/*轮播图*/
+.integral-log,.integral-slide{float: left;}
+#picarea{width: 100%;height: 333px;position:relative;}
+#bigpicarea{height:333px;overflow: hidden;}
+#picarea a{height: 100%;display: block;}
+#picarea img{height:333px;width: 100%;}
+.shopping-l #smallpicarea{position: absolute;top:300px;left:45%;z-index: 1000;}
+.shopping-l{width: 77%;float: left;overflow: hidden;}
+.image{position: absolute;}
+
+/*实物换取*/
+.kind{overflow: hidden;background-color: #fff7f2;border-radius: 5px;}
+.shopping-icon{width: 100%;margin-top:20px;padding-top: 20px;background-color: #fff7f2;}
+.shopping-icon p{font-size: 22px;color: #3c3c3c;background: url(../img/liebiao.png) no-repeat;padding-left:50px;margin-left:20px;font-weight: bold;}
+.kind-detail{width: 100%;overflow: hidden;}
+.gift-detail{overflow: hidden;}
+.kind-detail>li,.gift-detail>li{float: left;width:25%;background-color: #fff;padding: 15px;margin-top: 20px;}
+.kind-detail>li{overflow: hidden;text-align: center;height: 311px;}
+.price span{color: red;}
+.kind-detail>li ol,.gift-detail>li ol{border:1px solid #fff;}
+.kind-detail>li ol:hover,.gift-detail>li ol:hover{box-shadow: 0 0 5px 5px #ccc;-moz-box-shadow: 0 0 5px 5px #ccc;-webkit-box-shadow: 0 0 5px 5px #ccc;-o-box-shadow: 0 0 5px 5px #ccc;}
+.kind-detail>li ol li{line-height: 30px;}
+.huangou a,.gift-exchange a{width:100px;height: 30px; background-color: #5B5BE6;color: #fff;display: block;border-radius: 5px;margin: 10px auto;}
+.huangou a:hover,.gift-exchange a:hover{background-color:#0000ff;}
+
+/*游戏礼包*/
+.gift-detail>li{height: 340px;font-size: 12px;}
+.gift-detail label{display: inline-block;width:50%;margin-left:2%;}
+.gift-exchange a{text-align:center;line-height: 30px;}
+.gift-detail ol li{line-height: 25px;}
+.gift-detail ol li span{color: red;margin-left: 1%;}
+.gift-tu{width: 100%;height:170px;overflow: hidden;margin-bottom: 10px;}
+.gift-tu img{width: 100%;height: 100%;}
+.shopping-gift {font-size:19px;font-weight: 700;color:#2b9ae7;margin-left:2%;margin-bottom: 5px;}
+
+
+
+
+
+
+
+/*积分商城中的物品换购*/
+.cont-trade-left{width: 25%;float: left;}
+.cont-trade-right{width: 75%;border-left:1px solid #ccc;float: right;}
+.cont-trade-gift{padding-top: 0;margin-top: 0;}
+.cont-trade-gift p{background-color: #fff7f2;font-size: 19px;line-height:36px;font-weight: 700;background-position: 8px 0;}
+
+.cont-trade-gift ul{padding: 5px 15px;}
+.cont-trade-gift ul > li{border-bottom:1px dotted #ccc;overflow: hidden;height: 46px;margin-top: 10px;}
+.cont-trade-head {width: 30px;height: 30px;overflow: hidden;margin-top: 5px;}
+.cont-trade-head img{width: 100%;height: 100%;display: inline-block;}
+.cont-trade-head,.cont-trade-name,.cont-trade-lingqu{float: left;display: inline-block;}
+.cont-trade-lingqu{width:40px;height:26px;text-align: center;background:#ff9509;margin-top:7px;line-height:26px;border-radius: 5px;float: right;}
+a .cont-trade-lingqu{display: block;color: #fff;font-size: 14px;}
+a .cont-trade-name{padding-left: 5px;width:73%;font-size: 15px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;color: #3c3c3c;}
+a .cont-trade-name h6 span{color:red;}
+
+/*商品详情*/
+.cont-trade-xiangqing > p{background: #fff7f2;line-height: 36px;padding-left: 25px;font-weight: 700;}
+.goods-xiangqing{overflow: hidden;}
+.goods-xiangqing i,.goods-xiangqing ul{display: inline-block;margin:30px 0 30px 10%;float: left;}
+.goods-xiangqing ul li{line-height:30px;font-size: 14px;color: #3c3c3c;}
+.goods-xiangqing ul .goods-xiangqing-name{font-size: 18px;font-weight: 700;}
+.goods-xiangqing ul li span{color: red;padding-left: 5px;}
+.goods-xiangqing ul li:last-child{
+	width: 100px;height: 30px;text-align: center;background-color: #ff9509;cursor: pointer;color: #fff;border-radius: 5px;
+}
+
+/*商品介绍*/
+.shopping-introduce p{font-size: 14px;color: #3c3c3c;text-indent: 2em;margin-top: 15px;padding: 0 20px;line-height: 26px;}
+.shopping-introduce p span{color: red;}
+.shopping-introduce p a{color: red;}
+.shopping-introduce div{overflow: hidden;margin-top: 10px;}
+.shopping-introduce i{display: inline-block;float: left;padding-left: 20px;}
+.shopping-introduce ul{float: left;margin-top: 100px;margin-left: 10%;line-height: 30px;color: #3c3c3c;font-size: 14px;}
+.shopping-introduce ul li:first-child{font-size: 18px;font-weight: 700;}
+
+.new-listbox p{font-size:19px;color: #3c3c3c;background: url(../img/liebiao.png) no-repeat;padding-left:50px;margin-left:20px;font-weight: bold;}
+.new-listbox{width: 100%;}
+.cont-title{padding-left:50px;}
+.new-listbox .cont-least{background-position:8px 0;}
+.listbox-head{padding:0 15px;}
+.register_tuijian ol li:first-child{margin-left: 2%;width: 98px;}
+
+@media screen and (max-width: 1200px){
+	.cont{width: 100%;}
+	.integral-log{width: 25%;}
+	.shopping-l{width: 75%;}
+	#picarea{width:100%;}
+	a .cont-trade-name{width: 67%;}
+	.register_tuijian ol{width: 92%}
+	.register_back_head i, .register_back_head ul{margin: 20px 0 0 1%;}
+	.register_tuijian ol li:first-child{margin-left: 1%;width: 80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+}

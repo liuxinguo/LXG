@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'item', 1 => 'item_key', 2 => 'item_value', '_autoinc' => false, '_type' => array ( 'item' => 'varchar(30)', 'item_key' => 'varchar(30)', 'item_value' => 'varchar(250)', ), );?>

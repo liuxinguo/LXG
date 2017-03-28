@@ -1,0 +1,28 @@
+[ 2016-12-27T12:55:43+08:00 ] 61.53.130.232 /Json/index/ajax_pay?rnd=0.06095029297284782&rmb=200&ptb=2000&pay_tye=0&pay_name=&format=json&jsoncallback=jQuery18308220730184111744_1482814543901&_=1482814544196
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001101s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.001074s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/uc_client/lib/db.class.php 第 41 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_member_info` [ RunTime:0.001990s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_member_info` WHERE uid=2458490 LIMIT 1   [ RunTime:0.001158s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_login_log` [ RunTime:0.001379s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_login_log` WHERE uname='a7960440' ORDER BY id desc LIMIT 1   [ RunTime:0.001404s ]
+NOTIC: [8] Array to string conversion /www/newwan.752g.com/Source/ThinkPHP/Common/functions.php 第 22 行.
+

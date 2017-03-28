@@ -1,0 +1,18 @@
+html{background: #fff}
+body{color:#000;font-size:12px;line-height:2em;}
+body{font-family:"Microsoft Yahei",simsun,arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Base Used
+================================================================================================= */
+a{text-decoration:none;outline: none;}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}

@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><html><head><title>正在进入支付页面</title><meta http-equiv='refresh' content='3;URL=<?php echo ($data); ?>'></head><body><br><center>正在进入支付页面，请不要关闭和刷新浏览器</center></body></html>

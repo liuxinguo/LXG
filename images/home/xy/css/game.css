@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-11-03 13:41:37
+ * @version $Id$
+ */
+.place{
+	height: 120px;
+	width: 100%;
+}
+.place .box-1{
+    height: 100px;
+    width: 858px;
+    float: left;
+    line-height: 100px;
+    margin-top: 20px;
+    background: url(../images/tt-bj.png) repeat;
+}
+.place .box-1 h2{
+	font-size: 28px;
+	color: #fff;
+	padding-left: 40px;
+	line-height: 100px;
+}
+.place .box-1 .ico{
+	margin: 40px 0px 0px 40px;
+}
+.place .box-1 strong{
+	color: #cfae69;
+	font-family: "宋体";
+}
+.place .box-1 a{
+	color: #cfae69;
+}
+.place .box-1 a:hover{
+	text-decoration: none;
+}
+.place .box-2{
+	width: 342px;
+	height: 120px;
+	float: right;
+	background: url(../images/load.png) no-repeat -1px 0px;
+}
+.cover{
+     width: 100%;
+     background: #fff;
+}
+.cover .he{
+	min-height: 1720px;
+}
+.cover .cont{
+     width: 1080px;
+     margin: 0 auto;
+}
+.table{
+	width: 100%;
+	height: 186px;
+	border-bottom: dashed 1px #cecdcd;
+}
+.table ul{
+	padding: 50px 0px 0px 40px;
+}
+.table li{
+	float: left;
+	width: 225px;
+	height: 90px;
+	margin-left: 20px;
+}
+.table li a{
+	width: 225px;
+	height: 90px;
+	display: block;
+}
+.table .li1 .on, .table .li1 a:hover{
+   background-position: -19px -10px;
+}
+.table .li1 a{
+   	background: url(../images/game-pic.png) no-repeat  -252px -10px;
+}
+
+.table .li2 a{
+  	background: url(../images/game-pic.png) no-repeat  -250px -204px;
+}
+.table .li2 .on,  .table .li2 a:hover{
+  background-position: -21px -205px;
+}
+
+.table .li3 a{
+  	background: url(../images/game-pic1.png) no-repeat  0px 0px;
+}
+.table .li3 .on,  .table .li3 a:hover{
+  background-position: -245px 0px;
+}
+.table .li4 a{
+  	background: url(../images/game-pic.png) no-repeat  -250px -107px;
+}
+.table .li4 .on,  .table .li4 a:hover{
+  background-position: -23px -108px;
+}
+
+
+.cover .box-1{
+ 	border-bottom: dashed 1px #cecdcd;
+ 	height: 480px;
+}
+.guide-tt{
+	width: 100%;
+	height: 50px;
+	padding-top: 30px;
+}
+.guide-tt .pic{
+	width: 24px;
+	height: 24px;
+	margin-top: 13px;
+	float: left;
+	background: url(../images/game-pic.png) no-repeat -487px -14px;
+}
+.guide-tt h2{
+	width: 133px;
+	height: 41px;
+	margin-top: 2px;
+	float: left;
+	background: url(../images/tt.png) no-repeat;
+}
+.guide-tt .h1{
+   background-position:  -3px 2px;
+
+}
+.guide-tt .h2{
+   background-position:  -1px -36px;
+
+}
+.guide-tt .h3{
+   background-position:  -1px -74px;
+
+}
+.guide-tt .h4{
+   background-position:  -1px -112px;
+
+}
+.guide-tt a{
+	color: #fff;
+	padding: 6px 20px;
+	background: #584068;
+	float: right;
+	margin-top: 10px;
+}
+.cover .box-1 .txt{
+	padding-top: 14px;
+	float: left;
+}
+.cover .box-1 .txt li{
+	width: 354px;
+	height: 164px;
+	float: left;
+	background: url(../images/nr.png) no-repeat 0px 0px;
+}
+.cover .box-1 .txt li h4{
+	color: #584068;
+	font-size: 14px;
+	font-family: "宋体";
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+.cover .box-1 .txt li p{
+	color: #584068;
+	padding:0px 16px 0px 24px;
+	font-family: "宋体";
+	line-height: 20px;
+}
+.cover .box-1 .bm{
+   float: left;
+   margin-top: 24px;
+}
+.cover .box-1 .bm li{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+	float: left;
+	border: solid 8px #c2bac7;
+}
+.cover .box-1 .bm li:hover{
+	background: #584068;
+}
+.cover .box-1 .bm li:hover p{
+	color: #fff;
+}
+.cover .box-1 .bm p{
+	text-align: center;
+	color: #584068;
+	font-size: 14px;
+	font-family: "宋体";
+	line-height: 30px;
+}
+.cover .box-1 .bm span{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: url(../images/ico2.png) no-repeat;
+}
+.cover .box-1 .bm .xs-ico1{
+   background-position: -6px -88px;
+}
+.cover .box-1 .bm li:hover .xs-ico1{
+   background-position: -6px -3px;
+}
+.cover .box-1 .bm .xs-ico2{
+   background-position: -90px -94px;
+}
+.cover .box-1 .bm li:hover .xs-ico2{
+   background-position: -90px 1px;
+}
+.cover .box-1 .bm .xs-ico3{
+   background-position: -182px -94px;
+}
+.cover .box-1 .bm li:hover .xs-ico3{
+   background-position: -182px -3px;
+}
+.cover .box-1 .bm .xs-ico4{
+   background-position: -276px -88px;
+}
+.cover .box-1 .bm li:hover .xs-ico4{
+   background-position: -276px 0px;
+}
+.cover .box-1 .bm .xs-ico5{
+   background-position: -358px -88px;
+}
+.cover .box-1 .bm li:hover .xs-ico5{
+   background-position: -358px 0px;
+}
+.br{
+	width: 58px!important;
+	height: 2px!important;
+	border-bottom: dashed 1px #e6e6e6!important;
+	border-top:none!important;
+	border-left:none!important;
+	border-right:none!important;
+	background: #fff!important;
+	border-radius:0px!important;
+	padding-top:80px;
+}
+.br:hover{	
+	background: #fff!important;
+}
+.cover .box-2{
+ 	border-bottom: dashed 1px #cecdcd;
+ 	height: 426px;
+}
+.cover .box-2 .boss{
+    width: 540px;
+    height:303px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    background: url(../images/jz1.png) no-repeat 0px 0px;
+}
+.cover .box-2 .boss span{
+	width: 260px;
+	height: 289px;
+	position: absolute;
+	left: 60px;
+	top:10px;
+	background: url(../images/dj1.png) no-repeat 0px 0px;
+}
+.cover .box-2 a{
+	width: 120px;
+	line-height: 30px;
+	color: #fff;
+	height: 30px;
+	text-align: center;
+	background: #584068;
+	position: absolute;
+}
+.cover .box-2 .boss a{
+	right: 80px;
+	bottom: 100px;
+}
+.cover .box-2 .city{
+    width: 540px;
+    height:303px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    background: url(../images/jz2.png) no-repeat 0px 0px;
+}
+.cover .box-2 .city span{
+	width: 239px;
+	height: 296px;
+	position: absolute;
+	right: 60px;
+	top:10px;
+	overflow: hidden;
+	background: url(../images/dj2.png) no-repeat 0px 0px;
+}
+.cover .box-2 .city a{
+	left: 80px;
+	bottom: 100px;
+}
+.cover .box-3{
+	border-bottom: dashed 1px #cecdcd;
+	width: 100%;
+	height: 438px;
+}
+.reclist {
+	width: 100%;
+	background-image:url(../images/rc.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;  
+	overflow: hidden;
+	margin-top: 20px;
+	height: 300px;
+	z-index: 999999;
+	position: relative;
+}
+
+.reclist .rls {
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 180px;
+	height: 300px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.reclist .rec-ico,.reclist .rec-ico img,.reclist .rec-btn {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.reclist .rec-ico {
+	display: none;
+	background: #000;
+	overflow: hidden;
+}
+
+.reclist h3 {
+	width: 100%;
+	left: 0;
+	top: 130px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 120%;
+	font-weight: bold;
+	z-index: 2;
+	font-family: "宋体";
+	position: absolute;
+}
+
+.reclist .view {
+	left: 50%;
+	top: 200px;
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 0 0 -60px;
+	background: #cfae69;
+	color: #fff;
+	font-size: 12px;
+	z-index: 2;
+	position: absolute;
+	cursor: pointer;
+}
+
+.reclist .bc {
+	top: 65px;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 0 0 0 -27px;
+	z-index: 2;
+	position: absolute;
+	display: block;
+	background: url(../images/game-pic.png) no-repeat;
+}
+
+.reclist .infoem {
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 162px;
+	color: #fff;
+	font-size: 16px;
+	z-index: 2;
+}
+.reclist .rec-btn {
+	top: 0;
+	left: 0;
+	text-indent: -9999px;
+	z-index: 3;
+}
+.reclist .gbg {
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	padding: 0 0 200%;
+	margin: -100% 0 0 -100%;
+	transform: scale(0);
+	opacity: 0;
+	transition: all .3s ease-out 0s;
+	background: #584068 url(../images/gmk.png) no-repeat 50% 50%;
+}
+.reclist .rls:hover .gbg {
+	transform: scale(1);
+	opacity: .9;
+}
+.reclist .rls:hover .view {
+	background: #181818;
+}
+.reclist .ft1 .bc {
+	background-position: -476px -170px;
+}
+
+.reclist .ft2 .bc {
+   background-position: -542px -170px;
+}
+
+.reclist .ft3 .bc {
+   background-position:  -610px -166px;
+}
+
+.reclist .ft4 .bc {
+	background-position: -674px -166px;
+}
+
+.reclist .ft5 .bc {
+	background-position: -489px -232px;
+}
+.reclist .ft6 .bc {
+	background-position: -552px -232px;
+}
+
+.reclist .ft1 .rec-btn {
+	background-position: 100px 0;
+}
+
+.reclist .ft2 .rec-btn {
+	background-position: -235px 0;
+}
+
+.reclist .ft3 .rec-btn {
+	background-position: -567px 0;
+}
+.cover .box-4{
+	width: 100%;
+	min-height: 186px;
+	padding-bottom: 30px;
+
+}
+.cover .box-4 .cont{
+	margin-top: 20px;
+}
+.xt-he{
+	min-height: 34px;
+}
+.cover .box-4 .cont a{
+	width: 120px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+	background: #584068;
+	margin-left: 17px;
+	float: left;
+	margin-bottom: 20px;
+}
+.shijie{
+	width: 1200px;
+	height: 1025px;
+	background: url(../images/sj.jpg) no-repeat 0px -9px;
+}
+.shijie .cont{
+	width: 1080px;
+	margin: 0 auto;
+	position: relative;
+}
+.sj-tab{
+	margin-top: 70px;
+	float: left;
+	position: relative;
+	height: 80px;
+}
+.bor{
+	border-top: dashed 1px #cecdcd;
+	width: 100%;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+}
+.sj-tab li{
+	width: 180px;
+	height: 70px;
+	float: left;
+	position: relative;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.sj-tab li a, .jqqd a{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left:50%;
+	top:-10px;
+	margin-left: -6px;
+	border-radius: 50%;
+	border: solid 3px #cecece;
+	background: #e5e5e5;
+
+}
+.sj-tab li.current a{
+	background: #584068;
+}
+.sj-tab li p, .jqqd p{
+	width: 100%;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	font-size:22px ;
+	position:absolute;
+	top:20px;
+	left: 0px;
+	font-family: "宋体";
+	color: #a4a4a4;
+	font-weight: bold;
+}
+.sj-tab li.current p{
+	color: #584068;
+}
+.sj-tabcon{
+	position: relative;
+   height: 822px;
+   overflow-y: auto;
+   overflow-x:hidden;
+   width: 1080px;
+   margin: 0 auto;
+}
+.sj-tabcon p{
+	line-height: 50px;
+	text-indent: 2em;
+	color: #584068;
+	font-family: "宋体";
+	padding:0px 30px 0px 30px;
+}
+.tabcon .subbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.tabcon .sj-list {
+    height: 822px;
+}
+.jqqd{
+	width: 180px;
+	height: 70px;
+	float: left;
+	position: absolute;
+	margin-left: 30px;
+	cursor: pointer;
+	right: -193px;
+	top: 0px;
+}
+

@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/* loginframe */
+
+.block-a{display:block;overflow:hidden;height:100%;text-indent:-9999em}
+.login{font-size:12px;height:180px;color:#cacaca;background-color:#232935;position:relative;margin-bottom:45px;}
+.log a{color:#cacaca}
+.login .t{width:260px;background-position:2px -238px;margin:auto;}
+.login-t a{font-size:16px;line-height:43px;float:left;width:130px;height:43px;color:#a5a5a5;}
+.login-t{position:absolute;top:146px;left:15px;}
+#charge{background-position:-602px -158px}
+#charge:hover{background-position:-739px -158px}
+#btn-reg{width:130px;background-position:-602px -158px}
+#btn-reg:hover{background-position:-739px -158px}
+.mark{display:block;float:left;width:22px;height:22px;margin:10px 8px 0 23px;transition:all .5s ease-out;transform-origin:50% 50%;-webkit-transform-origin:50% 50%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;_display:inline}
+.m1{background-position:0 -242px}
+.m2{background-position:0 -290px}
+#charge:hover .mark,#btn-reg:hover .mark{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}
+.log li{position:absolute}
+.text{font-family:'Microsoft Yahei';line-height:24px;width:186px;height:26px;padding:0 6px;color:#2e2e2e;background-color:#d9dadb;border-radius:5px;}
+.user{top:22px;left:24px;}
+.psw{top:59px;left:24px;}
+.user label,.psw label{display:none}
+.remember{top:97px;left:24px}
+.get-psw{top:97px;left:109px}
+.reg{top:97px;left:195px;}
+.log-btn{bottom:11px;left:24px;width:198px;height:46px;border-bottom:4px;}
+.log-btn a{text-indent:0;text-align:center;line-height:45px;font-size:24px;color:#e8eaed;background: url(images/login-now.jpg) no-repeat;}
+.log-btn a:hover{width:100%;height:100%;background: url(images/login-now-hov.jpg) no-repeat;}
+.loged{width:229px;margin:0 auto;padding:4px 0 0;}
+.loged li{line-height:33px;padding:0 13px;}
+.loged a{color:#cacaca;}
+.loged a:hover{color:#bd9d60}
+.loged-usercenter{text-align:right}
+.loged-usercenter a{margin-left:5px}
+
+.log2{ overflow:hidden;text-align: center;}
+.log2 p{ color:#fff; line-height:20px;}
+.log2 p span{ color:#fdd56f;margin-right: 20px;}
+.log2 p a{ color:#fbc017;}
+.log2_ul{width:290px; margin:20px auto; overflow:hidden;}
+.log2_ul li{float:left; width:80px; height:20px; background:#5b637a; margin-right:5px; margin-bottom:5px;}
+.log2_ul li a{display:block; width:80px; height:20px; line-height:20px; text-align:center; color:#fff;}
+.s-loginframe{top:210px;}
+
+/* server */
+.recom-server{height:218px;background:#fff url(images/server-bg.jpg) no-repeat;overflow:hidden;}
+
+.fastin-input{width:37px;height:18px;text-align:center;line-height:18px;color:#000;background:#cccccc;}
+.fastin-btn{width:34px;height:17px;display:inline-block;overflow:hidden;vertical-align:middle;background: #fbfeff;color: #232935;text-align: center;line-height: 17px;border: 1px solid #d9d9d9;}
+.fastin-btn:hover{background: #3e5879;color: #f9fcfc;}
+.sidebar-server{height:112px;width:192px;margin:0 auto;}
+.sidebar-server li{height:25px;line-height:25px;overflow:hidden;border-bottom:1px dashed #E7E7E7;}
+.sidebar-server li a{display:block;}
+.sidebar-server li i{display:inline-block;width: 11px;height: 11px;background: url(images/arrow.png) no-repeat;margin-right: 3px;}
+.sidebar-server li:last-child{border:0;}
+.sidebar-server li span{float:right;}
+.btn-red{color:#fff;background:#b49353;display:block;text-align:center;border-radius:3px;transition:.5s;}
+.btn-red:hover{background:#cc962e;color:#fef8d7;}
+.server-more{line-height:38px;width:198px;height:38px;font-size:16px;margin:auto;background: url(images/all-server.jpg) no-repeat;display: block;text-align: center;color: #3d5474;}
+.server-more:hover {background: url(images/all-server-hov.jpg) no-repeat;color: #f9fcfc;}
+
+
+
+/* s-header */
+.s-body{background:url(../images/serwrapbg.jpg) center 0 no-repeat;color:#fff;font-size:14px}
+.s-body a{color:#fff}
+.s-wrap{background:url(../images/s-main.jpg) no-repeat;width:1104px;height:1618px;margin:0 auto;}
+.s-header{position:relative;height:224px;}
+.s-content{position:relative;margin:292px 0 0 346px;width:706px;}
+.s-logo{position:absolute;top:64px;left:-101px;overflow:hidden;width:283px;height:186px;text-indent:-9999px;}
+.s-nav{height:65px;padding:96px 0 0 302px;}
+.s-nav a{float:left;width:194px;height:65px;text-indent:-9999em;margin-left:px;}
+
+
+/**服务器类型选择**/
+.ser-type{ position:absolute; width:70px; height:30px; left:126px; top:27px; background:url(../images/sertypebg.jpg) left top no-repeat; padding-left:105px;}
+.ser-type select{ width:64px; height:18px; line-height:18px; background-color:##fff; color:#000; font-size:12px; font-family:'微软雅黑'; border:none; margin-top:3px;}
+/* s-loginframe */
+.s-loginframe{position:absolute;top:227px;left:340px;width:750px;height:77px;}
+.s-text{width:252px;height:30px;padding:0 6px;background:#cdd7ac;font-family:"Microsoft Yahei";line-height:30px;color:#1f1f21;}
+.s-user{top:13px;left:27px; width:252px; background-color:#f00}
+.s-psw{top:13px;left:320px; width:252px; background-color:#f00}
+.s-log-btn{top:10px;left:630px;}
+.s-log-btn a{display:block;background:url(../images/s-btn.jpg) no-repeat;width:37px;height:37px;}
+.s-log-btn a:hover{}
+.s-remember{top:47px;left:27px; color:#212123}
+.s-psw-btn{top:47px;left:453px; color:#212123}
+.s-psw-btn a{ color:#212123}
+.s-reg-btn{top:47px;left:340px}
+
+
+
+
+
+.s-logo {
+	position: absolute;
+	top: 20px;
+	left: 106px;
+	overflow: hidden;
+	width: 266px;
+	height: 126px;
+	text-indent: -9999px
+}
+
+.s-nav {
+	height: 69px;
+}
+
+.s-nav a {
+	float: left;
+	width: 193px;
+	height: 69px;
+	margin-right: 1px;
+	text-indent: -9999em
+}
+
+
+
+#sNav2 {
+	width: 164px
+}
+
+#sNav3 {
+	width: 163px
+}
+
+#sNav2:hover {
+	background-position: -162px -5px
+}
+
+#sNav3:hover {
+	background-position: -327px -5px
+}
+
+#sNav4:hover {
+	background-position: -491px -5px
+}
+
+
+.s-remember {
+	top: 64px;
+	left: 34px
+}
+
+.s-get-psw {
+	top: 64px;
+	left: 238px
+}
+
+.s-reg-btn {
+	top: 64px;
+	left: 302px
+}
+
+.s-body .loged {
+	display: block;
+	font-size: 14px;
+	padding: 18px 0 0 33px;
+	width: 619px
+}
+
+.s-body .loged li {
+	line-height: 24px;
+	float: left;
+	width: 309px;
+	color: #646567
+}
+
+.s-body .loged a:hover {
+	color: #429601
+}
+
+.s-body .colored {
+	color: #ec5707
+}
+
+.s-body .loged a.colored {
+	color: #ec5707
+}
+
+.s-body .loged a.colored:hover {
+	color: #429601
+}
+
+.s-body .quick-ingame {
+	width: 190px;
+	margin: 0 auto 65px;
+}
+
+.s-body .fastin-input {
+	color: #2a2e34;
+	background: #989A9E
+}
+
+.s-body .fastin-btn {
+	width: 64px;
+	height: 26px;
+	background: url(../images/server.jpg) no-repeat -381px -75px;
+	display: inline-block;
+	line-height: 26px;
+	color: #eaeef5;
+	font-size: 14px
+}
+
+.s-body .fastin-btn:hover {
+	background-position: -381px -102px;
+	color: #EAEEF5
+}
+
+
+
+.s-server-list li {
+	line-height: 40px;
+	float: left;
+	width: 188px;
+	height: 40px;
+	margin: 0 12px 10px 0;
+	text-align: center;
+	background: url(../images/server.jpg) -192px -75px no-repeat;
+	font-size: 12px
+}
+.s-server-list{margin-bottom:115px;overflow: hidden;}
+
+#rec-server li {
+	margin-bottom: 0
+}
+
+.s-server-list a {
+	display: block;
+	height: 100%;
+	color: #fdfcfb
+}
+
+.s-server-list a:hover {
+	font-size: 13px;
+	color: #E8F742
+}
+
+.s-server-list span {
+	color: #e8f742
+}
+
+/*.all {
+	overflow-y: auto;
+	height: 588px
+}*/
+
+.sp-panel-wrap{
+	overflow-y: auto;
+	height: 550px
+}
+
+.sp-panel-wrap li {
+	background-position: -192px -116px
+}
+
+.sp-pager li {
+	line-height: 22px;
+	width: 66px;
+	height: 23px;
+	margin: 0 6px 4px 0;
+	cursor: pointer;
+	background: #646567;
+	color: #d4d5d6
+}
+.sp-pager li:hover{
+	background: #0264B0;
+	color: #ECF2F8
+}
+
+.sp-pager {
+	overflow: hidden;
+	margin: 0 0 14px
+}
+
+.sp-pager li.on {
+	background: #0264B0;
+	color: #ECF2F8
+}
+
+.s-body .loged a {
+	color: #646567
+}
+
+.sq-dialog-content {
+	text-align: center
+}
+
+.new-server {
+	width: 100%;
+	height: 77px;
+	display: block;
+	background: url(../images/new-server.jpg) no-repeat
+}
+
+
+
+
+
+.tab_item{
+	display: block;
+    height: 100%;
+    background: #0264B0;
+    color: #ECF2F8;
+}
+
+
+#last_game_info li{display:inline-block;}
+
+

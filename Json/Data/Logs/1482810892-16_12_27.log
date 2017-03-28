@@ -1,0 +1,187 @@
+[ 2016-12-27T11:54:52+08:00 ] 222.222.251.103 /Json/index/doLogin?rnd=0.235288275946805&username=heq199712&password=dul54644&save_id=undefined&returl=&ltype=&adv_id=0&format=json&jsoncallback=jQuery18302544501184219985_1482810682805&_=1482810683119
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001483s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.001064s ]
+NOTIC: [8] Array to string conversion /www/newwan.752g.com/Source/ThinkPHP/Common/functions.php 第 22 行.
+NOTIC: [8] Undefined index: gourl /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 576 行.
+NOTIC: [8] Undefined index: tmp_user_name /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 578 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/uc_client/lib/db.class.php 第 41 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_member_info` [ RunTime:0.001838s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_member_info` WHERE uname='heq199712' LIMIT 1   [ RunTime:0.014858s ]
+NOTIC: [8] Undefined index: gid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 112 行.
+NOTIC: [8] Undefined index: sid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 113 行.
+NOTIC: [8] Undefined index: keywords /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 121 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 955 行.
+NOTIC: [8] Undefined variable: browserplatform /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 981 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 982 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 984 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_login_log` [ RunTime:0.001522s ]
+SQL: INSERT INTO `ai_login_log` (`uname`,`gid`,`sid`,`mid`,`logintype`,`loginip`,`logintime`,`referer`,`keywords`,`clientlanguage`,`useragent`,`clientbrowser`,`clientos`,`remark`) VALUES ('heq199712',null,null,'231','平台','222.222.251.103',1482810697,'http://api.752g.com/Json/index/doLogin?rnd=0.235288275946805&username=heq199712&password=dul54644&save_id=undefined&returl=&ltype=&adv_id=0&format=json&jsoncallback=jQuery18302544501184219985_1482810682805&_=1482810683119',null,'zh-cn','Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)','Internet Explorer 9.0','Windows 7','json登陆平台') [ RunTime:195.425307s ]
+NOTIC: [8] Undefined variable: str /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 607 行.
+
+[ 2016-12-27T11:54:52+08:00 ] 115.228.100.237 /Json/index/doLogin?rnd=0.171195371977797&username=fbxh19935&password=p3939311&save_id=undefined&returl=&ltype=&adv_id=0&format=json&jsoncallback=jQuery18302544501184219985_1482810700270&_=1482810700572
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000067s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001356s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.001016s ]
+NOTIC: [8] Array to string conversion /www/newwan.752g.com/Source/ThinkPHP/Common/functions.php 第 22 行.
+NOTIC: [8] Undefined index: gourl /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 576 行.
+NOTIC: [8] Undefined index: tmp_user_name /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 578 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/uc_client/lib/db.class.php 第 41 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_member_info` [ RunTime:0.001754s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_member_info` WHERE uname='fbxh19935' LIMIT 1   [ RunTime:0.016838s ]
+NOTIC: [8] Undefined index: gid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 112 行.
+NOTIC: [8] Undefined index: sid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 113 行.
+NOTIC: [8] Undefined index: keywords /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 121 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 955 行.
+NOTIC: [8] Undefined variable: browserplatform /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 981 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 982 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 984 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_login_log` [ RunTime:0.001571s ]
+SQL: INSERT INTO `ai_login_log` (`uname`,`gid`,`sid`,`mid`,`logintype`,`loginip`,`logintime`,`referer`,`keywords`,`clientlanguage`,`useragent`,`clientbrowser`,`clientos`,`remark`) VALUES ('fbxh19935',null,null,'231','平台','115.228.100.237',1482810702,'http://api.752g.com/Json/index/doLogin?rnd=0.171195371977797&username=fbxh19935&password=p3939311&save_id=undefined&returl=&ltype=&adv_id=0&format=json&jsoncallback=jQuery18302544501184219985_1482810700270&_=1482810700572',null,'zh-cn','Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)','Internet Explorer 9.0','Windows 7','json登陆平台') [ RunTime:189.777313s ]
+NOTIC: [8] Undefined variable: str /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 607 行.
+NOTIC: [2] rename(Data/Logs/16_12_27.log,Data/Logs/1482810892-16_12_27.log): No such file or directory /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Log.class.php 第 76 行.
+
+[ 2016-12-27T11:54:52+08:00 ] 182.33.197.110 /Json/index/doLogin?rnd=0.23285379383234456&username=cpfddk777749&password=860922&save_id=undefined&returl=&ltype=&adv_id=0&format=json&jsoncallback=jQuery18305989946284539978_1482810678029&_=1482810700613
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001270s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.001010s ]
+NOTIC: [8] Array to string conversion /www/newwan.752g.com/Source/ThinkPHP/Common/functions.php 第 22 行.
+NOTIC: [8] Undefined index: gourl /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 576 行.
+NOTIC: [8] Undefined index: tmp_user_name /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 578 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/uc_client/lib/db.class.php 第 41 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_member_info` [ RunTime:0.001820s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_member_info` WHERE uname='cpfddk777749' LIMIT 1   [ RunTime:0.001338s ]
+NOTIC: [8] Undefined index: gid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 112 行.
+NOTIC: [8] Undefined index: sid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 113 行.
+NOTIC: [8] Undefined index: keywords /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 121 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 955 行.
+NOTIC: [8] Undefined variable: browserplatform /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 981 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 982 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 984 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_login_log` [ RunTime:0.001439s ]
+SQL: INSERT INTO `ai_login_log` (`uname`,`gid`,`sid`,`mid`,`logintype`,`loginip`,`logintime`,`referer`,`keywords`,`clientlanguage`,`useragent`,`clientbrowser`,`clientos`,`remark`) VALUES ('cpfddk777749',null,null,'149','平台','182.33.197.110',1482810701,'http://user.752g.com/login',null,'zh-CN','Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Shuame)','Internet Explorer 7.0','Windows 7','json登陆平台') [ RunTime:191.645633s ]
+NOTIC: [8] Undefined variable: str /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 607 行.
+NOTIC: [2] rename(Data/Logs/16_12_27.log,Data/Logs/1482810892-16_12_27.log): No such file or directory /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Log.class.php 第 76 行.
+
+[ 2016-12-27T11:54:52+08:00 ] 117.10.163.76 /Json/index/doLogin?rnd=0.08478992946943292&username=ccc405515790&password=laogong521&save_id=undefined&returl=http://gameplay.752g.com/game_add.html?gid=107&sid=195&ltype=&adv_id=0&format=json&jsoncallback=jQuery183015006477574619964_1482810562906&_=1482810576821
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000067s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001459s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.001027s ]
+NOTIC: [8] Array to string conversion /www/newwan.752g.com/Source/ThinkPHP/Common/functions.php 第 22 行.
+NOTIC: [8] Undefined index: gourl /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 576 行.
+NOTIC: [8] Undefined index: tmp_user_name /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 578 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/uc_client/lib/db.class.php 第 41 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_member_info` [ RunTime:0.001751s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_member_info` WHERE uname='ccc405515790' LIMIT 1   [ RunTime:0.001392s ]
+NOTIC: [8] Undefined index: gid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 112 行.
+NOTIC: [8] Undefined index: sid /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 113 行.
+NOTIC: [8] Undefined index: keywords /www/newwan.752g.com/Json/Lib/Action/CommonAction.class.php 第 121 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 955 行.
+NOTIC: [8] Undefined variable: browserplatform /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 981 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 982 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 984 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function ereg() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 986 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 988 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 990 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 992 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [8192] Function eregi() is deprecated /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 994 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_login_log` [ RunTime:0.001410s ]
+SQL: INSERT INTO `ai_login_log` (`uname`,`gid`,`sid`,`mid`,`logintype`,`loginip`,`logintime`,`referer`,`keywords`,`clientlanguage`,`useragent`,`clientbrowser`,`clientos`,`remark`) VALUES ('ccc405515790',null,null,'149','平台','117.10.163.76',1482810702,'http://user.752g.com/login?returl=http%3A%2F%2Fgameplay.752g.com%2Fgame_add.html%3Fgid%3D107%26sid%3D195',null,'zh-CN','Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729)','Internet Explorer 8.0','Windows 7','json登陆平台') [ RunTime:190.203546s ]
+NOTIC: [8] Undefined variable: str /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 607 行.
+NOTIC: [2] rename(Data/Logs/16_12_27.log,Data/Logs/1482810892-16_12_27.log): No such file or directory /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Log.class.php 第 76 行.
+

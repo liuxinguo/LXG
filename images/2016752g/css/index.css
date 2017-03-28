@@ -1,0 +1,194 @@
+/*首页样式*/
+@charset "utf-8";
+
+
+/*主题内容*/
+
+.cont{width:1200px;margin: 0px auto;position: relative;}
+.cont-left,.cont-right{float: left;overflow: hidden;}
+/*cont 左边的内容*/
+.cont-left{width:74%;}
+.cont-right{width:26%;border-top: none;}
+
+
+/*精品游戏*/
+
+#bigpicarea div{position: absolute;overflow: hidden;}
+.cont-boutique{margin-top:15px;}
+.cont-boutique,.cont-new{width: 100%;overflow: hidden;}
+.cont-title{font-size: 18px;color: #323233;position: relative;padding-left: 15px;font-weight: bold;height: 44px;line-height: 44px;}
+
+.cont-title span{background: url(../img/dengji.png);background-repeat:no-repeat ; display: inline-block;width: 31px;height:32px;float: left;margin-right:5px;}
+.cont-jp span{ background-position:-187px -31px;}
+.cont-boutique ul>li{float: left;padding:7px;margin:15px 0 5px 8px; position: relative;overflow: hidden;width: 32%;}
+.cont-boutique ul>li>a{display: inline-block;}
+
+.cont-boutique ul>li:hover{box-shadow: 0 0  3px 3px #ff9509;-webkit-box-shadow: 0 0  3px 3px #ff9509;-moz-box-shadow: 0 0  3px 3px #ff9509;-o-box-shadow: 0 0  3px 3px #ff9509;}
+
+.boutique-title{position: absolute;width: 96%;background-color: #fff;bottom:-39px;left:7px;}
+.boutique-title li {margin-top: 10px;}
+.boutique-title li a{font-size: 14px;color:#3c3c3c;display:block;}
+.boutique-name{margin-left: 10px;float: left;line-height: 40px;}
+.boutique-name a:hover{color:#ff9509;}
+.boutique-come{float: right;margin-right: 30px;width:90px;height: 30px;}
+.boutique-title .boutique-come a{background-color: #f18c00;text-align: center;line-height: 30px;margin-top:5px;border-radius: 4px;color: #fff;}
+.boutique-come a:hover{background-color: #ff9509;}
+.ul-title{overflow: hidden;position: relative;}
+.ul-title li img{width: 100%;}
+
+.ul-title li i{display: inline-block;position: absolute;background: url(../img/status.png);width: 39px;height: 40px;left: 7px;top:7px;background-repeat: no-repeat;}
+.ul-title li .games-new{background-position: 0 0;}
+.ul-title li .games-tui{background-position: 0 -40px;}
+
+
+.cont-least span{background-position:-219px -34px; width:35px;}
+/*最新游戏*/
+.cont-new{margin-top: 5px;}
+.cont-new span{ background-position:-187px 2px;}
+.cont-title a{float: right;font-weight:300;font-size: 14px; cursor: pointer;margin-right: 10px;color: #3c3c3c;}
+.cont-title a:hover{color: #febc0f;}
+.cont-new-nr{margin-top: 20px;}
+.cont-new-nr>li{
+	float: left;margin: 0 0 15px 14px;position: relative;overflow: hidden;width: 31%;border:1px solid #eaeaea;
+	border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius: 5px;-ms-border-radius: 5px;
+	box-shadow:0 0 5px rgba(0,0,0,.1);height: 122px;
+}
+.cont-new-nr>li:hover{border:1px solid #f18c00;}
+
+
+
+.cont-new-nr>li img{width: 100%;height: 100%;}
+.new-nr a{color:#3c3c3c;}
+/*.new-nr a:hover{color:#f18c00;}*/
+.new-nr p,.new-nr h4{position:absolute;top: 10px;left: 15px;}
+.new-nr p{top: 40px;font-size: 14px;color: #9c9c9c;}
+
+.animate{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;}
+.cont-new-by{position: absolute;bottom:-27px;left: 0;width: 100%;height:27px;overflow: hidden;font-size: 14px;}
+.cont-new-by div{width: 100%;height: 100%;background-color: #000;opacity:.5;fliter:alpha(opacity=50);}
+.cont-new-by li{position: relative;z-index: 99;bottom:24px;left: 15px;display: inline-block;color:#fff;}
+.cont-new-by li a{color: #fff;}
+.cont-new-by li:hover{color:#ff9509;}
+.cont-new-by li:last-child{float: right;margin-right: 53px;height: 25px;text-align: center;line-height: 20px;border-radius: 5px;}
+/*.cont-new-by li:last-child:hover{border:1px solid #ccc;text-align: center;line-height: 20px;border-radius: 5px;background-color: #fff;}*/
+
+.cont-new-by li{background: url(../img/dengji.png) no-repeat;}
+.cont-new-by li:nth-child(2){background-position: -35px -119px;padding-left: 17px}
+.cont-new-by li:nth-child(3){background-position: -89px -119px;padding-left: 17px;margin-left:10%;}
+.cont-new-by li:nth-child(4){background-position: -166px -119px;padding-left: 17px;}
+
+/*游戏礼包*/
+
+.cont-gift span{ background-position:-187px -64px;}
+.git-detauils li{float: left;margin-left:1%;position: relative;color:#ccc;width: 31%;border-right: 1px solid #e8e8e8;padding: 0 10px;}
+.git-detauils li img{width: 100%;height: 100%;}
+
+.git-head{width: 48px;height: 48px;border-radius: 50%;display: inline-block;overflow: hidden;margin: 5px 5px 0 10px;}
+.git-describe{width: 53%;display: inline-block;overflow: hidden;}
+.git-describe a{color:#3c3c3c;font-size: 14px;}
+.git-describe a:hover{color:red;}
+.git-describe p{margin-top: 5px;font-size: 12px;}
+.git-describe p span{color:red;}
+.cont-get{display: inline-block;float: right;width:19%;height: 24px; color:#45acef;border:1px solid #45acef;border-radius:5px;text-align: center;line-height: 24px;font-size: 14px;margin: 17px 0 0 0;}
+.cont-get:hover{background-color: #45acef;border:none;color: #fff;}
+.git-detauils{overflow:hidden;border:1px solid #ccc;border-top: 2px solid #45acef;padding: 5px 0;}
+/*cont 右边的内容*/
+.cont-right{float: right;}
+
+/*游戏排行*/
+.game-list{margin-top: 10px;}
+.cont-num span{background-position:-220px -67px; width: 36px;}
+.game-num{overflow: hidden; font-size: 15px;}
+.game-num a {color: #3c3c3c;}
+.num-one{width: 100%;overflow: hidden;background-color:#45acef;}
+.num-one img{margin-top: 10px;margin-bottom: 8px;margin-left: 15px;margin-right: 15px;overflow: hidden;display: inline-block;float: left;width: 52px;height: 52px;}
+.num-one ul{display: inline-block;margin-top: 5px;color: #fff;line-height: 26px; font-size: 14px;}
+.num-one ul a{color: #fff;font-size: 16px;}
+.num-one p{display: inline-block;float: right;margin:20px 3% 0 0;width: 70px;height: 24px;background-color: #fff;text-align: center;line-height: 24px;border-radius: 5px;font-size: 14px;}
+.num-one p a:hover{background-color: #febc0f;color: #fff;display:block;border-radius: 5px;}
+.num-dotted{border-bottom: 1px dotted #ccc;width: 100%;position: relative;}
+.num-one i{display: inline-block;background: url(../img/dengji.png) no-repeat -148px -43px;width:39px;height:34px;position: absolute;top: 0;left: 0;}
+
+.num-two:hover a{color:#fff;}
+.num-two ul{overflow: hidden;line-height:36px;}
+.num-two ul:hover{background-color: #45acef;}
+.num-two li{float: left; cursor: pointer;}
+.num-two li span{width: 18px;height: 18px;display: inline-block;background-color: #febc0f;color: #fff;text-align: center;line-height: 18px;font-size: 12px;margin-left: 5px;}
+.num-two a{display:block;text-align: center;font-size: 12px;}
+
+.num-two .num-come a{width: 60px;/*margin-left: 50px;*/}
+.game-num .num-two:nth-child(4) span,.game-num .num-two:nth-child(5) span,.game-num .num-two:nth-child(6) span,.game-num .num-two:nth-child(7) span{background-color:#45acef;}
+.num-dotted-name {width: 38%;}
+.num-dotted-leix{width: 27%;}
+
+/*图片*/
+.cont-img {width: 100%;height:174px;overflow: hidden;margin-top:8px;}
+.cont-img img{width: 100%;height: 100%;}
+
+/*活动公告*/
+.active-bull{margin-top:15px;}
+.cont-notice span{ background-position:-216px 1px;width: 34px;}
+.active-bull,.new-listbox,.cont-img,.game-list {width: 95%;margin-left: 7px;}
+.active-deatails{overflow: hidden;margin-top:10px;}
+.active-deatails li{line-height: 36px;border-bottom:1px dotted #ccc;overflow: hidden;font-size: 12px;}
+.active-deatails li a{color:#3c3c3c;display: inline-block;width:81%; font-size: 12px;}
+.active-deatails li a:hover{color: red;}
+
+/*快捷通道*/
+.fast-track{overflow: hidden;margin-top: 5px;}
+.cont-track span{background-position:-259px 1px; width: 35px;margin-top: 5px;}
+.track_help{margin-left: 10px;}
+.track_help li{float: left;width: 40%;height: 30px;line-height: 30px;border:1px solid #ccc;text-align: center;margin: 0 7% 5px 2%;}
+.track_help li a{display:block;color: #3c3c3c;font-size: 14px;}
+.track_help li a:hover{background-color: #45acef;color:#fff;}
+
+/*客服电话*/
+.cont-tel { width: 40px; height: 41px;float:right;margin-top: 5px;}
+.game-tel{margin-top: 5px;overflow: hidden;}
+.cont-tel{margin-top: 8px;float: left;}
+.game-tel ul{color:#3c3c3c;line-height: 30px;float:left;margin-left:12%;}
+.game-tel ul span{color:#0f8dc4;font-weight: bold;font-family: Arial; margin-left: 5px;}
+.game-tel ul,.cont-tel{display: inline-block;}
+
+
+/*友情链接*/
+.friendship{width: 100%;margin-top: 10px;overflow: hidden;}
+.friendship p{margin-left: 9px;font-size: 18px;font-weight: bold;}
+.friendship ul{width:100%;margin-left: 10px;margin-top:10px;}
+.friendship ul li{float: left;height: 23px;}
+.friendship ul li a{display: block;margin-right: 10px;text-align: center;color: #3c3c3c;font-size: 12px;}
+.friendship ul li a:hover{color:#008eeb;}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+	.register_frame{right: 50px;}
+	.cont{width: 100%;}
+	.game-tel .cont-tel{width: 42px;height:30px;margin-top: 14px;}
+	.game-tel .cont-tel img{width: 100%;height: 100%;}
+	.game-tel ul{font-size: 14px;margin-left:6%;}
+	.active-deatails li a,.active-deatails li{font-size: 12px;}
+	.sign-data{left:-183px;}
+	.git-describe{width: 50%}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*
+ * 官网模板core.css
+ * zx 2014 08
+ */
+
+/* Reset
+================================================================================================= */
+html{background: #fff}
+body{color:#000;font-size:12px;line-height:2em;cursor:default;}
+body{font-family:"Microsoft Yahei",simsun,arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Base Used
+================================================================================================= */
+a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+/* Commonly Used
+================================================================================================= */
+
+/*content*/
+.content{width: 1024px;margin: 0 auto;}
+.sec_man{width: 769px}
+/*footer*/
+.footer{text-align: center;width: 1024px;margin: 0 auto;color: #959595;line-height: 20px}
+.footer_notice{border-bottom:#d2d2d2 solid 5px;padding:10px 0;}
+.footer_notice span{font-size:14px;padding:0 10px}
+.footer_com{color:#707070;padding:18px 0;}
+.footer_com span,
+.footer_com a{padding:0 5px;color:#707070;}
+
+/*mod*/
+.mod{}
+
+/*mod_newstab*/
+.mod_newstab{width:330px }
+.newtabs{}
+.newtabs p{float: left;}
+
+/*new_list*/
+.new_list{}
+.new_list a{float: left}
+.new_list span{float: right;}
+
+/*data_list*/
+.data_list{}
+.data_item strong,
+.data_item span{float: left}
+
+/*role*/
+.role_tabs p{float: left}
+
+/*mod_photab*/
+.pic_tabs p{float: left;}
+
+/*pic_list*/
+.pic_list{}
+.pic_list li{float: left;}
+
+
+/*inner*/
+.inner_list a{float: left}
+.inner_list span{float: right;}
+.inner_article{padding:40px 25px;}
+.inner_article h1{font-size: 20px;color:#45506e;border-bottom: #bfbfbf solid 3px;text-align: center;line-height: 40px;}
+.posttime{text-align: center;color:#959595;}
+.article_content{padding:40px 0;}
+
+/*sershade serpop*/
+#sershade{background: #000;opacity: 0.4;filter:alpha(opacity=40); position: fixed;left:0;right: 0;top: 0;bottom: 0;z-index:9999;display: none;}
+#serpop{width: 600px;height: 420px;padding:0 25px;background: #eee;position: fixed;z-index: 10000;top:50%;left:50%;margin: -210px 0 0 -325px;display: none;}
+.serpop_close{background: url('http://img.dwstatic.com/szhuodong/images/serpopclose.png') no-repeat;height: 34px;width: 34px;position: absolute;right: -40px;top:6px;cursor: pointer;
+					-webkit-transition:all 0.5s ease-in-out;
+		            -moz-transition:all 0.5s ease-in-out;
+		            -o-transition:all 0.5s ease-in-out;
+		            -ms-transition:all 0.5s ease-in-out;
+		            transition:all 0.5s ease-in-out;}
+.serpop_close:hover{-webkit-transform:rotate(360deg) scale(1,1); 
+					-moz-transform:rotate(360deg) scale(1,1);
+					-o-transform:rotate(360deg) scale(1,1); 
+					-ms-transform:rotate(360deg) scale(1,1); 
+					transform:rotate(360deg) scale(1,1); }
+.serpop_tit{font-size: 18px;color:#45506e;text-align: center;font-weight: normal;padding:25px 0 10px;border-bottom: #aaabad solid 1px}
+.serpop_rec{height: 35px;background:#ddd;margin-top:16px; line-height: 35px;padding:0 0 0 12px;overflow: hidden;}
+.serpop_grade,
+.serpop_hot{color:#fff;text-align: center;width:3em;display:inline-block;background: #448aca;height: 15px;line-height:15px;margin: 0 3px;
+	border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;}
+.serpop_lihot{color:#e00;}
+.serpop_hot{background: #cf2218}
+.serpop_rec h3{float: left;}
+.serpop_rec a{float: left;padding: 0 10px;}
+.serpop_list{padding:15px 0 0;border-bottom: #aaabad solid 1px;height: 245px}
+.serpop_list a{float: left;width: 144px;padding:0 0 0 6px;height: 26px}/*width: 136px;padding:0 0 0 12px;*/
+.serpop_rec strong,
+.serpop_list strong{padding:0 2px 0 0;}
+.serpop_page{width: 110px;margin: 12px auto 0}
+.serpop_page p{padding:0 8px;cursor: pointer;}
+.serpop_page p:hover{color:#cf2218;}
+
+#pageNum{text-align: center;padding:20px 0 ;}
+#pageNum a{padding:3px 8px;border:#ccc solid 1px;background: #ddd;margin:0 3px}
+#pageNum #pageNow a{color:#c00;}
+
+/*mod.slide.s2.css*/
+.mod-slide-s2{overflow:hidden;position:relative;width:428px;height:248px}
+.mod-slide-s2 .mod-slide-content{height:248px}
+.mod-slide-s2 .mod-slide-content ul{position:absolute}
+.mod-slide-s2 .mod-slide-content li{float:left;clear:both}
+.mod-slide-s2 .mod-slide-content a,
+.mod-slide-s2 .mod-slide-content img{display:block;width:428px;height:248px}
+.mod-slide-s2 .mod-slide-trigger{position:absolute;bottom:10px;right:10px;z-index:11}
+.mod-slide-s2 .mod-slide-trigger li{cursor:pointer;float:left;margin-left:5px;width:20px;height:20px;line-height:20px;text-align:center;background:#fff;color:#333}
+.mod-slide-s2 .mod-slide-trigger li.selected{font-weight:700;background-color:#289edd;color:#fff}

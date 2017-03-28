@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS layout */
+.clearfix:after { display:block;clear:both;content:"";visibility:hidden;height:0; }
+/* End hide from IE-mac */
+
+/********** 结构框架 ************/
+body { color: #b3988d; line-height:1.5; font-size: 14px; font-family:'Microsoft YaHei', 微软雅黑, Arial, Tahoma; background:#f9ddc8 url(../images/footerbg.jpg) center bottom no-repeat }
+a { color: #b3988d }
+a:hover { color: #ff9f00 }
+#warp { position:relative; height: auto!important; height: 1300px; min-height: 1300px; overflow: hidden; _overflow: visible;}
+#header { position:relative; width:1000px; margin:-900px auto 0 auto; height: 554px;}
+#main {  position:relative; width:1000px; margin:0 auto 0 auto;}
+#mainbox {}
+#left { float:left; width: 223px; }
+#right { float: right; width: 772px; }
+/**********************/
+
+/** logo **/
+.logo { position:absolute; top:10px; left:-20px; width:370px; height:200px; z-index:1;}
+.logo a { display:block; height:200px;}
+/**********************/
+
+/** 开服公告 **/
+#headerbg { width:100%; height:900px; padding-bottom:15px}
+.headerbox { width: 720px; height: 372px; position: absolute; top: 275px; left: 287px; }
+/**********************/
+
+/** 开始游戏 **/
+.strat { width: 223px; height: 116px; background:url(../images/stratbg.png?v=201503250111) no-repeat }
+.strat a { display:block; height:116px;}
+/**********************/
+
+/** 微端下载 **/
+.downpay a,.loginbtn input,.loginmore a,.card a,.fanchen a,.newcarserv b,.vipbtn,.topserv ul li em  { background: url(../images/icon.png?v=201503250111) no-repeat}
+.downpay { width:223px; overflow:hidden; zoom:1;}
+.downpay a { float:left; width:112px; height:39px; margin:auto; background-position: 0 -107px}
+.downpay a.download { width:111px; background-position:-111px -107px}
+/**********************/
+
+/** 尊贵VIP **/
+.vipbtn { height:53px; background-position:0 -147px;}
+.vipbtn a { display:block; height:53px;}
+/**********************/
+
+/*未登陆*/
+.login { background:#1d1817;  color:#cccccb; font-size:12px; height:154px;}
+.loginlist { padding:10px 0 0 15px;}
+.loginlist ul li em { display:inline-block; padding-right:5px}
+.loginlist ul li input { width:140px; height:20px; line-height:20px; border:1px solid #434343; background:#151515; margin-bottom:8px; color:#cccccb; padding:0 5px; vertical-align:middle; }
+.register { margin:7px 0 12px 45px;}
+.register a { margin-left: 10px; color:#cccccb }
+.register input { display:inline-block; *margin-left:-5px; }
+.loginbtn { overflow:hidden; zoom:1; padding-left:5px }
+.loginbtn input { width:85px; height:35px; cursor:pointer; display:inline-block; border:none; float:left; margin:0 3px; }
+.loginbtn input.btn1 {background-position: 0 -204px; }
+.loginbtn input.btn2 {background-position: -85px  -204px; }
+/**********************/
+
+/*已登录*/
+.yeslogin { background:#272020;  color:#cccccb; font-size:12px; height:144px; padding:10px 0 0 28px;}
+.yeslogin p { line-height:22px; }
+.yeslogin p.name b { margin-right:9px; }
+.yeslogin p.rech a { margin-right:8px; }
+.yeslogin p span { color:#646464}
+.yeslogin p a { color:#cccccb}
+.yeslogin p a:hover { color:#f30}
+.yeslogin p.rech em { color:#646464; font-style:normal; margin-right:5px; }
+.loginmore a { display:block; width:159px; height:30px; background-position:0 -242px; margin:7px 0; cursor:pointer; }
+/**********************/
+
+/** 领取新手卡 **/
+.card { width: 223px; height: 82px; background:#1d1817}
+.card a { text-indent: -9999px; display: block; height: 72px; width:209px; margin:auto; background-position:0 -280px; }
+/**********************/
+
+/** 菜单  **/
+#nav { position: absolute; width: 186px; top:240px; left:20px; z-index:10; }
+.navlist li { width:186px; height: 42px; margin-bottom:5px;  }
+.navlist li a { display: block; height: 42px; text-indent: -9999px;  background: url(../images/nav.png?v=201503250111) no-repeat;}
+.navlist li a:hover {  background: url(../images/nav.png?v=201503250111) no-repeat;}
+.navlist li.a1 a { background-position: 0 0 }
+.navlist li.a2 a { background-position: 0 -42px }
+.navlist li.a3 a { background-position: 0 -84px }
+.navlist li.a4 a { background-position: 0 -126px }
+.navlist li.a5 a { background-position: 0 -168px }
+.navlist li.a6 a { background-position: 0 -210px }
+.navlist li.a1 a:hover { background-position: 0 -252px }
+.navlist li.a2 a:hover { background-position: 0 -294px }
+.navlist li.a3 a:hover { background-position: 0 -336px }
+.navlist li.a4 a:hover { background-position: 0 -378px }
+.navlist li.a5 a:hover { background-position: 0 -420px }
+.navlist li.a6 a:hover { background-position: 0 -462px }
+/**********************/
+
+/*** 大眼睛 ***/
+.listbox { margin-top:5px; overflow:hidden; zoom:1;}
+#focus { float:left; position: relative; width: 397px; height: 238px; background: #261818; overflow: hidden; }
+#focus ul { height: 238px; position: absolute;}
+#focus ul li { float: left; width: 397px; height: 238px; overflow: hidden; position: relative; }
+#focus ul li div { position: absolute; overflow: hidden; }
+#focus .btnBg { position: absolute; width: 397px; height: 40px; left: 0; bottom: 0;}
+#focus .btn { position: absolute; width: 397px; height: 24px; left: 0; bottom: 8px; padding-right: 10px;  text-align:right;}
+#focus .btn span { display: inline-block; _display: inline; _zoom: 1; width: 22px; height: 22px; line-height: 22px; text-align: center; font-size: 14px; margin-right: 5px; cursor: pointer; color: #fff;  background: url(../images/foucsdot.jpg) 0 -22px no-repeat}
+#focus .btn span.on { background-position: 0 0; color: #fc0; }
+/**********************/
+
+/*** 首页动态 ***/
+.news,.gamegl,.notice,.customer,.servelist h2,.topserv,.xsbox,.sycustomer,.media,.sidebox,.newserv { background:url(../images/boxbg.jpg?v=201503250111) no-repeat}
+.news { float:right; width:372px; height: 238px; background-position:0 -118px}
+.newstag { height: 38px; background:url(../images/newstabbg.jpg) repeat-x }
+.newstag ul li { float: left; width: 72px; height: 38px; background:url(../images/tagline.jpg) right 0 no-repeat}
+.newstag ul li a { color: #feffff; display: block; width:70px; height: 38px; text-align: center; line-height: 38px;}
+.newstag ul li.more,.newstag ul li.none { background:none;}
+.newstag ul li.more a { width: 70px; text-align:right; padding-right:10px;}
+.newstag ul li a:hover { color: #b59562 }
+.newstag ul li.current a { background:url(../images/tabhover.jpg) no-repeat; color: #feffff }
+.newslist { padding: 10px 10px 0 10px; font-size:12px; }
+.newslist ul li { padding-bottom:8px; overflow: hidden; zoom: 1; }
+.newslist ul li span { float: right;  color:#646464}
+
+/** 推荐服务器  **/
+.topserv { position:relative; height:118px;}
+.topservbox { position:absolute; top:20px; left:90px; width:310px;}
+.topservbox ul li { padding-left:15px; float:left; width:130px; height:25px; line-height:25px; font-size:12px;}
+.topservbox ul li em { float:left; margin-left:-15px; margin-top:6px;  width:12px; height:12px; background-position: -181px -227px}
+.topservbox ul li a { color:#dbc4a2}
+.topservbox ul li a:hover { color:#ff9f00}
+.topservbox ul li.more a { color:#ff9f00}
+.topservbox ul li.more a:hover { text-decoration:underline}
+/**********************/
+
+/** 重点公告 **/
+.newstop { padding: 15px 0 10px 0; text-align: center; border-bottom:1px solid #2a2421}
+.newstop a { color: #fac870; font-size:17px; }
+.newstop a:hover { color:#ecab38}
+/**********************/
+
+/** 新手礼包  **/
+.toplb,.topxs { position: absolute; top:15px;  }
+.toplb { right:201px;}
+.topxs { right:16px;}
+/**********************/
+
+/** 四张广告 **/
+.listbox2,.listbox3 { width:1000px; margin:8px auto 0 auto; height:190px; overflow:hidden; zoom:1;}
+.listbox2 ul { float:left; margin-left:-8px;}
+.listbox2 ul li { float:left; width:244px; height:190px; margin-left:8px; overflow:hidden; zoom:1; display:inline; position:relative;}
+/**********************/
+
+/** 游戏资料 **/
+.list3 { overflow:hidden; zoom:1;}
+.listleft { float:left; width:536px;}
+.listright { float:right; width:455px;}
+.gamezl,.gamets { width:244px; height:190px; position:absolute; top:190px; left:0; background:#1d1817; display:none }
+.gamezl h2,.gamegl h2,.newserv h2,.xsbox h2,.gamets h2 { height:38px; font-size:22px; color:#000000; font-weight:normal; padding-left:45px;}
+.gamezl h2,.gamets h2 { color:#ebc309; font-size:20px; height:32px; padding:8px 0 0 15px;}
+.gamezl h2 span,.gamegl h2 span,.xsbox h2 span,.gamets h2 span { float:right; width:50px; height:20px; margin-top:12px;}
+.gamezl h2 span a,.gamegl h2 span a,.xsbox h2 span a,.gamets h2 a  { display:block; height:20px; line-height:20px; color:#f2f2f2; font-size:12px; font-weight:normal; text-align:center; }
+.gamezllist,.gametslist  { width:244px; height:107px; margin:5px 0 5px 15px; overflow:hidden; font-size:12px;}
+.gamezllist ul li,.gametslist ul li { float:left; height:25px; line-height:25px; width:auto; white-space:nowrap; margin:0}
+.gamezllist ul li a,.gametslist a { height:28px; display:inline-block; padding:0 13px 0 11px; color:#dbc4a2 }
+.gamezllist ul li a:hover,.gametslist a:hover { color:#F60}
+.gamezllist span,.gametslist span {  color:#dbc4a2; text-align:center;}
+.zlmore { float:right; margin-right:20px; color:#dbc4a2; text-align:center;}
+.zlmore a { color:#e4c30a}
+/**********************/
+
+/** 游戏攻略 **/
+.listbox3 { height:239px;}
+.gamegl { background-position: 0 -356px; height:239px;}
+.gamegl h2 { background-position:0 0px;}
+.gamegllist {  overflow:hidden; font-size:12px;}
+.gamegllist ul { margin-top:10px}
+.gamegllist ul li { float:left; width:45%; overflow:hidden; zoom:1; margin:7px 0 0 20px; display:inline}
+.gamegllist ul li span { float:right; color:#646464}
+/**********************/
+
+/** 小说章节 **/
+.xsbox { background-position: -536px -356px; height:239px;}
+.xsbox h2 { background-position:0 0px;}
+.xsboxllist { overflow:hidden; font-size:12px;}
+.xsboxllist ul { margin:10px 0 0 15px}
+.xsboxllist ul li { float:left; width:30%; overflow:hidden; zoom:1; display:inline; height:30px; line-height:30px}
+.xsboxllist ul li.tt { width:38%;}
+.xsboxllist ul li span { float:right; color:#646464}
+/**********************/
+
+/** 首页客服 **/
+.listbox3.bottom { height:138px ;}
+.sycustomer { float:left; width:264px;  height:138px; font-size:12px; margin-right:8px; overflow:hidden; zoom:1; background-position:0 -596px}
+.sycustomer p { padding:15px 0 0 20px}
+.sycustomer h2 { text-indent:-9999px; padding-bottom:10px;}
+.sycustomer p img { vertical-align:middle}
+/**********************/
+
+/*** 扫码活动 ***/
+.sidebox {float:left;  width:264px; height:138px; margin-right:8px; background-position:-264px -596px;}
+/**********************/
+
+/** 媒体 **/
+.media { float:left; width:239px; height:138px; margin-right:8px; background-position:-528px -596px;}
+.media h2 { height:35px; text-indent:-9999px;}
+.medialist { padding:10px;}
+.medialist a { margin:0 5px; display:inline-block; font-size:12px;}
+/**********************/
+
+/** 防沉迷 **/
+.fanchen { float:left; width:209px;}
+.fanchen a { display:block; height:67px}
+.fanchen a.link1 { margin-bottom:4px; background-position: 0 -360px}
+.fanchen a.link2 { background-position: 0 -430px}
+.fanchen.ny { width:211px; padding:5px; margin:8px 0 0 0; border:1px solid #4b3b2e; background:#1d1817;}
+/**********************/
+
+/*** 健康公告 ***/
+.notice { width:1000px; height:40px; margin:8px auto 0 auto; background-position:0 -733px}
+/**********************/
+
+/***  视频 ***/
+.tipsbox { display:none; position:fixed; _position:absolute; left:50%; top:50%;  margin:-190px 0 0 -325px; width:650px; height:380px; z-index: 12; border:2px solid #383836; background:#000;}
+.bodybgdiv { position: absolute; display: none; height: 100%; width: 100%; top: 0; left: 0; z-index: 10; background: url(../images/bbg.png);}
+a.mediaclose { position:absolute; top:-2px; right:-25px; width:25px; height:25px; display:block; color:#fff; text-align:center; line-height:25px; background:#333}
+/**********************/
+
+/** 新服务器推荐 **/
+.newserv { margin-top:10px; background-position:-372px -118px}
+.newserv h2 { text-indent:-9999px;}
+.newserv ul { height:200px; overflow:hidden}
+.newserv ul li { height:28px; width:90%; margin:8.5px auto 0 auto; font-size:12px; }
+.newserv ul li a {  display:block; height:28px; text-align:center; line-height:28px; background:#141110;}
+.newserv ul li.more a { color:#ff9f00}
+.newserv ul li a:hover { background:#252121}
+/**********************/
+
+/** 客服 **/
+.customer { margin-top:10px; overflow:hidden; zoom:1; height:138px; font-size:12px; background-position:-595px -118px}
+.customer h2 { text-indent:-9999px;}
+.customer p { padding:25px 0 0 20px}
+.customer p img { vertical-align:middle}
+/**********************/
+
+/** 内页新闻列表 **/
+.newsbox { background: #1d1817; border:2px solid #382b23; height: auto!important; height: 843px; min-height: 843px; overflow: hidden; _overflow: visible;}
+.location { height: 69px; color: #eb9201; line-height: 69px; padding-left: 20px; font-size:22px;  background:url(../images/newtop.jpg?v=201503250111) no-repeat }
+.location span { float:right; font-size:14px; color:#dadada; margin-right:10px; display:inline}
+.location span a { color: #dadada; }
+.location span a:hover { text-decoration: underline }
+.newsboxlist { padding: 0 30px; }
+.newsboxlist ul li { padding-bottom: 10px; overflow: hidden; zoom: 1; }
+.newsboxlist ul li span { float: right; font-size: 12px; color: #593833 }
+/**********************/
+
+/** 新闻标签 **/
+.newsboxtag { padding: 30px 0; text-align: center; }
+.newsboxtag a { position: relative; display: inline-block; _display: inline; _zoom: 1; color: #fff; width: 120px; height: 34px; line-height: 34px; background:#2e2623 }
+.newsboxtag a.current { color: #fff; background:#3a312e; }
+.newsboxtag a:hover { color: #fff; background:#2a2421 }
+/**********************/
+
+/** 新闻分页 **/
+.pagefen { padding: 20px 0 20px 0; text-align: center; font-size: 12px; }
+.pagefen a { display: inline-block; height: 25px; line-height: 25px; padding: 0 8px; text-decoration: none; vertical-align: middle; color: #fff; background: #2e2623; margin: 0 1px; }
+.pagefen a.current { background: #4c3c39; color: #fff }
+.pagefen a:hover { color: #ccc }
+/**********************/
+
+/** 新闻详情 **/
+.newscontent { padding:30px; line-height:1.8}
+.newscontent h1 { text-align:center; color:#fac870; font-size:16px;}
+.newscontent .time { font-size:12px; text-align:center; padding:10px 0;}
+.newsconlist { padding-top:20px;}
+.newsconlist p { padding-top:20px;}
+.newsboxbottom { padding-top:20px;}
+.newsback { padding-bottom:20px; overflow:hidden; zoom:1;}
+.newsback a {float:right; width:76px; height:25px; display:block; color:#fff; font-size:12px; line-height:25px; text-align:center; background:#900}
+.newsboxpage { font-size:12px; border-top:1px solid #422f29; padding-top:15px;}
+/**********************/
+
+/** 百度搜索 **/
+.baidu { border-bottom:1px solid #422f29; padding-bottom:15px;}
+/**********************/
+
+/*新手卡页*/
+.newcar { width:387px; height:189px; background:#2b2423; margin:20px auto 50px auto; border:2px solid #443425 }
+.newcar h2 { color:#F60; font-size:16px; padding:10px 0 10px 33px; border-bottom:1px solid #211c1a}
+.newcarnum { padding:20px 0 20px 33px;}
+.newcarnum b { text-align:left; color:#D8A2A3;}
+.newcarnum span { color:#fd7d00; padding-left:5px;}
+.newcarselect { position:relative; font-size:12px; padding-left:33px;}
+.newcarserv { position:relative; cursor:pointer; width:160px; background:#fff}
+.newcarserv span { padding-left:5px;}
+.newcarserv b { position:absolute; top:2px; right:2px; width:18px; height:18px; display:inline-block; background-position:-181px -205px }
+.newcarserv ul { position:absolute; top:22px; left:0; background:#fff; width:160px; height:120px; overflow-y:scroll}
+.newcarserv ul li { padding:0 3px; }
+.newcarserv ul li a { display:block; padding:0 2px; height:20px; line-height:20px;}
+.newcarserv ul li a:hover { color:#fff; background:#333}
+.newcarbtn { position: absolute; width: 103px; height: 27px; top: -2px; left: 199px; }
+.newcarbtn input { width:103px; height:27px; color:#fff; cursor:pointer; background:#930; border:none;}
+/**********************/
+
+/** 服务器列表 **/
+#servleft { float:left; width:350px;}
+#servright { float:right; width:640px;}
+.servebox { margin:30px; overflow:hidden;}
+.servelist { padding-bottom:20px; margin-bottom:20px; border:1px solid #3a2d24}
+.servelist h2 { color:#ffb001; height:35px; line-height:35px; margin-bottom:10px; padding-left:15px; background:url(../images/newstabbg.jpg) repeat-x}
+.servelist ul { overflow:hidden; zoom:1;}
+.servelist ul li { float:left; width:200px; height:30px; line-height:30px; padding:0 10px; margin:10px 0 0 11px; display:inline; font-size:12px;  background:#161212}
+.servelist ul li span { float:right; font-family:'宋体'; line-height:30px;}
+.servelist ul li span.yj { color:#C00}
+.servelist ul li span.lh { color:#2fd004}
+.servelist ul li span.wh { color:#666}
+.serveqs { text-align:right; padding-right:20px;}
+.serveqs input { vertical-align:bottom}
+.serveqs input.int { border:1px solid #45342a; width:40px; height:13px; font-size:12px; text-align:center; margin-right:5px; padding:2px; background:#908274}
+.serveqs input.btn { width:83px; height:20px; line-height:20px; color:#d9d3cf; font-size:12px; cursor:pointer; margin-left:10px; background:#262020; border:none}
+/**********************/
+
+/*** 版权 ***/
+#footer { width:1000px; margin:auto; color: #242323; padding: 20px 0 50px 0; }
+.footerlist { width: 650px; margin: 0 auto; padding: 25px 0 0 220px; font-size:12px }
+.footerlist em { float: left; width: 121px; height: 54px; margin: 5px 0 0 -130px; background: url(../images/logo.gif?v=201503250111) no-repeat }
+.footerlist em a { display: block; height: 54px; text-indent: -9999px; }
+.footerlist a { color: #242323 }
+.footerlist p { padding-bottom: 5px; }
+.footerlist span { color: #242323 }
+/**********************/
+
+/*** 小说列有 ***/
+.sxlist { padding:0 30px}
+.sxlist h2 { padding-bottom:10px; border-bottom:1px solid #333; color:#d0a052; font-size:20px; margin:10px 0;}
+.sxlist ul { overflow:hidden; zoom:1; padding-bottom:20px;}
+.sxlist ul li { float:left; width:33%; font-size:12px;}
+/**********************/
+
+
+/*** 一键注册 ***/
+html{ _text-overflow:ellipsis; }  /*解决闪动—*/ 
+.yi_regtip { display:none; position:fixed; _position:absolute;_top:expression(eval(document.documentElement.scrollTop+300)); left:50%; top:50%; width:480px; height:290px; margin:-145px 0 0 -240px; z-index: 11; background:url(../imgreg/bg.png) no-repeat}
+a.yi_close { position:absolute; top:0; right:0; width:25px; height:25px; display:block; color:#fff; text-indent:-9999px; text-align:center; line-height:25px;}
+.yi_regbox { padding:65px 0 0 80px; height:168px;}
+.yi_regbox ul li { color:#faf4bb; height:40px; line-height:40px; font-size:18px; overflow:hidden; zoom:1;}
+.yi_regbox ul li input { border:1px solid #283750; background:#121921; color:#d7dbe0; padding:2px; width:180px;}
+.yi_regbox ul li em { float:left; width:80px; text-align:right; margin-right:10px; margin-top:1px;}
+.yi_regbox ul li span { color:#C00}
+.yi_reglist { padding-top:30px; font-size:16px; color:#C30; margin-left:-10px;}
+.yi_fdbtn { margin:20px 0 0 160px}
+.yi_fdbtn input { float:left; margin-right:20px; text-indent:-9999px; background:url(../imgreg/bt1.jpg); color:#fff; font-size:14px; border:none; width:72px; height:22px; cursor:pointer;}
+.yi_fdbtn input.xx2 { background:url(../imgreg/bt2.jpg) no-repeat}
+/**********************/
+
+/*** SEO ***/
+.h1_seo { display:none}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+*:focus{ outline:none;}
+input,button,select,textarea{ outline:none;}
+
+a,a:link{color:#1788af; text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+a:visited{}
+a:hover{color:#f60;}
+a:active{}
+
+body{font:12px/1.6em arial;color:#000; }
+.wrap{height:155px;}
+
+.login{width:246px;height:155px;margin:0 auto 0 26px; padding-top:20px;}
+.login p{width:246px;height:28px;margin-bottom:10px;}
+.login p.pWarn{ margin:0; color:#fa6a14; height:20px; line-height:20px; width:225px; position:absolute; top:0px; left:76px; padding:0 0 0 20px; text-align:left; background:url(../img/pWarn.gif) no-repeat 0 4px;}
+.login label{width:50px; height:28px; line-height:28px; color:#d7b35b; text-align:center; font-size:12px; float:left;}
+.login input{width:188px; height:20px; line-height:20px;padding:4px;color:#ccc;border:none;background:none; position:absolute;left:50px;top:0; z-index:2;}
+.login p.p1,.login p.p2{position:relative; background:url(../img/logP.gif) no-repeat 50px 0;}
+.login p span{height:28px;line-height:28px;display:block;padding:0 5px; color:#444;border:none; color:#6c6c6c;background:transparent;position:absolute;left:50px;top:0; z-index:1;}
+.login p.validate{ width:270px; margin:0 0 10px; background:url(../img/logP.gif) no-repeat 50px -28px; position:relative;}
+.login p.validate input.i{ width:114px;}
+.login p.validate img{ width:63px; height:28px; position:absolute; top:0; left:183px; cursor:pointer;}
+
+.login p.p3,.login p.p3 a{ height:20px; line-height:20px;  color:#d7b35b; font-size:12px;}
+.login p.p3{width:202px;padding-left:44px; margin-bottom:10px;}
+.login p.p3 a{color:#d7b35b;float:left;}
+.login p.p3 a:hover{ color:#ffae4b;}
+.login p.p3 a.aRem{width:50px;padding-left:20px;background:url(../img/checkIco.gif) no-repeat;}
+.login p.p3 a.aOn{background:url(../img/checkIco.gif) no-repeat 0 -20px;}
+.login p.p3 a.aReg{float:right;}
+.login p.p3 a.aReg:hover{ text-decoration:underline;}
+
+.login p.p1.pOn,.login p.p2.pOn{ background:url(../img/logP.gif) no-repeat 50px 0;}
+.login p.validate.pOn{ background:url(../img/logP.gif) no-repeat 50px -28px;}
+.login p.p1 span,.login p.p2 span,.login p.validate span{ color:#6c6c6c;}
+.login p.pOn span{ color:#858585;}
+
+.login p.chek{ height:20px; line-height:15px; padding:2px 0 0 50px; margin-bottom:6px;}
+.login p.chek b{ font-style:normal; font-weight:normal;}
+.login p.chek .checkInp{ display:none;}
+.login p.chek a{color:#d7b35b;padding-left:20px;height:15px;line-height:15px;overflow:hidden;margin-top:0px;text-decoration:none;font-size:12px; font-family:"\5b8b\4f53"; vertical-align:top; float:left;}
+.login p.chek a span{ height:15px; line-height:15px; float:left;}
+.login p.chek a.fxk{background:url(../img/checkIco.gif) no-repeat 0 -3px;}
+.login p.chek a.fxk.on{background:url(../img/checkIco.gif) left -23px no-repeat;}
+.login p.chek a:hover{ color:#fcdc8c;}
+.login p.chek a.aGet,.login p.chek a.aReg{ padding-left:16px;}
+.login p.chek span{ color:#858585; font-family:"宋体"; font-size:12px; cursor:pointer; text-decoration:none;}
+.login p.chek a:hover span{ background-position:0 -21px;color:#caa67c;}
+.login p.chek .forget{ width:60px; background:none; margin-left:102px; padding-left:0; color:#ad7e00;}
+.login p.chek .forget span{color:#ad7e00;}
+.login p.chek .forget:hover span{color:#dea200; text-decoration:none;}
+
+.login p.btn,.btn2{height:41px;}
+.login button{width:147px; height:41px; margin-left:50px; border:none; background:url(../img/ucBtn.jpg) 0 0 no-repeat;text-indent:-999em; overflow:hidden;cursor:pointer;float:left;}
+.login button:hover{ background:url(../img/ucBtn.jpg) 0 -42px no-repeat;}
+.login a.reg{width:50px;height:18px;line-height:18px;margin:10px 0 0 12px; text-decoration:underline; color:#a58e99; font-size:12px; float:left;}
+.login a.reg:hover{ color:#FF0;}
+
+
+.logon{width:254px;height:155px;margin:0 auto; padding-top:12px;position:relative;}
+.n{ height:54px;margin-bottom:5px; position:relative;}
+.n p{height:20px;line-height:20px;color:#6d6d6d;margin-right:10px;float:left; font-weight:bold;}
+.n p a{color:#d7b35b;}
+.n p a:hover{color:#f60;}
+.n .t_c{ padding-top:26px;}
+.n .wel{ position:absolute; top:0; left:0; background:url(../img/wel.gif) no-repeat 0 2px; width:254px; height:20px; line-height:20px; padding:0 0 0 22px;}
+
+.logon .ser{height:80px;margin-bottom:8px;}
+.logon .ser h5{height:24px; line-height:22px; color:#6d6d6d; font-size:12px; font-weight:bold; }
+.logon .ser p{height:23px; line-height:23px;margin-bottom:6px; overflow:hidden;}
+.logon .ser p a{height:23px; line-height:23px;display:block;color:#a3a2a2; cursor:pointer;}
+.logon .ser p a:hover{color:#ffae4b;}
+.logon .ser p a span{ width:132px;height:23px;float:left;font-weight:normal;  cursor:pointer;color:#b0afaf;}
+.logon .ser p a:hover span{ color:#ffae4b;}
+.logon .ser p em{width:65px;height:16px; line-height:16px; text-align:center; display:block; color:#f6f6f6; font-style:normal;overflow:hidden;background:url(../img/emBtn.gif) no-repeat 0 0;float:right; margin-top:4px; overflow:hidden;}
+.logon .ser p a:hover em{background:url(../img/emBtn.gif) no-repeat 0 -16px;}
+
+.btn2 a{height:41px;text-indent:-999em; overflow:hidden;float:left; _display:inline;}
+.btn2 a.b2{width:147px;margin-right:8px; background:url(../img/ucBtn.jpg) no-repeat 0 -84px;}
+.btn2 a.b2:hover{background:url(../img/ucBtn.jpg) no-repeat 0 -126px;}
+
+.btn2 a.b3{width:96px;background:url(../img/ucBtn.jpg) no-repeat 0 -168px;}
+.btn2 a.b3:hover{background:url(../img/ucBtn.jpg) no-repeat 0 -210px;}

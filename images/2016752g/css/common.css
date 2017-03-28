@@ -1,0 +1,122 @@
+
+/*相同代码:有 index.html*/
+
+
+/*轮播图样式*/
+#picarea{width:100%;position:relative;}
+#bigpicarea{position:relative;width:100%;height:783px;overflow:hidden;z-index:1;}
+/*#bigpicarea >div{transition:opacity 1s linear;-webkit-transition:opacity 1s linear;-o-transition:opacity 1s linear;-moz-transition:opacity 1s linear;}*/
+#bigpicarea img{width:100%;height: 100%;}
+.image{text-align:center}
+.image img{margin:0px auto;}
+#bigpicarea .word{text-align:center;height:50px;line-height:50px;background:#fff;color:#333;position:absolute;bottom:0px;left:0px;width:100%;}
+#smallpicarea{position: absolute;top:50%;left:45%;z-index:1000;}
+#thumbs{margin:0px auto;width: 123px;height: 25px;overflow:hidden;background:rgba(255,255,255,0.5);border-radius: 10px;}
+#thumbs li{display:inline-block;margin-top:2px;}
+#thumbs li a{width:12px;height:12px;margin:0 3px;border-radius:6px;background-color:#434343;display:inline-block;transition:width 0.5s ease-out;-webkit-transition:width 0.5s ease-out;-o-transition:width 0.5s ease-out;-moz-transition:width 0.5s ease-out;}
+#thumbs li a:hover{background-color:#1791F0;}
+#thumbs li a.current{width: 25px;background-color:#1791F0;border:2px solid #fff;height:13px}
+#thumbs ul{margin-top: 0px;padding-left: 10px;}
+
+
+
+/*开服列表*/
+.cont-title{font-size: 18px;color: #323233;position: relative;padding-left: 15px;font-weight: bold;height: 44px;line-height: 44px;}
+
+.new-listbox{margin-top:15px;}
+.listbox-head{overflow:hidden;}
+.listbox-head ul{overflow:hidden;border-bottom:1px solid #ff6501;}
+.listbox-head ul li{float:left;color:#3c3c3c;width:50%;text-align:center;line-height:34px;cursor:pointer;}
+.listbox-head .listbox-active{color:#3c3c3c;border-bottom:3px solid #ff6501;color:#ff6501;}
+.tbody_b{display:none;}
+.new-herald {font-size:14px;color:#3c3c3c;}
+.new-herald {line-height:30px;}
+.tab-li a{display:block;color:#3c3c3c;font-size: 12px;}
+tbody .bianju{text-indent:5px;}
+.tab-li:hover{background-color:#45acef;color:#fff;}
+.server-tab td{border-bottom:1px dotted #ccc;height:35px;overflow: hidden;font-size: 12px;}
+.server-tab{margin:10px 0;}
+.server-tab  tbody .tab-li:hover a{color:#fff;}
+.tab-change {margin-left:42%;margin-bottom:30px;}
+.tab-change li{width:10px;height:10px;border-radius:50%;background-color:#ccc;float:left;margin-left:10px;cursor:pointer;}
+.tab-change .tab-active{background-color: #0f8ff2;}
+
+
+
+
+/*主页登录后*/
+/*.register_back {display: none}*/
+.register_back_head{height: 136px;}
+.register_back_head i{width: 50px;height: 50px;overflow: hidden;cursor: pointer;}
+.register_back_head i img{width: 100%;height: 100%;}
+.register_back_head i,.register_back_head ul{display:inline-block;float:left;margin: 20px 0 0 4%;}
+.register_back_name{display:inline-block;width:145px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;margin-right:5px;margin-bottom:4px;}
+.register_back_exit{display: inline-block;float: right;}
+.register_back_money{margin-bottom: 4px;font-size: 12px;}
+.register_back_money span{display:inline-block;color:#ff8d13;margin-left:5px;}
+.register_back_cz a,.register_back_cz span{margin-right:10px;display:inline-block;font-size:14px;width:50px;height:25px;background-color:#2b9ae7;color:#fff;text-align: center;line-height: 25px;border-radius: 4px;}
+.register_back_cz a:hover,.register_back_cz span:hover{background-color:#0066ff;}
+.register_back_cz span{cursor: pointer;position: relative;}
+
+
+
+.exit{display: inline-block;float: right;font-size: 14px;}
+/*等级*/
+.register_grade{width:90%;height:16px;background-color:#E8E8E8;border-radius:10px;margin:10px auto ;border:1px solid #ccc;}
+
+.register_grade i{display: inline-block;background:url(../img/dengji.png) no-repeat;width: 33px;height:10px;margin:2px 0 0 10px;float:left;}
+
+.register_grade .vip0{background-position:  0 0;}
+.register_grade .vip1{background-position:  0 -11px;}
+.register_grade .vip2{background-position:  0 -22px;}
+.register_grade .vip3{background-position:  0 -33px;}
+.register_grade .vip4{background-position:  0 -44px;}
+.register_grade .vip5{background-position:  0 -55px;}
+.register_grade .vip6{background-position:  0 -66px;}
+.register_grade .vip7{background-position:  0 -77px;}
+.register_grade .vip8{background-position:  0 -88px;}
+.register_grade .vip9{background-position:  0 -99px;}
+.register_grade .vip10{background-position:  0 -110px;}
+
+
+
+
+
+
+
+
+.register_progress{width:78%;background-color:#fff;border:1px solid #ccc;display:inline-block;float: right;height:10px;margin-top: 2px;border-radius: 10px;margin-right: 1%;}
+.register_bar{width:80%;background-color:red;height:4px;margin-top:2px;margin-left:2px;border-radius:8px;}
+
+/*推荐游戏*/
+.register_tuijian{width:90%;margin:0 auto;margin-bottom:10px;overflow:hidden;}
+.register_tuijian ul > li{margin-top:5px;overflow:hidden;margin-bottom:5px;}
+.register_tuijian i{width:16px;height:16px;display:inline-block;overflow:hidden;margin-top:3px;}
+.register_tuijian i img{display:block;width:100%;height:100%;}
+.register_tuijian ol{width: 93%;}
+.register_tuijian i,.register_tuijian ol{float:left;display:inline-block;}
+.register_tuijian ol li{float:left;line-height: 20px;}
+.register_tuijian ol li:first-child{margin-left: 5%;width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.register_tuijian ol li:last-child{float: right;}
+
+.register_tuijian ol li a{color:#3c3c3c;font-size:12px;}
+.register_tuijian ol li a:hover{color:red;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+	
+	.register_frame{right:10px;}
+}

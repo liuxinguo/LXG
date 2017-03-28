@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="Robots" content="all"/>
+<title>多玩游戏 404页面错误</title>
+<link rel="stylesheet" href="http://www.duowan.com/public/s/i/base.css" type="text/css" />
+<style type="text/css" media="all">
+body{margin:0;font-size:12px;background-color:#ffffff;padding-top:80px;}
+a:link,a:visited{color:#000;text-decoration:none;}
+a:hover{color:#ff0000;}
+#contents{width:800px;border:5px solid #969696;margin:0 auto;background:url(/s/404/i.gif) no-repeat 200px 20px;text-align:left;}
+h1{display:none;}
+#info{padding:10px 0 30px 330px;font-size:14px;margin-bottom:10px;line-height:1.5em;}
+#info a:link,#info a:visited{color:#ff0000;}
+#info a:hover{color:#c00001;}
+.fix{height:0;width:100%;clear:both;float:none;overflow:hidden;}
+#contents h2{width:100%;height:25px;margin:0;line-height:25px;overflow:hidden;background-color:#000;color:#fff;font-size:12px;}
+#box{border:1px solid #000;width:700px;margin:0 auto 30px;}
+#xyx{width:100%;background-color:#f3f3f3;}
+#contents h3{width:20px;padding-left:7px;background-color:#d4d4d4;font:12px normal;line-height:2em;margin:0;float:left;color:#000;}
+#xyx dl,#xyx dt,#xyx dd{margin:0;padding:0;list-style:none;}
+#xyx img{width:111px;height:80px;padding:1px;background-color:#fff;border:1px solid #b5b5b5;}
+#xyx dl{width:134px;text-align:center;float:left;padding-top:10px;}
+#newgame h3{background-color:#f3f3f3;}
+#newgame ul,#newgame li{margin:0;padding:0;list-style:none;}
+#newgame ul{width:335px;float:left;overflow:hidden;}
+#newgame li{padding-left:30px;background:url(http://www.duowan.com/s/008i/arrow.gif) no-repeat 20px center;line-height:27px;border-bottom:1px dotted #000;}
+em{font-style: normal;}
+#home-wonderful-recommendation{padding:0 !important;margin:0 !important;}
+#home-wonderful-recommendation ul li{margin:0 15px 15px 5px !important;}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="http://www.duowan.com/public/s/i/navbar/navbar.js?2015050701"></script>
+<div id="contents" data-tank404="width:800;height:640;">
+<h1>404页面错误</h1>
+<div id="info">
+<p>页面错误，<br />对不起，你查找的内容不存在或者连接服务器超时。<br />点击返回多玩首页。</p>
+<a href="http://www.duowan.com/" title="返回多玩首页">返回多玩首页</a>
+</div><!-- info -->
+<div id="box">
+	<h2>·多玩全站推荐·</h2>
+	<div id="xyx">
+		<!-- 图集推荐{ -->
+<div id="home-wonderful-recommendation">
+	<h3>图集推荐</h3>
+	<ul>
+    
+           <li class="album-item-1"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img3.dwstatic.com/www/1512/315050498624/1466584412893.jpg"><em>
+家族中有人出人头地了
+</em></a></li>
+
+           <li class="album-item-2"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img.dwstatic.com/www/1508/304423324477/1466584496081.jpg"><em>
+替身攻击：白喵之星！
+</em></a></li>
+
+ 	       	<li class="album-item-3"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img.dwstatic.com/www/1508/303928526489/1466584555201.jpg"><em>
+男演员才懂的尴尬苦楚
+</em></a></li>
+
+	       	<li class="album-item-4"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img1.dwstatic.com/www/1508/303928443222/1466407280022.jpg"><em>
+手机壁纸精选第17弹
+</em></a></li>
+ 
+           <li class="album-item-5"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img5.dwstatic.com/www/1508/303928384577/1466156110500.jpg"><em>
+英雄联盟-大zl粪青
+</em></a></li>
+
+           <li class="album-item-5"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img.dwstatic.com/www/1508/303927839778/1466407795697.jpg"><em>
+外国人评选重口9大美食
+</em></a></li>
+
+	         <li class="album-item-7"><a href="http://url.cn/HyuEUv"><img alt="" src="http://img5.dwstatic.com/www/1512/315142215387/1466408154669.jpg"><em>
+土豪干爹送电玩女神PS4
+</em></a></li>
+
+
+	</ul>
+</div>
+<!-- }图集推荐 -->
+<style>.zhuanqu-tuiguang--duanzishou a{color:#f50;font-weight:bold;}</style>
+<!--
+<div id="home-wonderful-recommendation" style="padding:0;height:auto;">
+    <div class="zhuanqu-tuiguang--duanzishou" style="color:#f50;font-weight:bold;">
+        <a href="http://duanzi.duowan.com/index.php?from=wonderful&r=view/index&tid=139455" target="_blank" style="color:#f50;font-weight:bold;"></a>
+    </div>
+</div>
+-->
+<style>
+#home-wonderful-recommendation {margin: 10px 0;padding: 5px 5px 10px;height:132px;overflow: hidden;position: relative;}
+#home-wonderful-recommendation h3 {font-size: 14px;}
+#home-wonderful-recommendation ul { letter-spacing: -0.34em; word-spacing: -0.34em; padding-top: 6px; }
+@media all and (-webkit-min-device-pixel-ratio: 1) { #home-wonderful-recommendation ul { word-spacing: normal; } }
+#home-wonderful-recommendation ul li { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; letter-spacing: normal; word-spacing: normal; overflow: hidden; margin: 0 0 10px 21px; width: 110px; }
+#home-wonderful-recommendation ul li a { zoom: 1; display: block; text-align: center; position: relative;font-size:12px;color: #333;}
+#home-wonderful-recommendation ul li a:hover { zoom: 1; text-decoration: none; }
+#home-wonderful-recommendation ul li a:hover em { text-decoration: underline; }
+#home-wonderful-recommendation ul li img {display: inline-block;padding: 0; width: 110px; height: 85px;}
+#home-wonderful-recommendation ul li em { display: inline-block; vertical-align: baseline; text-align: left; cursor: pointer; line-height: 18px;height:18px;overflow: hidden;}
+.zhuanqu-tuiguang--duanzishou {padding-left: 42px;height: 28px; line-height: 28px; overflow: hidden;background: url(http://assets.dwstatic.com/project/duanzi/common/logo.gif) no-repeat 12px 50%;}
+.zhuanqu-tuiguang--duanzishou a {color: #31322D;text-decoration: underline;}
+.page_c #home-wonderful-recommendation {background-color:#dbe4d2;border: 1px solid #b6cba0; height:128px; overflow:hidden;}
+.page_c #home-wonderful-recommendation h3 { padding: 0 0 0 10px !important;background: none !important;color: #333;}
+.page_c #home-wonderful-recommendation ul li {margin-left:11px; width:112px;}
+.page_c #home-wonderful-recommendation ul li img{ border:1px solid #fff;}
+</style>
+	</div><!-- xyx -->
+	<div id="newgame">
+		<h3>新游戏人气栏目</h3>
+		<ul>
+										<li><a href="http://newgame.duowan.com/1607/331686050155.html?404" title="新游TOP榜：蜀山缥缈录公测大涨 无尽战区将测">新游TOP榜：蜀山缥缈录公测大涨 无尽战区将测</a></li>
+							<li><a href="http://newgame.duowan.com/1607/331594053300.html?404" title="热游TOP榜：守望先锋天梯开启 天刀 冒险岛大涨">热游TOP榜：守望先锋天梯开启 天刀 冒险岛大涨</a></li>
+							<li><a href="http://newgame.duowan.com/1607/331509212662.html?404" title="海外TOP榜：冒险岛更新将至 人气重夺榜首">海外TOP榜：冒险岛更新将至 人气重夺榜首</a></li>
+										<li><a href="http://newgame.duowan.com/1606/330121027116.html?404" title="策划：2016年E3游戏展最值得期待游戏盘点">策划：2016年E3游戏展最值得期待游戏盘点</a></li>
+							<li><a href="http://newgame.duowan.com/1604/325189628044.html?404" title="3月成绩表 COC公司人少吸金多 DNF养活济州岛">3月成绩表 COC公司人少吸金多 DNF养活济州岛</a></li>
+										<li><a href="http://newgame.duowan.com/1606/330981209049.html?404" title="前瞻：3D极致仙侠网游《蜀山缥缈录》6.29公测">前瞻：3D极致仙侠网游《蜀山缥缈录》6.29公测</a></li>
+					</ul>
+		<ul>
+										<li><a href="http://newgame.duowan.com/1606/330084404222.html?404" title="新游视玩：格斗射击《恶魔三人组OL》日服试玩">新游视玩：格斗射击《恶魔三人组OL》日服试玩</a></li>
+							<li><a href="http://newgame.duowan.com/1606/329929216626.html?404" title="新游视玩：回归恐怖《生化危机7》Demo体验">新游视玩：回归恐怖《生化危机7》Demo体验</a></li>
+							<li><a href="http://newgame.duowan.com/1606/329738979708.html?404" title="新游视玩：魔幻史诗《全面战争 战锤》试玩">新游视玩：魔幻史诗《全面战争 战锤》试玩</a></li>
+										<li><a href="http://newgame.duowan.com/1606/330627386148.html?404" title="嗨评：你先拿“魔兽”炒作 我们只能用“身高”说事儿">嗨评：你先拿“魔兽”炒作 我们只能用“身高”说事儿</a></li>
+							<li><a href="http://newgame.duowan.com/1606/330366591705.html?404" title="新游歪评：大部分游戏离开中国玩家只有死路一条">新游歪评：大部分游戏离开中国玩家只有死路一条</a></li>
+										<li><a href="http://newgame.duowan.com/1606/329771411823.html?404" title="上周三款新作首曝 星陨战术 柯南逃亡者等">上周三款新作首曝 星陨战术 柯南逃亡者等</a></li>
+					</ul>
+		<div class="fix"></div>
+	</div><!-- newgame -->
+</div><!-- box -->
+</div><!-- contents -->
+<script src="http://assets.dwstatic.com/amkit/entry.js" data-entry="p/tank/embed-main"></script><!-- 404 tank, added by ralph_lu@qq.com -->
+<script src="http://www.duowan.com/duowan.js" type="text/javascript"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d3da82191e5540a9e42feaba8dcfc9ac";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

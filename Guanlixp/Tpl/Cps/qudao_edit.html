@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+
+<script  language="JavaScript">  
+<!--  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}  
+
+function gotoserver(){
+    $.get("{:U('Setting/server_list')}/gid/"+$("#gid").val(),function(data){
+        $("#sid").html(data);
+    $("#d_sid").val('');
+    });    
+    /*var game_id = $('#gid').val();
+    $.ajax({url: APP+'/public/paylist/',
+    type: 'POST',data:{gid:game_id},async: false,timeout: 1000,success: function(result){
+        $("#sid").html(result);
+    }
+    });
+    */
+}
+
+
+
+function change_select(obj,field){
+  $("#d_"+field).val($(obj).val());
+}
+
+function check(){
+/*
+    if(!trim($("#category").val()) || trim($("#category").val()) == 0) {
+        alert("请选择链接分类！");
+        $("#category").focus();
+        return false;
+    }
+    if(!trim($("#type").val()) || trim($("#type").val()) == 0) {
+        alert("请选择链接类型！");
+        $("#type").focus();
+        return false;
+    }
+*/
+
+    if(!trim($("#mname").val())) {
+        alert("请填写渠道名称！");
+        $("#mname").focus();
+        return false;
+    }
+}
+
+var URL = '__URL__';
+var APP  =   '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+//-->
+</SCRIPT>
+  <table class="table set_table">
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+
+  <tr>
+    <td height="30" align="right" valign="middle">渠道帐号：</td>
+    <td valign="middle" class="huise_font"><input name="mname" id="mname" type="text" size="30" class="inputclass inputtitle" value="{$vo.mname}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">工会名称：</td>
+    <td valign="middle" class="huise_font"><input name="name" id="name" type="text" size="30" class="inputclass inputtitle" value="{$vo.name}" /></td>
+  </tr> 
+  <tr>
+    <td height="30" align="right" valign="middle">渠道密码：</td>
+    <td valign="middle" class="huise_font"><input name="password" id="password" type="text" size="30" class="inputclass inputtitle" value="" />*空为不修改！</td>
+  </tr>  
+ 
+  <tr>
+    <td height="30" align="right" valign="middle">分成比例：</td>
+    <td valign="middle" class="huise_font"><input name="bili" id="bili" type="text" size="10" class="inputclass inputtitle" value="{$vo.bili}" /></td>
+  </tr>   
+  
+  <tr>
+    <td height="30" align="right" valign="middle">收款人：</td>
+    <td valign="middle" class="huise_font"><input name="payee" id="payee" type="text" size="20" class="inputclass inputtitle" value="{$vo.payee}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">银行卡号：</td>
+    <td valign="middle" class="huise_font"><input name="cardno" id="cardno" type="text" size="30" class="inputclass inputtitle" value="{$vo.cardno}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">开户行：</td>
+    <td valign="middle" class="huise_font"><input name="bankaccount" id="bankaccount" type="text" size="30" class="inputclass inputtitle" value="{$vo.bankaccount}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">手机电话：</td>
+    <td valign="middle" class="huise_font"><input name="phone" id="phone" type="text" size="20" class="inputclass inputtitle" value="{$vo.phone}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">邮箱地址：</td>
+    <td valign="middle" class="huise_font"><input name="email" id="email" type="text" size="20" class="inputclass inputtitle" value="{$vo.email}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">二级密码：</td>
+    <td valign="middle" class="huise_font"><input name="twopassword" id="twopassword" type="text"  size="30" class="inputclass inputtitle" value="" />*空为不修改！</td>
+  </tr>  
+    <tr>
+    <td height="30" align="right" valign="middle">资料审核：</td>
+    <td valign="middle" class="huise_font">
+<input name="check" type="radio" value="1" <if condition="$vo.check eq '1'">checked="checked"</if> />审核
+<input name="check" type="radio" value="0" <if condition="$vo.check eq '0'">checked="checked"</if> />未审
+</td>
+  </tr>  
+  
+  
+    <tr>
+    <td height="30" align="right" valign="middle">账户状态：</td>
+    <td valign="middle" class="huise_font">
+<select name="status"  size="1" id="status">
+      <option value="0" <if condition="$vo.status eq '0'">selected='selected'</if>>封停</option>
+            <option value="1" <if condition="$vo.status eq '1'">selected='selected'</if>>开启 </option>
+    </select>
+        </td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">注册日期：</td>
+    <td valign="middle" class="huise_font">{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+  </tr>
+
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle">
+    <input name="id" type="hidden" id="id" size="20" value="{$vo.id}"/>
+        <input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交">
+    </td>
+  </tr>
+  </form>
+</table>
+
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+  //alert(document.form1.action);
+  document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

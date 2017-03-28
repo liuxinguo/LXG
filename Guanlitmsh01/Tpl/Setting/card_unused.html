@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+<SCRIPT language=JavaScript>
+//指定当前组模块URL地址
+var URL = '__URL__';
+var APP = '__APP__';
+var PUBLIC = '__PUBLIC__';
+function gotoserver(){
+    $.get("{:U('Setting/server_list')}/gid/"+$("#gid").val(),function(data){
+        $("#sid").html(data);
+    });
+}
+</SCRIPT>
+    <form action="{:U('Setting/card_unused')}" name="Form2" method="get">
+   <table class="table set_table">
+
+    <tr>
+        <td height="30" width="200" class="table-textcenter">游戏列表：</td>
+        <td class="huise_font">
+            <select name='gid' id='gid' onChange="gotoserver()">
+                <option value='0' <if condition="$get.gid eq 0">selected='selected'</if>>全部游戏</option>
+                <volist name="gamelist" id="vog">
+                <option value='{$vog.id}' <if condition="$vog.id eq $get['gid']">selected='selected'</if>>{$vog.gamename}</option>
+                </volist>
+            </select>
+            <select name='sid' id='sid'>
+                <option value='0'>全部服务器</option>
+                <volist name="gameserver" id="vos">
+                <option value='{$vos.sid}' <if condition="$vos.sid eq $get['sid']">selected='selected'</if>>{$vos['line']}{$vos['sid']}区 {$vos['servername']}</option>
+                </volist>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td height="30" width="200" class="table-textcenter">指定新手卡：</td>
+        <td class="huise_font"><input type="text" class="inputclass" name="card" value="{$get.card}" /></td>
+    </tr>
+    <tr>
+            <td colspan="2" height="30">
+            <span style="float:left;line-height:30px;width:45%;text-align:center;">
+            <input type="submit" name="submit" value='查 询' class="btn btn-primary btn-small" /> <input type="reset" name="reset" value='重 置' class="btn btn-primary btn-small" />
+            </span>
+                <span style="float:right;padding-right:10px;line-height:30px;">总库存数量：{$sumcount} 张&nbsp;&nbsp;</span>
+            </td>
+</tr>
+</TABLE>    </form>
+<br>
+<table class="table table-bordered table-striped">
+<thead>
+  <tr>
+    <th width="4%" class="table-textcenter">编号</th>
+    <th width="8%" class="table-textcenter">新手卡</th>
+    <th width="8%" class="table-textcenter">新手卡标识</th>
+    <th width="6%" class="table-textcenter">游戏名称</th>
+    <th width="8%" class="table-textcenter">服务器名称</th>
+    <th width="7%" class="table-textcenter">生成时间</th>
+  </tr>
+</thead>
+  <volist name="list" id="vo">
+  <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';" class="tabletr">    
+    <td class="table-textcenter">{$vo.id}</td>
+    <td class="table-textcenter">{$vo.card}</td>
+    <td class="table-textcenter">{$vo.title}</td>
+    <td class="table-textcenter">{$vo.gamename}</td>
+    <td class="table-textcenter">{$vo.servername}{$vo.sid}服</td>
+    <td class="table-textcenter">{$vo.date}</td>
+  </tr>
+  </volist>
+  
+  <empty name="list">
+  <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';">    
+    <td height="25" class="table-textcenter" colspan="10">暂无记录！</td>
+  </tr>
+  </empty>
+  
+</table>
+
+            <div class="pagination-i">
+               {$ShowPage}
+            </div>
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

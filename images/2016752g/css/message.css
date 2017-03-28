@@ -1,0 +1,96 @@
+.cont{width: 1200px;overflow: hidden;margin: 0 auto;border:1px solid #d9d9d9;background-color: #fff;}
+.cont-integral{width: 100%;overflow: hidden;}
+
+.message-log{width: 25%;}
+.integral-log{height: 333px;border-bottom:1px solid #ccc;}
+
+#content{background:url(../img/container-bg.jpg) repeat-x;margin-top: 0;padding-top: 20px;}
+
+/*右边内容*/
+.cont-least{padding:10px;color: #9c9c9c;}
+.new-listbox{padding:0 2px;}
+.message-left,.message-right{float: left;}
+.message-left{border-right:1px solid #ccc;}
+.message-right{width: 75%;padding: 20px;overflow: hidden;border-left: 1px solid #ccc;margin-left: -1px;}
+.message-detail-img{height: 173px;width: 230px;overflow: hidden;}
+.message-detail-img,.message-detail ul ol{float: left;}
+.message-detail ul>li{overflow: hidden;border-bottom:1px solid #efefef;padding-top: 10px;}
+.message-detail ul>li:hover{background-color: #efefef;}
+.message-detail ul>li:hover .message-detail-head{color: #008eeb}
+
+.message-detail-nav{width:90%;margin-left: 5%;}
+.message-detail-nav li{margin-bottom: 15px;}
+.message-detail-head {font-size: 20px;font-weight: 700;color: #3c3c3c;}
+.message-detail-time{color: #ccc;}
+.message-detail-time label{margin-left: 5%;}
+.message-detail-body{font-size: 14px;line-height: 25px;}
+.message-detail-know a{color:#ff6501;}
+.message-detail-know a:hover{color:#2b9ae7;}
+
+.cont-title span{background: url(../img/dengji.png);background-repeat:no-repeat ; display: inline-block;width: 31px;height:32px;float: left;margin-right:5px;}
+.cont-least span{background-position:-219px -34px; width:35px;}
+
+/*游戏资讯的子页面*/
+.message-next{width: 100%;}
+.message-next p{line-height:36px;font-size: 14px;}
+.message-next .message-next-nav{font-size: 24px;}
+.message-next-nav{text-align: center;color: #0d99e0;font-size: 20px;margin: 15px 0;}
+.message-next-time{text-align:right;font-size: 14px;color: #ccc;}
+.message-next .message-next-body{text-indent: 2em;margin-top: 10px;line-height:25px;margin-bottom: 50px;font-size: 15px;}
+hr{margin: 25px 0;}
+.cont-least a{color:#9c9c9c;}
+
+
+/*活动公告*/
+.active-bull{margin-top:15px;}
+.cont-notice span{ background-position:-216px 1px;width: 34px;}
+.active-bull,.new-listbox,.cont-img,.game-list {width: 95%;margin-left: 7px;}
+.active-deatails{overflow: hidden;margin-top:10px;}
+.active-deatails li{line-height: 36px;border-bottom:1px dotted #ccc;overflow: hidden;margin-bottom: 5px;font-size: 14px;}
+.active-deatails li a{color:#3c3c3c;display: inline-block;width:81%; font-size: 14px;}
+.active-deatails li a:hover{color: red;}
+
+/*快捷通道*/
+.fast-track{overflow: hidden;margin-top: 5px;}
+.cont-track span{background-position:-259px 1px; width: 35px;margin-top: 5px;}
+.track_help{margin-left: 10px;}
+.track_help li{float: left;width: 40%;height: 30px;line-height: 30px;border:1px solid #ccc;text-align: center;margin: 0 7% 5px 2%;}
+.track_help li a{display:block;color: #3c3c3c;}
+.track_help li a:hover{background-color: #45acef;color:#fff;}
+
+/*客服电话*/
+.cont-tel { width: 40px; height: 41px;float:right;margin-top: 5px;}
+.game-tel{margin-top: 5px;overflow: hidden;}
+.cont-tel{margin-top: 8px;float: left;}
+.game-tel ul{color:#3c3c3c;line-height: 30px;float:left;margin-left:12%;}
+.game-tel ul span{color:#0f8dc4;font-style: italic;font-weight: bold;font-family: Arial; margin-left: 5px;}
+.game-tel ul,.cont-tel{display: inline-block;}
+
+
+/*分页样式*/
+
+.fenye{width:50%;margin: 20px auto 0;}
+.fenye a{display: inline-block;border:1px solid #d9d9d9;padding: 5px;margin-right: 1%;color:#9c9c9c;}
+.fenye .active{background-color: #45acef;color: #fff;}
+
+@media screen and (max-width: 1200px){
+	.cont{width: 100%;}
+	.message-log{width: 26%;}
+	.message-right{width: 74%;}
+	.register_back_head i, .register_back_head ul{margin: 20px 0 0 1%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

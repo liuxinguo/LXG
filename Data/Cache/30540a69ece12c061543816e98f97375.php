@@ -1,0 +1,10 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="login_t" id="we_login_t"><div class="Layer01" style="display:none;" id="we-post-msg"><!--消息框 --><script type="text/javascript" language="javascript">
+           $(document).ready(function(){
+		     $("#pos_msg_close").click(function(){
+			 $("#pos_msg").css("display","none");
+		   });
+	    });
+       </script><div id="pos_msg" style="display:block;"><div id="pos_msg_top"><div id="pos_msg_close">×关闭</div>温馨提示
+			</div><div id="pos_msg_con">
+			您的账号安全系数较低，请尽快<a href="http://user.<?php echo ($ai["url"]); ?>/user_renzheng_ph.html" target="_blank">免费绑定手机</a>（送20积分）			
+	    </div></div></div></div><div class="login_b1" id="userinfo_d"><p><input class="l_txt mb10" type="text" value="用户名或手机号" onblur="if (value ==''){value='用户名或手机号';}" onclick="if(this.value=='用户名或手机号'){this.value='';}" id="usname" tabindex="1"></p><p><input id="login_pwdTxt" class="l_pwd" type="text" onfocus="if(this.value == '请输入密码'){document.getElementById('uspsd').style.display = 'block';document.getElementById('uspsd').focus();document.getElementById('login_pwdTxt').style.display = 'none';}" value="请输入密码" tabindex="2" name="login_pwdTxt" style="display: block;"><input id="uspsd" class="l_pwd" type="password" style="display: none;" onblur="if(this.value == ''){document.getElementById('login_pwdTxt').style.display = 'block';document.getElementById('uspsd').style.display = 'none';}" tabindex="2" name="login_pass"></p><p class="l_jz"><input type="checkbox" checked="checked" class="l_check"><label>记住登录账号</label><a href="http://reg.<?php echo ($ai["url"]); ?>/pwd_find.html" class="l_f A">忘记密码？</a></p><p><a href="#" onclick="doLogin();" class="l_dl" title="登录" tabindex="3">登录</a></p><p class="l_dl1"><!--<a href="#" onclick="toQzoneLogin()" class="l_qq" title="选择QQ登录">QQ登录</a><a href="#" onclick="toWeiboLogin()" class="l_wb" title="选择微博登录">微博登录</a> --><a href="http://reg.<?php echo ($ai["url"]); ?>" class="l_zc" title="免费注册送礼包">免费注册送礼包</a></p></div><div class="login_b" id="userinfo" style="display:none;"></div>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+<script  language="JavaScript">  
+<!--  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}  
+
+function check(){
+    if(!trim($("#gid").val()) || trim($("#gid").val()) == 0) {
+        alert("请选择游戏！");
+        $("#gid").focus();
+        return false;
+    }
+    if(!trim($("#cid").val()) || trim($("#cid").val()) == 0) {
+        alert("请选择新手卡标识！");
+        $("#cid").focus();
+        return false;
+    }
+    if(!trim($("#cdkeys").val())) {
+        alert("请填写新手卡！");
+        $("#cdkeys").focus();
+        return false;
+    }
+}
+
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+
+
+function gotoserver2(){
+    $.get("{:U('Setting/server_list')}/gid/"+$("#gid").val(),function(data){
+        $("#sid").html(data);
+    });
+}
+function gotoserver(){
+	location.href='{:U('Setting/card_add')}&gid='+$("#gid").val();
+}
+//-->
+</SCRIPT>
+ <table class="table set_table">
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+  
+    <tr>
+        <td height="30" width="200" align="right" valign="middle">游戏列表：</td>
+        <td class="huise_font">
+            <select name='gid' id='gid' onChange="gotoserver()">
+                <option value='0' <if condition="$gid eq 0">selected='selected'</if>>全部游戏</option>
+                <volist name="gamelist" id="vo">
+                <option value='{$vo.id}' <if condition="$vo.id eq $gid">selected='selected'</if>>{$vo.gamename}</option>
+                </volist>
+            </select>
+            <select name='sid' id='sid'>
+                <option value='0'>全部服务器</option>
+                <volist name="gameserver" id="vos">
+                <option value='{$vos.sid}' <if condition="$vos.sid eq $get['sid']">selected='selected'</if>>{$vos['line']}{$vos['sid']}区 {$vos['servername']}</option>
+                </volist>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name='cid' id='cid'>
+                <option value='0'>&gt&gt选择新手卡标识</option>
+                <volist name="cardlist" id="voc">
+                <option value='{$voc.id}'>{$voc['title']}</option>
+                </volist>
+            </select>
+        </td>
+    </tr>
+
+  <tr>
+    <td height="30" align="right" valign="middle">新手卡列表：<br/>(每张卡一行)<br/>为考虑性能,每次最好添加<500张</td>
+    <td  valign="middle" class="huise_font"><textarea id="cdkeys" name="cdkeys" style="width:350px;height:150px;"></textarea></td>
+  </tr>
+
+  <tr>
+    <td height="30" align="right" valign="middle">添加日期：</td>
+    <td valign="middle" class="huise_font"><input name="date" type="text" id="date" size="20" value="{:date("Y-m-d H:i:s")}"  class="inputclass"/></td>
+  </tr>
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle">
+        <input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交">
+    </td>
+  </tr>
+  </form>
+</table>
+</div>
+      <!--end Right Content-->  
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

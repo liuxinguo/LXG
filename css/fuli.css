@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+html{_background:url(about:blank);}
+
+/* 福利中心游戏列表 */
+.icon{display:inline-block;*display:inline;*zoom:1;background:url("../images/fuli/fuli-sprite.png") no-repeat -207px -448px;width:18px;height:18px;vertical-align:top;margin-right:7px;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.icon-success{background-position:-245px -448px;}
+.icon-uicon{background-position:0px -549px;margin-right:0;width:11px;}
+.icon-VIP-num0{background-position:0px -578px;width:40px;margin-left:10px;}
+.icon-VIP-num1{background-position:-62px -578px;width:40px;margin-right:0;}
+.icon-VIP-num2{background-position:-124px -578px;width:40px;margin-right:0;}
+.icon-VIP-num3{background-position:-188px -578px;width:40px;margin-right:0;}
+.icon-VIP-num4{background-position:-250px -578px;width:40px;margin-right:0;}
+.icon-VIP-num5{background-position:-314px -578px;width:40px;margin-right:0;}
+.icon-VIP-num6{background-position:0px -610px;width:40px;margin-right:0;}
+.icon-VIP-num7{background-position:-62px -610px;width:40px;margin-right:0;}
+.icon-VIP-num8{background-position:-124px -610px;width:40px;margin-right:0;}
+.icon-VIP-num9{background-position:-188px -610px;width:40px;margin-right:0;}
+.icon-VIP-num10{background-position:-250px -610px;width:40px;margin-right:0;}
+.fontNormal{font-weight:normal;}
+
+.fuli-content-list{border:1px solid #ddd;/* width:978px;min-height:930px;_height:930px;margin:15px auto 50px; */}
+.fuli-content-list .fuli-title{height:64px;background:url("../images/fuli/fuli-sprite.png") no-repeat -1px -1px;text-indent:-999em;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.fuli-content-list .game-list{padding:20px;background:#fff;padding-left:0;}
+.fuli-content-list .game-single{border:1px solid #ddd;padding:10px;width:283px;height:99px;padding-right:0;margin-left:24px;margin-bottom:26px;}
+.fuli-content-list .game-single .game-single-img{margin-right:10px;}
+.fuli-content-list .game-single-info{overflow:hidden;margin-top:3px;*padding-top:3px;}
+.fuli-content-list .game-single-info strong{font-size:14px;}
+.fuli-content-list .game-single-info em{color:#999;}
+.fuli-content-list .game-single-info .price-type{margin-top:17px;}
+.fuli-content-list .game-single-info .price-type a{float:left;display:inline;width:59px;height:24px;text-align:center;line-height:24px;color:#fff;background:url("../images/fuli/fuli-sprite.png") no-repeat 0 -85px;margin-right:5px;margin-top:5px;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.fuli-content-list .game-single-info .price-type a:hover{background-position:-79px -85px;text-decoration:none;}
+.disabled-option{float:left;display:inline;width:59px;height:24px;text-align:center;line-height:24px;color:#000;margin-right:5px;margin-top:5px;background-color: #eee;}
+/* 福利中心游戏详细 */
+.fuli-main{/* margin-top:-20px; */}
+.fuli-main-content{/* padding-top:50px; */color:#555;}
+.fuli-main .game-fuli{border:1px solid #ddd;position:relative;zoom:1;margin-bottom:20px;}
+.fuli-main .game-fuli .game-title{height:64px;background:url("../images/fuli/fuli-sprite.png") no-repeat -1px -130px;position:relative;zoom:1;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.fuli-main .game-fuli .game-title h3{float:left;display:inline;font-size:24px;margin:14px 0 0 50px;color:#333;}
+.game-title .breadcrumb{position:absolute;right:15px;top:22px;color:#999;height:18px;line-height:18px;_overflow:hidden;}
+.game-title .breadcrumb a{color:#999;}
+.game-title .breadcrumb li{float:left;display:inline;}
+.game-title .breadcrumb li.bread-title{margin-right:10px;}
+.game-title .breadcrumb li.bread-split{margin:0 5px;}
+.game-title .breadcrumb li a,.game-title .breadcrumb li span{vertical-align:middle;line-height:14px;}
+.game-content{padding:35px;background-color:#fff;}
+.game-content .user-info{margin-bottom:30px;margin-left:15px;background-color:#fffecd;padding:7px 10px;}
+.game-content .user-info a{color:#0073cc;}
+.game-content .game-content-title{height:37px;background:url("../images/fuli/fuli-sprite.png?v=6") no-repeat 0 -214px;margin-bottom:15px;_background-image:url("../images/fuli/fuli-sprite-png8.png?v=6");}
+.game-content .game-content-title .limit-time{float:left;display:inline;color:#fe6305;margin:5px 0 0 130px;}
+.game-content .sc-content .game-content-title{background-position:0 -214px;}
+.game-content .cz-content .game-content-title{background-position:0 -270px;}
+.game-content .czfl-content .game-content-title{background-position:0 -326px;}
+.game-content .lb-content .game-content-title{background-position:0 -381px;}
+.sc-content-detail,.cz-content-detail,.czfl-content-detail,.lb-content-detail{margin-left:15px;}
+.cz-content,.czfl-content,.lb-content{margin-top:60px;}
+
+.recent-servers .recent-servers-title{padding:10px;font-weight:bold;color:#333;}
+.split-line-fl{margin:0 15px;font-size:0;height:0;line-height:0;border-top:1px solid #ddd;}
+
+/*充值福利开始*/
+.cz-content .fuli-detail{margin-bottom:20px;}
+.czfl-content .fanli-detail{margin-bottom:40px;height:407px;}
+.cz-content .ui-select{display: inline-block;*zoom:1;*display:inline;background: #fff;margin-right: 10px;float: left;position: relative;width: 130px;border: 1px solid #ccc;}
+.cz-content .ui-select-trigger{height: 28px;line-height: 28px;padding-left: 24px;text-decoration: none;background: url(../images/fuli/dot.png) 109px 50% no-repeat;cursor:pointer;_background-image:url("../images/fuli/dot-png8.png");}
+.cz-content .ui-select-trigger-on{border-bottom: 1px solid #fff;margin-bottom: -1px;position: relative;z-index: 99;}
+.cz-content .ui-select-content{border: 1px solid #ccc;width: 482px;z-index: 50;position: absolute;top: 28px;left: -1px;background: #fff;min-height:250px;_height:250px;}
+.cz-content .gift{width: 99px;height: 30px;text-align: center;line-height: 30px;background: url(../images/fuli/fuli-sprite.png) no-repeat -332px -85px;color: #fff;display: inline-block;*zoom:1;*display:inline;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .gift a{color: #fff;text-decoration: none;}
+.cz-content .gift a:hover{background-position: -451px -85px;}
+.cz-content .game-select-played{padding-bottom: 13px}
+.cz-content .service-list{border-bottom: 1px solid #e8e8e8;margin:0 20px 15px;}
+.cz-content .ui-select-item{padding: 0 35px 13px 25px;/* width:35px; */overflow:hidden;}}
+.cz-content .ui-select-title{font-weight: bold;padding: 20px 0 14px 25px;}
+.cz-content .blank{clear:both;height:1px;background:#ddd;width:452px;overflow:hidden;margin: 0 16px;}
+.cz-content .game-list{padding-top:13px;padding-bottom:7px; height:190px;} 
+.cz-content .page-split{padding-left:20px;padding-bottom: 20px;}
+.cz-content .next{width: 50px;height: 20px;line-height: 21px; border: 1px solid #ddd;text-align: center;margin-right: 10px;}
+.cz-content .page{background: #ff9000;}
+.cz-content .page a{color: #fff;}
+.cz-content .tips{display:inline-block;*display:inline;*zoom:1;background-color:#fffecd;padding:6px 10px;width:610px;}
+.cz-content .tips-error-type{color:#ff7200;}
+.cz-content .tips-error-custom{background-color:#d15252;color:#fff;}
+.cz-content .tips-loading {color:#ff7200;}
+.cz-content .tips-success .blue{color:#007eff;font-weight:bold;margin:0 7px 0 0;}
+.cz-content .tips-success{color:#555;background-color:#eaffd0;width:680px;}
+.cz-content .tips-mark{float:left;display:inline-block;*display:inline;*zoom:1;background:url("../images/fuli/fuli-sprite.png") no-repeat -294px -448px;width:30px;height:30px;vertical-align:top;margin-right:10px;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .tips-mark em{font-size:16px;font-weight:bold;color:#fff;width:30px;height:30px;line-height:30px;text-align:center;display:inline-block;*display:inline;*zoom:1;}
+.cz-content .mark-content{line-height:30px;}
+
+.cz-content .message-table .msg-title,.czfl-content .message-table .dialog-title,.czfl-content .message-table .msg-title{font-size:14px;font-weight:bold;color:#333;background-color:#f4f4f4;}
+.cz-content .message-table,.czfl-content .message-table{border:1px solid #ddd;width:278px;height:auto;margin-right:20px;float:left;display:inline;_margin-bottom:-1px;}
+.message-table ul li{border-bottom:1px solid #ddd;height:33px;vertical-align:middle;}
+.message-table .msg-title{text-align:center;line-height:33px;}
+.message-table .width-time,.message-table .width-grade,.message-table .width-glod,.message-table .width-get,.message-table .style-handle{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#999;float:left;display:inline;height:33px;line-height:33px;text-align:center;}
+.message-table .nav-style{color:#999;font-weight:bold;}
+.message-table .width-time{width:85px;}
+.message-table .width-grade{width:40px;}
+.message-table .width-glod{width:75px;}
+.message-table .width-glod .icon{vertical-align:text-bottom;margin-right:3px;}
+.message-table .width-glod span{display:inline-block;height:33px;line-height:33px;}
+.message-table .width-get{width:78px;}
+.cz-content .message-table span,.czfl-content .message-table span{font-size:13px;color:#fe6305;font-weight:bold;}
+.cz-content .message-table .disabled-btn,.czfl-content .message-table .disabled-btn{width:80px;height:28px;background:url("../images/fuli/fuli-sprite.png") no-repeat 2px -495px;display:inline-block;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .message-table .get-btn,.czfl-content .message-table .get-btn{width:80px;height:28px;background:url("../images/fuli/fuli-sprite.png") no-repeat -182px -495px;display:inline-block;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .message-table .get-email,.czfl-content .message-table .get-email{width:80px;height:28px;background:url("../images/fuli/fuli-sprite.png") no-repeat -182px -495px;display:inline-block;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .message-table .get-btn:hover,.czfl-content .message-table .get-btn:hover{background-position:-86px -495px;}
+.cz-content .message-table .get-time-disabled{width:80px;height:28px;background:url("../images/fuli/fuli-sprite.png") no-repeat -280px -495px;display:inline-block;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .message-table .get-other-disabled{width:80px;height:28px;background:url("../images/fuli/fuli-sprite.png") no-repeat -376px -495px;display:inline-block;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.cz-content .message-table .remide-server,.cz-content .message-table .remide-btn,.cz-content .message-table .remide-time{float:left;display:inline;height:33px;line-height:33px;}
+.cz-content .message-table .remide-btn {width:60px;height:33px;line-height:33px;}
+.cz-content .message-table .remide-btn a{position:relative;top:3px;_top:10px;}
+.cz-content .message-table .remide-server{width:90px;padding-left:10px;color:#007eff;display:inline-block;}
+.cz-content .message-table .remide-time{width:115px;}
+.cz-content .tips-error-login .blue,.czfl-content .tips-error-login .blue{color:#0073cc;}
+/*充值福利结束*/
+
+
+/*充值返利开始*/
+.czfl-content .message-table td,.czfl-content .message-table th{border-bottom:1px solid #ddd;}
+.czfl-content .message-table tr td,.czfl-content .message-table tr th{text-align:center;height:33px;}
+.czfl-content .message-table thead th{color:#999;font-weight:bold;}
+.czfl-content .message-table tbody em{color:#333;}
+.czfl-content .nates-page{background-color:#f4f4f4;width:410px;height:33px;line-height:33px;text-align:center;}
+.czfl-content .nates-page .page-btn{background:url("../images/fuli/fuli-sprite.png") no-repeat 0px -640px;display:inline-block;width:66px;height:33px;vertical-align:middle;text-decoration:none;color:#333;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.czfl-content .nates-page em{color:#999;}
+#my-czfl{width:410px;height:407px;margin-right:0;position:relative;zoom:1;}
+#my-czfl .my-czfl-pager{position:absolute;left:0;bottom:-1px;border-top:1px solid #ddd;}
+#my-czfl tbody{}
+.czfl-content .icon{*position:relative;*top:-2px;left:-1px;}
+/*充值返利结束*/
+
+
+.game-content .explain{margin-top:15px;margin-left:15px;}
+.game-content .explain li{margin-bottom:7px;}
+.game-content .explain .explain-title{color:#fe6305;margin-right:5px;font-size:12px !important;}
+.lb-content .ui-select{display: inline-block;*zoom:1;*display:inline;background: #fff;margin-right: 10px;float: left;position: relative;width: 130px;border: 1px solid #ccc;vertical-align:top;}
+.lb-content .ui-select-trigger{height: 28px;line-height: 28px;padding-left: 24px;text-decoration: none;background: url(../images/fuli/dot.png) 109px 50% no-repeat;cursor:pointer;_background-image:url("../images/fuli/dot-png8.png");}
+.lb-content .ui-select-trigger-on{border-bottom: 1px solid #fff;margin-bottom: -1px;position: relative;z-index: 99;}
+.lb-content .ui-select-content{border: 1px solid #ccc;width: 482px;z-index: 50;position: absolute;top: 28px;left: -1px;background: #fff;min-height:250px;_height:250px;}
+.lb-content .gift{width: 99px;height: 30px;text-align: center;line-height: 30px;background: url(../images/fuli/fuli-sprite.png) no-repeat -332px -85px;color: #fff;display: inline-block;*zoom:1;*display:inline;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.lb-content .gift{color: #fff !important;text-decoration: none;vertical-align:top;}
+.lb-content .gift:hover{background-position: -451px -85px;}
+.lb-content .ui-select-gift{border: 1px solid #ccc; width: 130px;z-index: 99;position: absolute;top: 28px;left: -1px;background: #fff;}
+.lb-content .ui-select-gift a{display:block;height:30px;line-height:30px;text-align:center;font-size:13px;}
+.lb-content .game-select-played{padding-bottom: 13px}
+.lb-content .service-list{border-bottom: 1px solid #e8e8e8;margin:0 20px 15px;}
+.lb-content .ui-select-item{padding: 0 35px 13px 25px;/* width:35px; */overflow:hidden;}}
+.lb-content .ui-select-title{font-weight: bold;padding: 20px 0 14px 25px;}
+.lb-content .blank{clear:both;height:1px;background:#ddd;width:452px;overflow:hidden;margin: 0 16px;}
+.lb-content .game-list{padding-top:13px;padding-bottom:7px; height: 190px;} 
+.lb-content .page-split{padding-left:20px;padding-bottom: 20px;}
+.lb-content .next{width: 50px;height: 20px;line-height: 21px; border: 1px solid #ddd;text-align: center;margin-right: 10px;}
+.lb-content .page{background: #ff9000;}
+.lb-content .page a{color: #fff;}
+.lb-content .tips{display:inline-block;*display:inline;*zoom:1;background-color:#fffecd;padding:6px 10px;vertical-align:top;}
+.lb-content .tips-error-type{color:#ff7200;}
+.lb-content .tips-error-login{}
+.lb-content .tips-error-login .blue{color:#0073cc;}
+.lb-content .tips-success-card .red{color:#f00;}
+.lb-content .tips-error-custom .red{color:#f00;}
+
+.sc-content .ui-select{display: inline-block;*zoom:1;*display:inline;background: #fff;margin-right: 10px;float: left;position: relative;width: 130px;border: 1px solid #ccc;vertical-align:top;}
+.sc-content .ui-select-trigger{height: 28px;line-height: 28px;padding-left: 24px;text-decoration: none;background: url(../images/fuli/dot.png) 109px 50% no-repeat;cursor:pointer;_background-image:url("../images/fuli/dot-png8.png");}
+.sc-content .ui-select-trigger-on{border-bottom: 1px solid #fff;margin-bottom: -1px;position: relative;z-index: 99;}
+.sc-content .ui-select-content{border: 1px solid #ccc;width: 482px;z-index: 50;position: absolute;top: 28px;left: -1px;background: #fff;min-height:250px;_height:250px;}
+.sc-content .gift{width: 99px;height: 30px;text-align: center;line-height: 30px;line-height:32px\9;background: url(../images/fuli/fuli-sprite.png) no-repeat -332px -85px;color: #fff;display: inline-block;*zoom:1;*display:inline;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.sc-content .gift{color: #fff !important;text-decoration: none;vertical-align:top;}
+.sc-content .gift:hover{background-position: -451px -85px;}
+.sc-content .game-select-played{padding-bottom: 13px}
+.sc-content .service-list{border-bottom: 1px solid #e8e8e8;margin:0 20px 15px;}
+.sc-content .ui-select-item{padding: 0 35px 13px 25px;/* width:35px; */overflow:hidden;}}
+.sc-content .ui-select-title{font-weight: bold;padding: 20px 0 14px 25px;}
+.sc-content .blank{clear:both;height:1px;background:#ddd;width:452px;overflow:hidden;margin: 0 16px;}
+.sc-content .game-list{padding-top:13px;padding-bottom:7px;height: 190px; } 
+.sc-content .page-split{padding-left:20px;padding-bottom: 20px;}
+.sc-content .next{width: 50px;height: 20px;line-height: 21px; border: 1px solid #ddd;text-align: center;margin-right: 10px;}
+.sc-content .page{background: #ff9000;}
+.sc-content .page a{color: #fff;}
+.sc-content .tips{display:inline-block;*display:inline;*zoom:1;background-color:#fffecd;padding:6px 10px;vertical-align:top;}
+.sc-content .tips-error-type{color:#ff7200;}
+.sc-content .tips-error-login{}
+.sc-content .tips-error-login .blue{color:#0073cc;}
+.sc-content .tips-success{color:#f00;}
+.sc-content .tips-error-custom .red{color:#f00;}
+.sc-content .tips-loading {color:#ff7200;}
+#sc-select-server{z-index:7;}
+
+.fuli-main .side-nav{width:130px;border:1px solid #ddd;border-bottom:0;border-right:0;background-color:#fff;position:absolute;top:95px;left:50%;z-index:9;margin-left: -631px;}
+.fuli-main .side-nav a{display:block;height:32px;line-height:32px;border-bottom:1px solid #ddd;text-align:center;position:relative;zoom:1;}
+.fuli-main .side-nav .current-flag{display:none;}
+.fuli-main .side-nav .current .current-flag{display:block;position:absolute;width:149px;height:33px;background:url("../images/fuli/fuli-sprite.png") no-repeat 0 -448px;top:0;left:0;z-index:-1;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.fuli-main .side-nav .current a{color:#fff;}
+
+.fuli-main .hot-tasks-nav{width:205px;background-color:#fff;position:absolute;top:270px;right:10px;z-index:9;}
+.fuli-main .hot-tasks-nav .close-hot-task{margin-right:10px;color:#fff;}
+.fuli-main .hot-tasks-title{height:35px;line-height:35px;text-align:center;color:#fff;background-color:#fe6a13;font-size:14px;}
+.fuli-main .hot-tasks-content {border:1px solid #ddd;border-top:0;}
+.fuli-main .hot-tasks-content .explain-text{height:32px;line-height:32px;text-align:center;color:#fe6a13;}
+.fuli-main .hot-tasks-content li{height:32px;line-height:32px;border-top:1px solid #ddd;padding:0 10px;}
+.fuli-main .hot-tasks-content .server-name{color:#007eff;text-decoration:underline;}
+.fuli-main .hot-tasks-content .open-time{color:#999;}
+
+.game-fuli-list{border:1px solid #ddd;margin-bottom:35px;background:#fff;}
+.game-fuli-list .game-list-title{height:33px;line-height:33px;font-size:15px;color:#333;padding:0 20px;font-weight:bold;background-color:#f4f4f4;border-bottom:1px solid #ddd;}
+.game-fuli-list .game-list-title .more-game{font-size:12px;font-weight:normal;}
+.game-fuli-list .game-list-content{padding:20px;padding-right:0;padding-left:0;}
+.game-fuli-list .game-list-content dl{}
+.game-fuli-list .game-single{margin-left:20px;width:140px;}
+.game-fuli-list .game-single .price-type a{float:left;display:inline;width:67px;height:24px;text-align:center;line-height:24px;color:#333;background:url("../images/fuli/fuli-sprite.png") no-repeat -245px -85px;margin-right:5px;margin-top:5px;_background-image:url("../images/fuli/fuli-sprite-png8.png");}
+.game-fuli-list .game-single .price-type a:hover{background-position:-158px -85px;text-decoration:none;color:#fe6406;}
+
+
+/*公共提示框*/
+.ui-tipbox{width:502px;height:247px;background:#fff;border:1px solid #fff;position:fixed;color:#333 !important;top:50%;left:50%;margin:-123px 0 0 -251px;z-index:9999;_position:absolute;}
+.ui-tipbox-close{position:absolute;top:0;right:0;width:30px;height:30px;background:url(../images/fuli/gift.png) no-repeat 0 -3px;_background-image:url("../images/fuli/gift-png8.png");}
+.ui-tipbox-close:hover{background-position: 0 -35px;}
+.ui-tipbox .ui-tipbox-btn{display:inline-block;*display:inline;zoom:1;text-align:center;width:99px;height:30px;line-height:30px;background:url(../images/fuli/gift.png) no-repeat 0 -149px;font-weight:bold;color:#666 !important;_background-image:url("../images/fuli/gift-png8.png");}
+.ui-tipbox .ui-tipbox-btn:hover{background-position:0 -199px;text-decoration:none;}
+.ui-tipbox .blue-btn{display:inline-block;*display:inline;zoom:1;text-align:center;width:99px;height:30px;line-height:30px;background:url(../images/fuli/gift.png) no-repeat 0 -344px;font-weight:bold;color:#fff !important;_background-image:url("../images/fuli/gift-png8.png");}
+.ui-tipbox .blue-btn:hover{background-position:-119px -344px;text-decoration:none;}
+.ui-tipbox .ui-tipbox-user-title-icon{display:inline-block;*display:inline;zoom:1;width:30px;height:30px;background:url(../images/fuli/gift.png) no-repeat 0 -99px;position: relative;top: 6px;right: 10px;_background-image:url("../images/fuli/gift-png8.png");}
+.ui-tipbox .success-icon{display:inline-block;*display:inline;zoom:1;width:30px;height:30px;background:url(../images/fuli/gift.png) no-repeat -50px -99px;position: relative;top: 4px;right: 3px;_background-image:url("../images/fuli/gift-png8.png");}
+.ui-tipbox .error-icon{display:inline-block;*display:inline;zoom:1;width:30px;height:30px;background:url(../images/fuli/gift.png) no-repeat -100px -99px;position: relative;top: 4px;right: 3px;_background-image:url("../images/fuli/gift-png8.png");}
+
+/*用户提示*/
+.tipbox-user{text-align:center;}
+.tipbox-user .ui-tipbox-user-title{font-size:25px;color:#ffa800;margin:80px 0 15px;text-align:center;}
+.tipbox-user .ui-tipbox-user-info{text-align:center;margin-bottom:20px;}
+.tipbox-user .ui-tipbox-user-link{color:#007eff;text-decoration:underline;}
+.tipbox-user .ui-tipbox-user-btn{}
+
+/*安全提示*/
+.tipbox-security{text-align:center;}
+.tipbox-security .ui-tipbox-user-title{font-size:25px;color:#ffa800;margin:50px 0 15px;text-align:center;}
+.tipbox-security .ui-tipbox-user-info{text-align:center;margin-bottom:20px;padding:0 30px;line-height:2;}
+.tipbox-security .ui-tipbox-user-link{color:#007eff;text-decoration:underline;}
+.tipbox-security .small-tips{position:relative;top:30px;color:#14A300;}
+
+/*手机绑定*/
+.phone-message{margin:39px 0 15px 27px;}
+.phone-icon{display:inline-block;*display:inline;zoom:1;width:15px;height:15px;background:url(../images/fuli/gift.png) no-repeat 0 -248px;position: relative;top: 3px;right: 3px;_background-image:url("../images/fuli/gift-png8.png");}
+.phone-info{padding-left:27px;margin-bottom:10px;}
+.phone-input{width:134px;height:26px;border:1px solid #ddd;padding-left:7px;line-height:26px;}
+.phone-input-erroor{background:#fff1f3;border:1px solid #ff8697;}
+.phone-input-info{width:120px;height:28px;line-height:28px;text-align:center;color:#999;background:url(../images/fuli/gift.png) no-repeat 0 -283px;cursor:pointer;border:0;margin-left:5px;_background-image:url("../images/fuli/gift-png8.png");}
+.phone-input-info-color{color:#333;}
+.error-info{color:#fe0024;margin:10px 0 10px 94px;}
+.error-info-icon{display:inline-block;*display:inline;zoom:1;width:15px;height:15px;background:url(../images/fuli/gift.png) no-repeat -35px -248px;position: relative;top: 4px;right: 3px;_background-image:url("../images/fuli/gift-png8.png");}
+.success-info{color:#32bd0d;margin:10px 0 10px 94px;}
+.success-info-icon{display:inline-block;*display:inline;zoom:1;width:15px;height:15px;background:url(../images/fuli/gift.png) no-repeat -70px -248px;position: relative;top: 4px;right: 3px;_background-image:url("../images/fuli/gift-png8.png");}
+.phone-btn{margin-left:90px;}
+.success-content{margin:82px 0 0 175px;}
+.success{font-weight:bold;font-size:25px;color:#52c011;margin-bottom:53px;}
+.success-btn{margin-left:21px;}
+
+/*元宝*/
+.tipbox-ingot{text-align:center;}
+.tipbox-ingot .ingot-title{margin:82px 0 15px ;font-size:25px;color:#666;}
+.tipbox-ingot .ingot-title-color{color:#ffa800;}
+.tipbox-ingot .ingot-info{margin-bottom:20px;}
+.tipbox-ingot .ingot-botton{}
+.tipbox-ingot .ingot-other-botton{margin-left:20px;}
+
+/*领取成功 失败 */
+.ui-tipbox-statusone{text-align:center;} 
+.ui-tipbox-statusone .success-content{margin:82px 0 0 0;}
+.ui-tipbox-statusone .success-status1{margin-top:60px;}
+.ui-tipbox-statusone .success{font-weight:bold;font-size:25px;color:#52c011;margin-bottom:15px;}
+.ui-tipbox-statusone .error{color:#ff0000;}
+.ui-tipbox-statusone .success-color{color:#ff0000;}
+.ui-tipbox-statusone .success-info{margin-bottom:15px;text-align:center;}
+.ui-tipbox-statusone .success-mb{margin-bottom:20px;}
+.ui-tipbox-statusone .success-link{color:#007eff;text-decoration:underline;}
+.ui-tipbox-statusone .success-btn{}
+
+/*返利*/
+.tipbox-rebate .rebate-content{margin:63px 0 25px 50px;}
+.tipbox-rebate .rebate-content-icon{margin-right:10px;margin-bottom:52px;}
+.tipbox-rebate .rebate-content-yellow{color:#fe6305;line-height:24px;}
+.tipbox-rebate .rebate-content-grey{color:#999;line-height:24px;}
+.tipbox-rebate .rebate-btn{margin-left:143px;}
+.tipbox-rebate .rebate-other-btn{margin-left:20px;}

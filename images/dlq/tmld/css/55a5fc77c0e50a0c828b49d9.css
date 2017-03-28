@@ -1,0 +1,11 @@
+.wdSlider{width:360px;height:250px;border:0;}
+.mod-slide-s2{overflow:hidden;position:relative;width:100%;height:100%;}
+.mod-slide-s2 .mod-slide-content{height:250px}
+.mod-slide-s2 .mod-slide-content ul{width:100%;position:absolute;left:0px;}
+.mod-slide-s2 .mod-slide-content li{width:100%;position:relative; float:left;clear:both;}
+.mod-slide-s2 .mod-slide-content li p{position:absolute; left:0; bottom:0; width:100%;height: 40px;line-height: 40px; text-indent:20px; color:#FFFFFF; background-color:rgba(0,0,0,.5);font-size:14px;}
+.mod-slide-s2 .mod-slide-content a,
+.mod-slide-s2 .mod-slide-content img{display:block;width:100%;height:100%;}
+.mod-slide-s2 .mod-slide-trigger{position:absolute;bottom:12px;right:10px;z-index:11}
+.mod-slide-s2 .mod-slide-trigger li{cursor:pointer;float:left;margin-left:5px;width:10px;height:10px;line-height:10px;text-align:center;background:#959595;color:#333}
+.mod-slide-s2 .mod-slide-trigger li.selected{font-weight:700;background-color:#f39800;color:#fff}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+ <form action="__URL__/{$act}" method="post" name="Form1">		
+<table class="table table-bordered table-striped">
+<thead>
+  <tr>
+    <th width="3%" class="table-textcenter">ID</th>
+    <th width="4%" class="table-textcenter">渠道MID</th>
+    <th width="10%" class="table-textcenter">渠道名称</th>
+    <th width="8%" class="table-textcenter">总注册</th>
+    <th width="8%" class="table-textcenter">总冲值</th>
+    <th width="8%" class="table-textcenter">当天用户注册</th>
+    <th width="8%" class="table-textcenter">最近三天注册</th>
+    <th width="8%" class="table-textcenter">近7天活跃(重登均计)</th>
+  </tr>
+ </thead>
+  <volist name="list" id="vo">
+  <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';" height="28">    
+     <td class="table-textcenter">{$vo.id}</td>
+    <td class="table-textcenter">{$vo.mid}</td>
+    <td align="center">{$vo.mname}</td>
+     <td class="table-textcenter">{$vo.zong}</td>
+    <td class="table-textcenter">{$vo.tong}</td>
+    <td class="table-textcenter">{$vo.dtzc}</td>
+    <td class="table-textcenter">{$vo.stzc}</td>
+    <td class="table-textcenter">{$vo.qthy}</td>
+
+  </tr>
+  </volist>
+
+</table> 
+ </form>
+            <div class="pagination-i">
+               {$ShowPage}
+            </div>
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

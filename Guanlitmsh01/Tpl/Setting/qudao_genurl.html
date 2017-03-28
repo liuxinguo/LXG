@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+<?php
+$ad_url = 'http://newwan.752g.com/tg';
+?>
+<script  language="JavaScript">  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}  
+
+function gotoserver(){
+    $.get("{:U('Setting/server_list1')}&tag="+$("#gid").val(),function(data){
+        $("#sid").html(data);
+		$("#d_sid").val('');
+    });    
+}
+
+
+function change_select(obj,field){
+	$("#d_"+field).val($(obj).val());
+}
+
+function genurl(){
+	var gid = $('#d_gid').val();
+	var sid = $('#d_sid').val();
+	var mid = $('#d_mid').val();
+
+
+	if(gid==0||mid==0){alert("有某个选择错误,除跳转其他值不能为0");return;}
+	var _url = new Array(); 
+	_url.push("<?php echo $ad_url?>");
+	_url.push(gid);
+	if(sid!=0)_url.push(sid);
+	_url.push(mid);
+
+	
+	$('#adurl').val(_url.join('/'));
+}
+
+var URL = '';
+var APP	 =	 '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+</SCRIPT>
+  <table class="table set_table">
+
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+  
+  <tr>
+    <td height="30" align="right" valign="middle">渠道列表：</td>
+    <td valign="middle" class="huise_font">
+        <select name='mid' id="mid" onChange="change_select(this,'mid')">
+        <option value='0'>==选择渠道==</option>
+		<volist name="qdlist" id="vo">
+			<option value='{$vo.mid}'>{$vo.mid} - {$vo.mname}</option>
+		</volist>
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td height="30" align="right" valign="middle">游戏列表：</td>
+    <td valign="middle" class="huise_font">
+		<select name='gid' id='gid' onChange="gotoserver();change_select(this,'gid')">
+            <option value='0'>==选择游戏==</option>
+			<volist name="gamelist" id="game">
+			<option value='{$game.tag}' <if condition="$game.tag eq $get['tag']">selected='selected'</if>>{$game.gamename}</option>
+			</volist>
+		</select>
+		<select name='sid' id='sid' onChange="change_select(this,'sid')"></select>
+		不选择服务器为自动跳转到最后一个服
+    </td>
+  </tr>
+
+
+ 
+  <tr>
+    <td height="30" align="right" valign="middle"></td>
+    <td height="50" colspan="1" align="left" valign="middle">
+        <!--input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认生成"-->
+        <input type="button" class="btn btn-primary btn-small" name="Submit" id="submit" onClick="genurl()" value="确认生成">
+    </td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">选择信息调试：</td>
+    <td valign="middle" class="huise_font">
+		mid:<input name="d_mid" id="d_mid" type="text"  class="inputclass inputshort" value="" />
+		tag:<input name="d_gid" id="d_gid" type="text"  class="inputclass inputshort" value="" />
+		sid:<input name="d_sid" id="d_sid" type="text"  class="inputclass inputshort" value="" />
+
+	</td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">生成链接地址：</td>
+    <td valign="middle" class="huise_font"><input name="adurl" id="adurl" type="text" style="width:500px;" size="50" class="inputclass inputtitle" value="" /></td>
+  </tr>
+
+  </form>
+</table>
+
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+
+
+@charset "utf-8";
+
+
+
+.game-footer {
+	width: 100%;
+	height: 395px;
+	background: #1d1c20;
+	font: 12px/1.5 "microsoft yahei", Arial, sans-serif;
+	margin-top: 0px;
+}
+.game-footer-inner {
+	width: 100%;
+	height: 198px;
+	border-top: 1px solid #27262a;
+	border-bottom: 1px solid #27262a;
+	background: #1d1c20;
+	position: relative;
+}
+.game-footer-fun {
+	width: 1098px;
+	height: 198px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -530px;
+}
+.game-footer-fun dl {
+	width: 133px;
+	height: 135px;
+	margin: 32px 0 0 -1px;
+	padding-left: 50px;
+	border-left: 1px solid #2a292d;
+	float: left;
+}
+.game-footer-fun dt {
+	height: 18px;
+	color: #5e5e5e;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.game-footer-fun dd {
+	height: 22px;
+	line-height: 22px;
+}
+.game-footer-fun dd a {
+	color: #5e5e5e;
+	transition: all 0.4s ease;
+}
+.game-footer-fun dd a:hover {
+	color: #3f6c8c;
+}
+.game-footer-more {
+	width: 720px;
+	height: 198px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 184px;
+	display: none;
+}
+.game-footer-m {
+	width: 732px;
+	height: 170px;
+	overflow: hidden;
+	background: #1d1c20;
+	position: absolute;
+	top: 0px;
+	left: 714px;
+}
+.game-footer-copyright {
+	width: 1024px;
+	height: 195px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.game-footer-logo {
+	width: 140px;
+	height: 56px;
+	margin: 45px 0 0 70px;
+	background: url(../newimg/footer_logo_black.png) no-repeat;
+	_background: url(../newimg/footer_logo_black.gif) no-repeat;
+	float: left;
+}
+.game-footer-copr {
+	height: 157px;
+	padding-left: 14px;
+	margin-top: 34px;
+	overflow: hidden;
+	border-left: 1px solid #343237;
+	color: #5e5e5e;
+	float: left;
+}
+.game-footer-copr2 {
+	height: 120px;
+	margin-top: 44px;
+}
+.game-footer-copr a {
+	color: #373638;
+	transition: all 0.4s ease
+}
+.game-footer-copr a:hover {
+	color: #3f6c8c;
+}
+.game-footer-copr p {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 3px;
+	line-height: 20px;
+}
+/*底部风格 --白色*/
+.game-footer-white {
+	background: #f0f0f0;
+}
+.game-footer-white .game-footer-inner {
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	background: #fff;
+}
+.game-footer-white .game-footer-inner .game-footer-fun dl {
+	border-left: 1px solid #e3e3e3;
+}
+.game-footer-white .game-footer-fun dt {
+	color: #6f6f6f;
+}
+.game-footer-white .game-footer-fun dd a {
+	color: #6f6f6f;
+}
+.game-footer-white .game-footer-fun dd a:hover {
+	color: #03b4f5;
+}
+.game-footer-white .game-footer-m {
+	background: #fff;
+}
+.game-footer-white .game-footer-copr {
+	border-left: 1px solid #d6d5d5;
+	color: #908f92;
+}
+.game-footer-white .game-footer-copr a {
+	color: #908f92;
+}
+.game-footer-white .game-footer-copr a:hover {
+	color: #03b4f5;
+}
+#copylink li {
+	display: inline;
+	list-style: outside none none;
+}

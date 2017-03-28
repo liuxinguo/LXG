@@ -1,0 +1,76 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title><?php echo (L("welcome")); ?></title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl"><?php echo ($act_title); ?></h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i><?php echo (L("configuring_site")); ?></div>
+          <div class="cl"></div>
+        </div>
+<SCRIPT language=JavaScript>
+function check(){
+    if(!trim($("#paysn").val()) || trim($("#paysn").val()) == 0) {
+        alert("请填写订单号！");
+        $("#paysn").focus();
+        return false;
+    }
+
+    if(!trim($("#process").val()) || trim($("#process").val()) == 0) {
+        alert("请选择处理方式！");
+        $("#paysn").focus();
+        return false;
+    }
+}
+</SCRIPT>
+  <table class="table set_table">
+
+    <form action="<?php echo U('pay_updateorder');?>" name="Form2" method="post" onSubmit="return check()">
+    <tr>
+        <td height="30" width="200" align="center" valign="middle">指定订单：</td>
+        <td class="huise_font"><input type="text" class="inputclass" name="paysn" id="paysn" value="" /></td>
+    </tr>
+    <tr>
+        <td height="30" width="200" align="center" valign="middle">订单类型：</td>
+        <td class="huise_font">
+            <select name="paytable" id="paytable">
+                <option value="0">请选择订单类型</option>
+                <option value="pay_ok">虚拟币订单</option>
+                <option value="pay_togame">游戏币订单</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td height="30" width="200" align="center" valign="middle">处理方式：</td>
+        <td class="huise_font">
+            <select name="process" id="process">
+                <option value="0">请选择处理方式</option>
+                <option value="1">更新为成功状态</option>
+                <option value="2">更新为初始状态</option>
+                <option value="3">删除订单</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+            <td colspan="2" height="30">
+            <span style="float:left;line-height:30px;width:45%;text-align:center;">
+            <input type="submit" name="submit" value='查 询' class="btn btn-primary btn-small" /> <input type="reset" name="reset" value='重 置' class="btn btn-primary btn-small" />
+            </span>
+                <span style="float:right;padding-right:10px;line-height:30px;"></span>
+            </td>
+</tr>
+    </form>
+</TABLE>
+<div style="display: none">
+    {__RUNTIME__}
+</div>
+</body>
+</html>

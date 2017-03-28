@@ -1,0 +1,159 @@
+
+
+
+/*充值中心*/
+*{margin: 0;padding: 0;box-sizing:border-box;font-family: "微软雅黑";}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+body,html{width: 100%;height: 100%;}
+
+#content{width: 1200px;margin: 0 auto;overflow: hidden;background-color: #A2ECFF;font-size: 14px;margin-top:8px;}
+.cont-left{width: 19%;background-color: #A2ECFF;}
+.cont-right{
+	width: 81%;;border:1px solid #ccc;overflow: hidden;background-color: #fff;
+}
+.cont-left,.cont-right{float: left;height: 100%;}
+
+/*左边*/
+.rechange_way{width: 100%;margin: 0 auto;}
+
+.rechange_way h3{text-align: center;font-size: 16px;color: #fff;height:50px;line-height: 50px;background-color:#0099FF; }
+
+.rechange_way li{height: 50px;cursor: pointer;color: #5b767e;line-height: 50px;}
+.rechange_way li span,.rechange_way li span a{display:block;width: 125px;height: 100%;margin: 0 auto;color: #3c3c3c;}
+
+.rechange_way_active {background-color: #fff;}
+
+/*右边*/
+
+.cont-right-cont{width:98%;height: 98%;padding: 20px;}
+
+.rechange_h{margin-top: 20px;}
+
+/*充值到哪里去*/
+.rechange_where{overflow: hidden;}
+.rechange_where ul{margin: 20px 0 0 50px;}
+.rechange_where ul li{width: 114px;height: 38px;text-align: center;line-height: 38px;float: left;border: 1px solid #ccc;margin-right: 20px;cursor: pointer;font-size: 15px}
+.rechange_where ul  .rechange_active{border:1px solid #ff6c00;background:url(../img/select.gif) no-repeat bottom right;color:#ff6c00;}
+.rechange_where ul li:hover{border:1px solid #ff6c00;background:url(../img/select.gif) no-repeat bottom right;color:#ff6c00;}
+
+
+/*选择游戏*/
+.rechange_games{height:120px;}
+.rechange_games >ul{margin: 20px 0 0 40px;}
+.rechange_games_head > li{background: url(../img/select.png) no-repeat;width: 335px;height: 60px;float: left;position: relative; cursor: pointer;}
+.rechange_games_head > li:first-child{background-position: 0 -55px;}
+.rechange_games_head >li>span{display: inline-block;margin:20px 0 0 75px;color: #fff;font-size: 16px;}
+
+   /*游戏目录*/
+.rechange_games_title,.rechange_games_name{width: 560px;height: 180px;border:1px solid #c1d71d;position: absolute;top:65px;left: 10px;z-index: 99;background-color: #fff;}
+.rechange_games_name{left:-292px;}
+.rechange_games_title i,.rechange_games_name i{width:13px;height: 11px;background: url(../img/arrow.jpg);display: inline-block;top: -12px;position: absolute;left:200px;}
+.rechange_games_name i{left:410px;}
+.rechange_games_title span,.rechange_games_name span{display: inline-block;width: 22px;height: 22px;background: url(../img/alert_close.jpg);position: absolute;top:0;right: 0;z-index: 999;}
+.games_cont,.games_name{width: 100%;height: 30px;background-color: #c1d71d;line-height: 30px;}
+.rechange_games_first a,.rechange_games_last a{display: inline-block;position: absolute;width: 252px;height: 43px;top:8px;left:12px;background-color: #000;opacity: .1;}
+.games_cont >li,.games_name > li{float: left;width: 70px;text-align: center;color: #3c3c3c;}
+.games_cont-active,.games_name-active{background-color: #fff;}
+.games_cont > li:hover,.games_name > li:hover{background-color: #fff;}
+.games_cont_detail,.games_name_detail{width: 558px;height: 150px;overflow-y: scroll;}
+.games_cont_detail li,.games_name_detail li{width:100px;height: 26px;border:1px solid #ebebeb;text-align: center;line-height: 26px;background-color: #fff;cursor: pointer;float: left;margin: 10px 0 0 7px;}
+.games_cont_detail li:hover,.games_name_detail li:hover{background-color: #0f8dc4;color:#fff;}
+
+
+
+
+
+
+
+
+/*平台币充值*/
+.rechange_pingt p{margin-left: 40px;margin-top:20px;width: 700px;line-height: 1.5;font-size: 14px;color: #3c3c3c;}
+.rechange_pingt p span{color: red;}
+
+/*请输入您要充值的账号*/
+
+.rechange_num ul{margin: 20px 0 0 40px;font-size: 14px;}
+.rechange_num ul input{width: 255px;border:1px solid #ccc;margin-left: 5px;margin-top: 15px;height: 25px;padding-left: 5px;}
+
+/*选择充值金额*/
+.rechange_money ul,.rechange_money ol{margin: 20px 0 0 40px;width: 600px;overflow: hidden;}
+.rechange_money ul li{
+	background: url(../img/radio.png) no-repeat 0 -19px;
+	padding-left:30px;
+	float: left;cursor: pointer;width: 100px;margin-bottom: 20px;
+}
+.rechange_money ul input{border:1px solid #ccc;margin-right: 10px;height: 35px;padding-left: 5px;}
+.rechange_money ul div{font-size: 14px;color: red;}
+.rechange_money ul .rechange_money_active{background-position: 0 -55px;}
+.rechange_money ul li:hover{background-position: 0 -55px;}
+
+.rechange_money ol li{line-height: 30px;}
+.rechange_money ol li span{color:red;}
+
+.rechange_money ol li a{display: inline-block;margin-left:60px;color:red;}
+
+/*选择银行*/
+
+.rechange_blank ul{width: 720px;margin-left: 40px;overflow: hidden;}
+.rechange_blank ul li{float: left;background: url(../img/radio.png) no-repeat 0 -12px;padding-left: 23px;cursor: pointer;overflow: hidden;}
+
+.rechange_blank ul li:hover{background-position: 0 -48px;}
+.rechange_blank ul .rechange_blank_active{background-position: 0 -48px;}
+.to_up{display:block;width: 230px;height: 39px;background-color: #ff9509;text-align: center;line-height: 39px;border-radius: 8px;color:#fff;margin: 20px auto;}
+.to_up:hover{background-color:#f18c00;}
+
+
+/*充值说明*/
+.rechange_explain{margin-bottom: 50px;}
+.rechange_explain ul{margin-left: 40px;}
+.rechange_explain ul li{line-height:30px;}
+.rechange_explain p{color: red;margin-top: 20px;}
+
+.rechange_explain a:hover{color: red;}
+
+
+
+/*充值到平台币*/
+
+/*确认信息*/
+.rechange_affirm ul{margin-left: 40px;margin-top: 15px;}
+
+.rechange_affirm ul li{line-height: 25px;}
+
+.rechange_affirm ul li span{display: inline-block;color:#ccc;}
+
+/*请选择兑换额度*/
+
+.rechange_limit p{margin-left: 40px;margin-top: 20px;}
+
+.rechange_limit p input{height: 25px;width: 200px;padding-left: 5px;}
+
+.rechange_limit p span{color: red;}
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+	#content{width: 100%;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

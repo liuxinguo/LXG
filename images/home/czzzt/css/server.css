@@ -1,0 +1,119 @@
+.server_list{height:900px; color:#252324; padding:20px 25px;}
+a{text-decoration: none;}
+
+
+/*ç™»å½•*/
+.block-a{display:block;overflow:hidden;height: 48px;color:#d1d1d1;line-height: 48px;text-align:center;font-size:24px;width: 186px;background: url(../images/jpg.jpg) no-repeat;background-position: 0 -226px;}
+.login{font-size:12px;height:160px;color:#e3cfba;position:relative;overflow:hidden;}
+.login .t{width:260px;background-position:2px -238px;margin:auto;}
+.login-t a{font-size:18px;line-height:60px;float:left;width:143px;height:57px;color:#eee5c8;text-indent:54px;}
+li.get-psw a{color:#797171;}
+#btn-reg{background-position:0 -144px;}
+#charge{background-position:-143px -144px;width:144px;}
+.login-t a:hover{background-image:url(../images/start2.jpg);}
+.m1{background-position:0 -242px}
+.m2{background-position:0 -290px}
+#charge:hover .mark,#btn-reg:hover .mark{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}
+.log{position:relative}
+.log li{position:absolute}
+.text{font-family:'Microsoft Yahei';line-height:24px;width:187px;height:26px;padding:0 6px;color:#2e2e2e;background-color: #d9dadb;}
+.user{top: 8px;left:63px;}
+.psw{top: 38px;left:63px;}
+.user label,.psw label{display:none}
+.remember{top: 70px;left:63px;color:#8a919b;}
+.get-psw{top: 70px;left:174px;}
+.log-btn{top: 92px;left:63px;width:187px;}
+.log-btn a:hover{background-position:0 -276px;}
+.loged{width:90%;margin:auto;color: #9b8a8a;}
+.loged li{line-height:24px;}
+.loged a{color: #c69368;}
+.loged .loged-highlight{color: #ff751b;padding:0 10px 0 0;}
+
+.loged-panel{padding: 18px 0 0 48px;font-size:12px;}
+.loged-top{display:none}
+.login-t{overflow: hidden;}
+
+
+.log ul{margin-top: 20px;overflow: hidden;}
+#btn-reg{background-position:0 -144px;}
+.login-t a{font-size: 18px;line-height: 60px;float: left;width:166px;height: 57px;color: #eee5c8;text-indent: 54px;}
+.sprite{background-image: url(../images/start.jpg);background-repeat: no-repeat;}
+
+.server-more{line-height:30px;width: 190px;height: 30px;font-style: 16px;margin: auto;}
+.btn-red{display: block;text-align: center;border-radius: 3px;background:#CB0A04;color:#fff;margin-top:15px;}
+.btn-red:hover{background: #B20602;color: #FFF4A2}
+
+
+
+/* s-header æœåŠ¡å™¨*/
+.s-body{background:url(../images/s-bg.jpg) top center no-repeat;color:#000;font-size:14px;}
+.s-body a{color:#b69179;}
+.s-wrap{background:url(../images/s-main.jpg) top center no-repeat;width:1149px;height:1100px;margin:0 auto;}
+.s-header{position:relative;height:334px;}
+.s-content{position:relative;margin:14px 0 0 70px;width:688px;}
+.s-logo{left:-77px;top:12px;background:url(../images/s-logo.png) no-repeat;width:147px;height:137px;}
+.s-nav{padding:31px 0 0 389px;width:700px;height:65px;}
+.s-nav a{float:left;width:157px;margin-right:17px;height:100%;text-indent:-9999em;}
+#s-nav2{}
+#s-nav3{}
+
+/* s-loginframe */
+.s-loginframe{position:absolute;top:172px;left:386px;width:686px;height:88px;font-size:12px;}
+.s-text{width:181px;height:28px;padding:0 6px 0 29px;color:#94724E;font-family:"Microsoft Yahei";line-height:28px;border-radius:5px;}
+.s-body .log{color:#b69179;}
+.s-body #username{background:#1f1308 url(../images/i1.png) no-repeat 7px center;}
+.s-body #password{background:#1f1308 url(../images/i2.png) no-repeat 7px center;}
+.s-remember label{}
+.s-user{top:20px;left:16px;}
+.s-psw{top:20px;left:248px;}
+.s-log-btn{top:20px;left:481px;}
+.s-log-btn a{display:block;width:190px;height:53px;background:url(../images/s-login.png) no-repeat;text-indent:-9999em;}
+.s-log-btn a:hover{background-image:url(../images/s-login2.png);}
+.s-remember{top: 57px;left:18px;}
+.s-psw-btn{top:56px;left:250px;}
+.s-reg-btn{top:56px;left:416px;}
+
+/* s-loged */
+.s-body .loged-panel{padding: 8px 0 0 0;font-size: 14px;}
+.s-body .loged li{line-height:24px;float:left;width: 308px;color: #b69179;}
+.s-body .loged a{color: #ff751b;}
+.s-body .loged a:hover{color:#1FCBEE;}
+.s-body .loged .s-loged-highlight{}
+.s-body .loged .s-loged-highlight:hover{color:#1FCBEE;}
+
+/* s-recommend-server */
+.s-name{font-size:18px;margin-bottom:10px;color:#c7740a;}
+.s-server-list{overflow-y:auto;overflow-x:hidden;height: 600px;}
+.s-server-list li{float:left;margin:0 18px 11px 0;text-align:center;background:url(../images/s-btn.png) no-repeat;}
+.s-server-list li a{display:block;width:206px;height:39px;line-height:39px;color:#420b02;overflow:hidden;}
+.s-server-list span{color:#e6dca7;}
+.rec-server{height:54px;}
+#history li{background-image:url(../images/s-rec.png);}
+
+#server_ban li a{display: block;}
+/* s-type-choose */
+.s-body .type-choose{height:30px;position:relative;font-size:14px;margin-bottom:14px;color:#b69179;}
+.s-body .select-dom{width:101px;height:20px;*margin-right:4px;background:#1f1308;}
+#selFastType{margin-right:10px;}
+.s-body .select-con{color:#9C6E3E;height:20px;line-height:20px;width:101px;}
+.s-body .select-btn{top:7px;right:8px;border-left:5px solid #1F1308;border-right:5px solid #1F1308;border-top:5px solid #604C37;}
+.s-body .s-fastin{height:20px;line-height:20px;background:#1F1308;color:#AD7E4D;}
+.s-body #select-dom-xz{width:75px}
+.s-body #select-dom-xz .select-con{width:75px;}
+.s-body .option-bg{display:none;z-index:2;top:23px;left:0;*top:30px;}
+.s-body .option-dom{}
+.s-body .type-option-dom{font-size:12px;}
+.s-body .type-option-dom li{width:97px;padding:2px;line-height:16px;height:16px;}
+.s-body .type-option-dom li:hover{background:#782110;color:#E8E8E8;}
+#all-xz-server{width:689px;}
+.s-body #btnFast{width:71px;height:20px;line-height:19px;transition:.5s;color:#BB0000;background:#f09100;border:0;box-shadow:1px 1px 2px #330606;border-radius:1px;font-size:12px;}
+.s-body #btnFast:hover{_background-position:0 0;}
+
+/* s-all-server */
+.sp-pager{overflow:hidden;margin:0 0 6px 0;}
+#nameList{*padding-bottom:8px}
+.sp-pager li,#nameList a{line-height:24px;width:84px;height:24px;margin:0px 10px 8px 0;cursor:pointer;background:#6e5d4d;color:#1e1107;text-align:center;float:left;display:block;font-size:12px;}
+.sp-pager li.hover,#nameList a.hover{background:#2e2216;color:#9a724f;}
+.sp-pager li a{color:#fff}
+
+#server_ban .tab_item{background-color:#E2740C;}

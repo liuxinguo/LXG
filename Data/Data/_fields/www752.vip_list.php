@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'level', 2 => 'shuzhi', 3 => 'fanli', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'level' => 'int(30)', 'shuzhi' => 'int(50)', 'fanli' => 'char(50)', ), );?>

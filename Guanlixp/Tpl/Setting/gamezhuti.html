@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i><a href="{:U('gamezhuti_add')}" class="btn btn-primary btn-small"><font color="#FFFFFF">添加主题</font></a></div>
+          <div class="cl"></div>
+        </div>
+
+
+  <form action="submit" method="post" name="Form1">
+<table class="table table-bordered table-striped">
+<thead>
+    <tr>
+      <th class="table-textcenter">编号</th>
+      <th class="table-textcenter">主题名称</th>
+      <th class="table-textcenter">标签</th>
+      <th class="table-textcenter">路径</th>
+      <th class="table-textcenter">备注</th>
+      <th class="table-textcenter">编辑</th>
+    </tr>
+   </thead>
+    <volist name="list" id="vo">
+      <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';">
+        <td class="table-textcenter">{$i}</td>
+        <td class="table-textcenter">{$vo.name}</td>
+        <td class="table-textcenter">{$vo.bs}</td>
+        <td class="table-textcenter">{$volijing}</td>
+        <td class="table-textcenter">{$vo.beizhu}</td>
+        <td class="table-textcenter"><a href="{:U('gamezhuti_edit',array('id'=>$vo['id']))}">修改</a></td>
+      </tr>
+    </volist>
+</table>
+</form>
+            <div class="pagination-i">
+               {$ShowPage}
+            </div>
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

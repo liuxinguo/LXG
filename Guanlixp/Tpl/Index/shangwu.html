@@ -1,0 +1,84 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		 $(".sidebar_nav li span").click(
+		function(){
+			if($(this).next("ul").is(":hidden")) 
+				{	
+					$(".sidebar_nav li ul").slideUp(300);
+					$(this).next("ul").slideDown(300);
+				}
+			else
+				{
+					$(this).next("ul").slideUp(300);
+				};
+	});	
+	});
+</script>
+
+
+      <div class="content">
+        <div class="sidebar_nav">
+          <ul class="unstyled">
+          
+
+
+            <li><span><a href="#"><i class="icon-file"></i>新闻管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+				 <li><a href="{:U('Setting/article')}" target="myframe"><i class="caret_left"></i>新闻管理</a></li>
+                 <li><a href="{:U('Setting/article_add')}" target="myframe"><i class="caret_left"></i>增加新闻</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li> 
+
+            <li><span><a href="#"><i class="icon-list-alt"></i>游戏管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/game')}" target="myframe"><i class="caret_left"></i>游戏管理</a></li>
+				 <li><a href="{:U('Setting/game_add')}" target="myframe"><i class="caret_left"></i>添加游戏</a></li>
+                 <li><a href="{:U('Setting/server')}" target="myframe"><i class="caret_left"></i>服务器管理</a></li>
+				 <li><a href="{:U('Setting/server_add')}" target="myframe"><i class="caret_left"></i>添加服务器</a></li>
+				 <li><a href="{:U('Setting/server_pladd')}" target="myframe"><i class="caret_left"></i>批量配服</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+            <li><span><a href="#"><i class="icon-th-large"></i>新手卡管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                 <li><a href="{:U('Setting/card_detail')}" target="myframe"><i class="caret_left"></i>新手卡列表</a></li>
+                 <li><a href="{:U('Setting/card_detail_add')}" target="myframe"><i class="caret_left"></i>添加新手卡类别</a></li>
+				 <li><a href="{:U('Setting/card_log')}" target="myframe"><i class="caret_left"></i>已发放列表</a></li>
+                 <li><a href="{:U('Setting/card_unused')}" target="myframe"><i class="caret_left"></i>库存列表</a></li>
+				 <li><a href="{:U('Setting/card_add')}" target="myframe"><i class="caret_left"></i>新手卡导入</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+
+        <li><span><a href="#"><i class="icon-user"></i>渠道管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                 <li><a href="{:U('cps/qudao_tongji')}" target="myframe"><i class="caret_left"></i>渠道统计</a></li>
+				 <li><a href="{:U('Setting/qudao_add')}" target="myframe"><i class="caret_left"></i>添加渠道</a></li>
+				 <li><a href="{:U('cps/qudao_xiaoguo')}" target="myframe"><i class="caret_left"></i>广告效果</a></li>
+				 <li><a href="{:U('cps/qudao_sucai_add')}" target="myframe"><i class="caret_left"></i>素材添加</a></li>	
+				 <li><a href="{:U('cps/qudao_genurl')}" target="myframe"><i class="caret_left"></i>推广链接</a></li>
+                 <li><a href="{:U('cps/qudao')}" target="myframe"><i class="caret_left"></i>渠道查询</a></li>
+             
+
+				 <li><a href="{:U('Setting/jiesuan')}" target="myframe"><i class="caret_left"></i>结算管理</a></li>
+				 <li><a href="{:U('Setting/jiesuangl')}" target="myframe"><i class="caret_left"></i>结算统计</a></li>	
+
+                 <li></li>
+		 
+				  <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+      
+		
+            
+          </ul>
+
+          
+        </div>
+        <!--end sidebar_nav--> 
+      </div>
+      <!--end Left content--> 

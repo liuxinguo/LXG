@@ -1,0 +1,324 @@
+@charset "utf-8";
+*{ margin:0px; padding:0px; border:0; outline:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,span,img{padding:0;margin:0;}
+body{font-size:12px;font-family:"微软雅黑";}
+ul{list-style:none;}
+
+body{font-size:12px;color:#666666;background-position:center top;font-family:"微软雅黑","宋体";}
+
+ul li{list-style:none;}
+img{border:none;}
+a{color:#666666;text-decoration:none;}
+a:hover{color:#FF0000;text-decoration:underline;}
+
+.dn{display:none;}
+.db{display:block;}
+
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.tc{ text-align:center;}
+.indent0{ text-indent:0em;}
+.cl{ clear:both;}
+
+.sctopwrap_div{ height:38px; background:url(http://shop.49you.com/images/shop/topbg01.jpg) center top no-repeat; }
+.sctop_div{ width:1000px; height:38px; margin:0 auto; z-index:999;}
+.logowrap{ width:294px; height:58px; padding-left:14px; left:0; top:16px; background:url(http://shop.49you.com/images/shop/jfscbg.png) right top no-repeat; z-index:999;}
+a.logo49you_a{width:154px; height:53px; background:url(/images/shop/images/logo.png) left top no-repeat;}
+.loginwrap_div{width:355px; height:419px;left:-18px; top:38px; background:url(http://shop.49you.com/images/shop/loginwrapbg.png) left top no-repeat; z-index:900;}
+
+.logindiv01,.logindiv02{ overflow:hidden; padding-top:66px;}
+/**登录前style**/
+.logintitle_h1{ width:279px; height:35px; text-align:center; margin:0 auto; background:url(http://shop.49you.com/images/shop/qdline.jpg) left bottom repeat-x; color:#fff; font-size:17px; font-family:"微软雅黑"; text-shadow: 0px 1px 1px #000;}
+.unamewrap_div{width:235px; height:41px; padding-left:44px; background:url(http://shop.49you.com/images/shop/unamebg.jpg) left top no-repeat; margin:22px auto 0;}
+.upwdwrap_div{width:235px; height:41px; padding-left:44px; background:url(http://shop.49you.com/images/shop/upwdbg.jpg) left top no-repeat; margin:15px auto 0;}
+.uname_input{ width:225px; height:41px; padding:0 3px; line-height:41px; color:#2c8fd2; font-size:12px; font-family:"宋体"; background-color: transparent;}
+.jzzhwrap_div{width:279px; height:34px; margin:0 auto; padding-top:18px; color:#fff; font-size:12px; font-family:"宋体";}
+.jzzhwrap_div input{ vertical-align:middle;}
+.jzzhwrap_div a{ color:#06619c;}
+.jzzhwrap_div a:hover{ text-decoration:underline;}
+a.loginbtn_a{width:279px; height:50px; margin:0 auto; background:url(http://shop.49you.com/images/shop/loginbtn_a.jpg) left top no-repeat;}
+.slbwrap_div{width:279px; height:48px; margin:14px auto 0; padding-top:19px; background:url(http://shop.49you.com/images/shop/qdline.jpg) left top repeat-x;}
+a.qqbtn_a,a.sinabtn_a{ display:inline-block; width:31px; height:31px; background:url(http://shop.49you.com/images/shop/qqbtn.jpg) left top no-repeat; vertical-align:top; margin-top:8px;}
+a.qqbtn_a:hover{ background-position:left -31px;}
+a.sinabtn_a{background-position:left -62px; margin-left:9px;}
+a.sinabtn_a:hover{ background-position:left -93px;}
+a.slbbtn_a{display:inline-block; width:191px; height:48px; background:url(http://shop.49you.com/images/shop/slbbtn_a.jpg) left top no-repeat; margin-left:10px;}
+/**登录后style**/
+/**登录后style**/
+.logininfowrap_div{ width:279px; height:118px; margin:10px auto 0; background:url(http://shop.49you.com/images/shop/qdline.jpg) left bottom repeat-x;}
+.photo_div{width:95px; height:95px; border:3px solid #0464a3;}
+.qd_p{ width:95px; height:19px; line-height:19px; text-align:center; left:0; bottom:0;_bottom:-1px; background:url(http://shop.49you.com/images/shop/qdbg.png) left top no-repeat; font-size:12px; font-family:"宋体";}
+.qd_p a{color:#fff;}
+.qd_p a:hover{ text-decoration:underline;}
+
+.photoinfo_div{ margin-left:13px; width:165px; height:101px; padding-top:0px;}
+.userinfo_p{ height:22px; line-height:22px; color:#fff; font-size:12px; font-family:"宋体";}
+#userinfo_ul{ width:165px; height:20px; line-height:20px; color:#fff; font-size:12px; font-family:"宋体"; position:relative; z-index:9999;}
+.username_span{ display:block; width:125px; height:20px; float:left}
+.menu{ width:115px; height:20px; line-height:20px; float:left; overflow:hidden;}
+.quit_li{ float:left; width:40px; height:20px; line-height:20px; color:#fff; margin-left:10px;}
+#userinfo_ul .submenu{width:200px; height:24px; line-height:24px; padding-top:10px; background:url(http://shop.49you.com/images/shop/tipsbg.png) left top no-repeat; position:absolute;left:0px;top:15px;display:none; overflow:hidden; z-index:10000;}
+#userinfo_ul .submenu dd{ color:#fff; font-size:12px; font-family:"宋体"; line-height:24px; padding:0px 3px;}
+
+a.quit_a{ color:#fff;}
+a.quit_a:hover{ text-decoration:underline;}
+a.shengji_a{ color:#fff;}
+a.shengji_a:hover{ text-decoration:underline;}
+
+.qdinfowrap_div{ width:276px; height:40px; margin:14px auto 0; background:url(http://shop.49you.com/images/shop/qdbg.jpg) left top no-repeat; color:#fff; font-size:12px; font-family:"宋体";}
+.qddate_p{ width:36px; height:40px; line-height:19px; margin-left:11px;_margin-left:5px; text-align:center;}
+.qdrs_p{ width:118px; height:40px; line-height:40px; margin-left:32px; text-align:center;}
+.qdts_p{ width:45px; height:40px; line-height:19px; margin-left:32px; text-align:center;}
+a.bdsj_a{width:279px; height:50px; margin:14px auto 0; background:url(http://shop.49you.com/images/shop/bdsjbtn_a.jpg) left top no-repeat;}
+a.mydhjl_a{width:279px; height:50px; margin:8px auto 0; background:url(http://shop.49you.com/images/shop/dhjlbtn_a.jpg) left top no-repeat;}
+
+/* banner style */
+.flexslider{position:relative;height:405px;overflow:hidden;background:url(http://shop.49you.com/images/shop/loading.gif) 50% no-repeat; z-index:0;}
+.slides{position:relative;height:405px;overflow:hidden; z-index:0;}
+.slides li{height:405px;}
+.slides li a{display:block; width:1000px; height:405px; margin:0 auto;}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:19px;height:19px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:19px;height:19px;line-height:50px;overflow:hidden;background:url(http://shop.49you.com/images/shop/dot.png) right 0 no-repeat;_background:url(http://shop.49you.com/images/shop/dot.gif) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:45px;height:45px;overflow:hidden;cursor:pointer;position:absolute; display:none;}
+.flex-direction-nav li a.flex-prev{left:50%; margin-left:-580px; background:url(http://shop.49you.com/images/shop/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:50%; margin-right:-580px; background:url(http://shop.49you.com/images/shop/next.png) center center no-repeat;}
+.slideshadow_div{ height:10px; background:url(http://shop.49you.com/images/shop/bannershadow.jpg) center top no-repeat;}
+
+/**中部内容style**/
+.contentwrap0_div{ overflow:hidden; margin-top:20px;}
+.contentwrap1_div{ width:1000px; margin:0 auto; overflow:hidden;}
+.contentwrapleft_div{width:735px; overflow:hidden;}
+.contentwrapright_div{ width:auto; margin-left:10px; overflow:hidden;}
+
+/**抢购专区style**/
+.qgzqtitle_p{ height:85px; background:url(http://shop.49you.com/images/shop/qgzqtitlebg.jpg) left top no-repeat; padding:16px 0 0 30px; color:#fff; font-size:24px; font-family:"微软雅黑";}
+.sytime_p{ height:57px; color:#424141; font-size:14px; font-family:"宋体"; background:url(http://shop.49you.com/images/shop/timebg.jpg) 185px top no-repeat;}
+.sytime_p span{ display:inline-block; width:57px; height:39px; padding-top:12px; text-align:center; color:#1b1c1c; font-size:30px; font-family:"微软雅黑";text-shadow: 0px -1px 1px #fff; vertical-align:baseline}
+.hourspan{  background-color:;}
+.minutespan{ margin-left:70px;}
+.secondspan{ margin-left:63px;}
+.hmspan{ margin-left:58px;}
+.flq_ul{  height:121px; margin-top:45px;}
+.flq_ul li{float:left; width:156px; height:121px; margin-right:20px; position:relative;}
+.flqimg_div{width:127px; height:121px;}
+a.ljlqbtn_a{ width:29px; height:121px; background:url(http://shop.49you.com/images/shop/lqbtn_a.jpg) left top no-repeat;}
+a.ljlqbtn_a:hover{ background-position:right top;}
+a.ljlqbtn_b{ width:29px; height:121px; background:url(http://shop.49you.com/images/shop/lqbtn_a.jpg) left top no-repeat;}
+a.ljlqbtn_b:hover{ background:url(http://shop.49you.com/images/shop/lqbtn_a.jpg) left top no-repeat;}
+.flqtips{width:63px; height:33px; padding-top:13px; background:url(http://shop.49you.com/images/shop/poptipsbg.png) left top no-repeat; right:-8px; top:-17px; text-align:center; color:#fff; font-size:12px; font-family:"宋体";}
+
+/**礼包专区**/
+.lbzqtopwrap_div{ height:85px; margin-top:22px;}
+.lbzqtitle_div{width:123px; height:64px; background:url(http://shop.49you.com/images/shop/qgzqtitlebg.jpg) left top no-repeat; padding:21px 0 0 30px; color:#fff; font-size:24px; font-family:"微软雅黑";}
+
+#lbzqtab-title{ width:510px; height:42px; border-bottom:1px solid #e3e4e4; padding-left:10px; margin-top:13px; margin-left:10px; float:left;}
+#lbzqtab-title .selected{ width:124px; height:31px; line-height:31px; background-color:#747474; display:inline-block; color:#fff;}
+#lbzqtab-title span{ display:inline-block; width:124px; height:31px; line-height:31px; cursor:pointer; text-align:center; color:#7f8084;font-size:12px;font-family:"微软雅黑";}
+#lbzqtab-content .hide{display:none;}
+#lbzqtab-content div{ margin-top:20px; height:370px;}
+.lbzq_ul{ height:242px;}
+.lbzq_ul li{ width:219px; height:130px; float:left; position:relative;border:2px solid #fff;}
+.lbzqli01{border:2px solid #f19113; background-color:#f9b45a; margin-bottom:46px}
+.lbzqli02{border:2px solid #cc5948; background-color:#e66653; margin:0 11px 46px}
+.lbzqli03{border:2px solid #4d9bca; background-color:#54abdf; margin-bottom:46px}
+.lbzqli04{border:2px solid #ec7933; background-color:#fc8237; margin-bottom:28px}
+.lbzqli05{border:2px solid #2b7763; background-color:#318770; margin:0 11px 28px}
+.lbzqli06{border:2px solid #57bea3; background-color:#61d2b4; margin-bottom:28px}
+
+.lbzqfenye_p{ width:250px; height:28px; margin:0 auto;_margin-top:28px;}
+.lbzqfenye_p span{ display:inline-block; width:90px; height:28px; text-align:center; line-height:28px; color:#777879;}
+a.we-ajax-page{ display: inline-block; width:70px; height:28px; background-color:#ff8b01; text-align:center; line-height:28px; color:#fff; border-radius: 3px; -webkit-border-radius: 3px;}
+
+.lbzq_ul li dl{width:92px; height:130px; right:0; top:0; position:absolute; z-index:99}
+.lbzq_ul li dl dd h1{height:20px; line-height:20px; color:#fff;font-size:20px;font-family:"微软雅黑"; margin-top:18px;}
+.lbzq_ul li dl dd p{ height:36px; line-height:20px; color:#fff;font-size:12px;font-family:"宋体"; margin-top:8px;}
+.lbzq_ul li dl dd a{ width:71px; height:22px; line-height:22px; text-align:center; margin-top:12px; color:#fff;font-size:12px;font-family:"微软雅黑"; border:1px solid #eee; border-radius: 3px; -webkit-border-radius: 3px;}
+a.ljdhbtn01_a{ background-color:#f9b45a;}
+a.ljdhbtn02_a{ background-color:#e66653;}
+a.ljdhbtn03_a{ background-color:#54abdf;}
+a.ljdhbtn04_a{ background-color:#fc8237;}
+a.ljdhbtn05_a{ background-color:#318770;}
+a.ljdhbtn06_a{ background-color:#61d2b4;}
+
+.jsimg_p{ left:0; bottom:0; z-index:100;}
+
+.jscover_span{width:179px; height:116px; line-height:18px; left:0; bottom:25px;*bottom:25px;_bottom:21px;z-index:1000; padding:20px; overflow:hidden; color:#fff; font-size:14px;font-family:"微软雅黑";}
+
+/**抽奖专区style**/
+.cjzqtitle_p{ height:30px; margin-top:20px; background:url(http://shop.49you.com/images/shop/cjzqtitlebg.jpg) left top no-repeat;}
+.cjzpwrap_div{ width:671px; height:400px; margin:23px auto 0;}
+
+.grid1{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg1.jpg) left top no-repeat; left:0; top:0;}
+.grid2{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg2.jpg) left top no-repeat; left:112px; top:0;}
+.grid3{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg3.jpg) left top no-repeat; left:224px; top:0;}
+.grid4{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg4.jpg) left top no-repeat; left:336px; top:0;}
+.grid5{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg5.jpg) left top no-repeat; left:448px; top:0;}
+.grid6{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg6.jpg) left top no-repeat; left:560px; top:0;}
+.grid7{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg7.jpg) left top no-repeat; right:3px; top:78px;}
+.grid8{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg8.jpg) left top no-repeat; right:0; top:160px;}
+.grid9{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg9.jpg) left top no-repeat; right:0; top:240px;}
+.grid10{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg10.jpg) left top no-repeat; right:0; top:320px;}
+.grid11{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg11.jpg) left top no-repeat; right:111px; top:320px;}
+.grid12{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg12.jpg) left top no-repeat; right:223px; top:320px;}
+.grid13{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg13.jpg) left top no-repeat; right:335px; top:320px;}
+.grid14{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg14.jpg) left top no-repeat; right:447px; top:320px;}
+.grid15{width:112px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg15.jpg) left top no-repeat; right:559px; top:320px;}
+.grid16{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg16.jpg) left top no-repeat; left:0; top:240px;}
+.grid17{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg17.jpg) left top no-repeat; left:0; top:160px;}
+.grid18{width:111px; height:80px; background:url(http://shop.49you.com/images/shop/cjimg18.jpg) left top no-repeat; left:0; top:80px;}
+.current{ background-position:left bottom;}
+.middlebg{width:347px; height:179px; padding-top:61px; padding-left:102px; background:url(http://shop.49you.com/images/shop/cjzqbg.jpg) left top no-repeat; left:111px; top:80px;}
+a.start_a{width:245px; height:120px; background:url(http://shop.49you.com/images/shop/ljcq_btn.png) left top no-repeat;}
+a.ckzjjl_a{width:85px; height:28px; background:url(http://shop.49you.com/images/shop/zjjlbtn.png) left top no-repeat; left:121px; top:90px;}
+
+/**平台会员升级style**/
+.pthytitle_p{ height:20px; line-height:20px; color:#282b2c;font-size:14px;font-family:"微软雅黑"; padding-left:19px; background:url(http://shop.49you.com/images/shop/titlebg.jpg) 2px top no-repeat;}
+#hysjtab-title{ height:40px; padding-left:8px;  background:url(http://shop.49you.com/images/shop/hysjtabbgline2.jpg) left bottom repeat-x; margin-top:17px;}
+#hysjtab-title .hysjspan{ display:inline-block; width:83px; height:20px; padding-top:6px; margin-right:4px; background:url(http://shop.49you.com/images/shop/hysjtabbg01.jpg) left top no-repeat; cursor:pointer; text-align:center; color:#35373a;font-size:12px;font-family:"宋体"; vertical-align:bottom;}
+#hysjtab-title .hysjspan img{ vertical-align:middle; margin-right:3px}
+#hysjtab-title .selected{ display:inline-block; width:83px; height:23px; padding-top:8px; background:url(http://shop.49you.com/images/shop/hysjtabbg02.jpg) left top no-repeat; color:#35373a; font-size:12px;font-family:"宋体";}
+#hysjtab-title .selected img{ vertical-align:middle; margin-right:3px}
+#hysjtab-content .hide{display:none;}
+#hysjtab-content div{ border:1px solid #d9dada; border-top:0px solid #d9dada; height:448px; padding-top:22px}
+.card_p{ height:; text-align:center;}
+.hykinfo_p{ width:242px; height:40px; margin:34px auto 0;}
+.hyklabel{ display:inline-block; width:200px; height:40px; margin-left:10px; line-height:20px; color:#7f8084;font-size:12px;font-family:"微软雅黑";}
+.hykinfo_p input{ vertical-align:top; margin-top:10px;}
+.b_span{color:#000;}
+.gbjs_p{width:100px; height:24px; padding-left:40px; line-height:24px; margin:20px auto 0; background:url(http://shop.49you.com/images/shop/zsico.jpg) left top no-repeat;font-size:14px;font-family:"微软雅黑";}
+.gbjs_p a{color:#fa7d04;}
+.gbjs_p a:hover{ text-decoration:underline;}
+a.ljdhbtn_a{ width:147px; height:41px; margin:20px auto 0; background:url(http://shop.49you.com/images/shop/ljdhbtn02.jpg) left top no-repeat;}
+
+/**常见问题style**/
+.cjwttitle_p{ height:20px; line-height:20px; color:#282b2c;font-size:14px;font-family:"微软雅黑"; padding-left:19px; background:url(http://shop.49you.com/images/shop/titlebg.jpg) 2px top no-repeat; margin-top:1px;}
+.cjwtwrap_div{ border:1px solid #d9dada; height:337px; margin-top:14px;}
+.cjwt_ul{margin:16px auto 0; width:252px; overflow:hidden;}
+.cjwt_ul li{ height:35px; border-bottom:1px solid #e0e0e1; padding-left:12px; background:url(http://shop.49you.com/images/shop/dot01.jpg) 2px 16px no-repeat;}
+.cjwt_ul li a{display:block; width:228px; height:35px; line-height:35px; background:url(http://shop.49you.com/images/shop/arrowico.jpg) right 12px no-repeat; padding-right:12px; color:#777879;font-size:12px;font-family:"宋体"; overflow:hidden;}
+.cjwt_ul li a:hover{ color:#54abdf;}
+
+/**兑奖情况style**/
+.djqktitle_p{height:20px; line-height:20px; color:#282b2c;font-size:14px;font-family:"微软雅黑"; padding-left:19px; background:url(http://shop.49you.com/images/shop/titlebg.jpg) 2px top no-repeat; margin-top:32px;}
+.djqkwrap_div{ width:252px;border:1px solid #d9dada; height:390px; margin-top:13px;}
+#scroll1{width:230px; height:390px; overflow:hidden; margin:2px auto 0;}
+#scroll1 li{height:36px; overflow:hidden; border-bottom:1px solid #dcdfe0; padding-top:17px; padding-bottom:19px;}
+#scroll1 li span{ display:inline-block; height:18px; line-height:18px;}
+.djr_span{ width:75px; color:#626364; overflow:hidden;}
+.dh02_span{width:50px; color:#626364; overflow:hidden; text-align:center}
+.hdlb_span{width:100px; color:#626364; overflow:hidden; text-align:right}
+.sjsy_span{width:230px; color:#adb1b3; overflow:hidden; text-align:right}
+
+/**领取海量积分style**/
+.lqhljfwrap_div{ width:1000px; height:20px; margin:0 auto;margin-top:1px}
+.lqhljfdiv{ width:1000px; height:224px; margin:0 auto;margin-top:74px}
+
+/**footwrap style**/
+.footwrap{ background:url(http://shop.49you.com/images/shop/dibg.jpg) left top repeat;}
+.footerdiv{width:1000px; margin:0 auto; overflow:hidden; 
+margin-top:30px;
+/**_margin-top:10px; 
+*margin-top:0; **/
+text-align:center; line-height:24px; color:#afb0b4; font-size:12px; font-family:"宋体";}
+.footerdiv a{ color:#afb0b4;}
+.footerdiv a:hover{ text-decoration:underline;}
+
+/**钻石弹窗style**/
+#div_zs { width: 430px; height:421px; position:absolute; Z-INDEX: 10001; display: none; background:url(http://shop.49you.com/images/shop/tc_z.jpg) left top no-repeat;}
+a.kuang_close{width: 39px; height: 39px; background: url(http://shop.49you.com/images/shop/closebtn01.png) no-repeat left top;_background:url(http://shop.49you.com/images/shop/closebtn01.gif) left top; right:-15px; position: absolute; display: block; top:-16px;}
+#div_jp { width: 430px; height:377px; position:absolute; Z-INDEX: 10001; display: none; background:url(http://shop.49you.com/images/shop/tc_j.jpg) left top no-repeat;}
+#div_yp { width: 430px; height:276px; position:absolute; Z-INDEX: 10001; display: none; background:url(http://shop.49you.com/images/shop/tc_y.jpg) left top no-repeat;}
+
+/**会员升级弹窗style**/
+#div_hysj,#div_zj,#div_cj,#div_lb,#div_qg,#div_jfdh{width: 462px; height:275px; position:absolute; Z-INDEX: 10001; display: none; background:url(http://shop.49you.com/images/shop/tcbottombg.png) left bottom no-repeat;}
+a.kuang_close2{width: 39px; height:39px; background: url(http://shop.49you.com/images/shop/closebtn02.png) no-repeat left top;_background:url(http://shop.49you.com/images/shop/closebtn02.gif) left top; right:0; position: absolute; display:block; top:-16px;}
+.sjtopkuang{ width:429px; height:141px; margin:0 auto; background-color:#fff; padding-top:80px;}
+.tcbtn_p{ margin-top:9px; width:280px; height:42px; margin:8px auto 0;}
+.tcbtn_p a{width:115px; height:33px; text-align:center; padding-top:9px; color:#333436;font-size:16px;font-family:"微软雅黑"; background:url(http://shop.49you.com/images/shop/confirmbtnbg.jpg) left top no-repeat; float:left;}
+a.cancelbtn_a{ margin-left:49px;}
+.juhong{color:#fcc040;}
+.tc_p{margin:0 auto; width:370px; text-decoration:underline; font-size:24px; color:#59595e; font-family:'微软雅黑'; text-align:center; }
+
+#div_dhjl{width: 790px; height:440px; position:absolute; Z-INDEX: 10001; display: none; background-color:#f9f9fa;}
+.mydhjl_p{height:52px; border:1px solid #287cb5; text-align:center; line-height:52px; color:#fff; font-size:24px;font-family:"微软雅黑"; background-color:#2c8fd2;}
+.dhjlinfo_div{ height:386px; overflow-x:hidden; overflow-y: scroll;}
+.dhjlinfo_table{ width:749px; border-collapse:collapse; margin-top:12px;}
+.dhjlinfo_table tr{ border-bottom:1px solid #dee1e4; height:28px; line-height:28px;}
+.dhjlinfo_table tr td{ text-align:center; color:#757577; font-size:12px; font-family:"宋体";}
+
+#div_zjjl{width: 580px; height:440px; position:absolute; Z-INDEX: 10001; display: none; background-color:#f9f9fa;}
+.myzjjl_p{height:52px; border:1px solid #287cb5; text-align:center; line-height:52px; color:#fff; font-size:24px;font-family:"微软雅黑"; background-color:#2c8fd2;}
+.zjjlinfo_div{ height:386px; overflow-x:hidden; overflow-y: scroll;}
+.zjjlinfo_table{ width:524px; border-collapse:collapse; margin:0 auto; margin-top:12px;}
+.zjjlinfo_table tr{ border-bottom:1px solid #dee1e4; height:28px; line-height:28px;}
+.zjjlinfo_table tr td{ text-align:center; color:#757577; font-size:12px; font-family:"宋体";}
+
+
+/**常见问题style**/
+.cjwttitle_p{ height:20px; line-height:20px; color:#282b2c;font-size:14px;font-family:"微软雅黑"; padding-left:19px; background:url(http://shop.49you.com/images/shop/titlebg.jpg) 2px top no-repeat; margin-top:1px;}
+.cjwtwrap_div{ border:1px solid #d9dada; height:251px; margin-top:14px;}
+.cjwt_ul{margin:16px auto 0; width:242px; overflow:hidden;}
+.cjwt_ul li{ height:35px; border-bottom:1px solid #e0e0e1; padding-left:12px; background:url(http://shop.49you.com/images/shop/dot01.jpg) 2px 16px no-repeat;}
+.cjwt_ul li a{display:block; width:228px; height:35px; line-height:35px; background:url(http://shop.49you.com/images/shop/arrowico.jpg) right 12px no-repeat; padding-right:12px; color:#777879;font-size:12px;font-family:"宋体"; overflow:hidden;}
+.cjwt_ul li a:hover{ color:#54abdf;}
+
+.main_top4_l{ width:743px;border:solid 1px #e3e2e2;}
+.main_title2{ width:743px; height:45px; overflow:hidden;}
+.main_title2 strong{ font-size:18px; line-height:45px; padding-left:20px;}
+.main_content2{ width:743px; padding-bottom:20px;}
+.main_content2 ul{ margin-left:18px;}
+.main_content2 ul li{ width:162px; float:left;margin-right:19px; display:inline;}
+.main_content2 ul li .img{ width:160px; height:124px; border:solid 1px #6c6c6c; float:left;}
+.main_content2 ul li .title{ width:162px; height:20px; float:left;margin-top:5px;}
+.main_content2 ul li .title a, .main_content_l .title a, .main_content3 ul li .title a{ font-size:14px; font-weight:bold;}
+.main_content2 ul li .infor{width:162px;float:left; margin-top:5px;}
+.main_content2 ul li .infor b, .main_content_l .infor b, .main_content3 ul li b, .main_content4 ul li .infor span b{ color:#FF0000; font-weight:normal;}
+.main_content2 ul li .buttom2, .main_content_l .buttom2, .main_content3 ul li .buttom2{ width:73px; height:27px; float:left;margin-top:10px;}
+.main_content2 ul li .buttom2 a, .main_content_l .buttom2 a, .main_content3 ul li .buttom2 a, #msg_fk .but2 a, #msg_fk .but a, #msg_fk .but3 a, #msg_fk1 .but a{width:73px; height:27px; float:left; background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px top; text-align:center; line-height:27px; color:#FFFFFF;}
+.main_content2 ul li .buttom2 a:hover, .main_content_l .buttom2 a:hover, .main_content3 ul li .buttom2 a:hover, #msg_fk .but2 a:hover, #msg_fk .but a:hover, #msg_fk .but3 a:hover{background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px -38px;}
+.main_top4_r{ width:205px; height:290px;}
+#main{width:960px;margin:5px auto 0px auto;}
+
+.main_title{ width:998px; height:45px; overflow:hidden;}
+.main_title strong{ font-size:18px; line-height:45px; padding-left:20px; float:left;}
+.main_title .more{ float:right; margin-right:10px; line-height:45px;}
+.main_title .more a{ color:#FF0000;}
+
+#main_top{width:960px;margin:0px auto;}
+#main_top2, #main_top4, #main_top7{width:960px; float:left; margin-top:8px;}
+#main_top3, #main_top5, #main_top6{width:998px; margin-top:8px; float:left;border:solid 1px #e3e2e2;}
+
+.main_content4{ padding-bottom:10px;}
+.main_content4 ul{ margin-left:28px;}
+.main_content4 ul li{ width:175px; float:left;margin-right:19px; display:inline;padding-bottom:20px;}
+.main_content4 ul li .img{ width:160px; height:124px; border:solid 1px #6c6c6c; float:left;}
+.main_content4 ul li .title{ width:162px; height:20px; float:left;margin-top:5px;}
+.main_content4 ul li .title a, .main_content_l .title a, .main_content3 ul li .title a{ font-size:14px; font-weight:bold;}
+.main_content4 ul li .infor{width:162px;float:left; margin-top:5px;}
+.main_content4 ul li .infor b, .main_content_l .infor b, .main_content3 ul li b, .main_content4 ul li .infor span b{ color:#FF0000; font-weight:normal;}
+.main_content4 ul li .buttom2, .main_content_l .buttom2, .main_content3 ul li .buttom2{ width:73px; height:27px; float:left;margin-top:10px;}
+.main_content4 ul li .buttom2 a, .main_content_l .buttom2 a, .main_content3 ul li .buttom2 a, #msg_fk .but2 a, #msg_fk .but a, #msg_fk .but3 a, #msg_fk1 .but a{width:73px; height:27px; float:left; background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px top; text-align:center; line-height:27px; color:#FFFFFF;}
+.main_content4 ul li .buttom2 a:hover, .main_content_l .buttom2 a:hover, .main_content3 ul li .buttom2 a:hover, #msg_fk .but2 a:hover, #msg_fk .but a:hover, #msg_fk .but3 a:hover{background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px -38px;}
+
+
+.main_top4_l{ width:743px;border:solid 1px #e3e2e2;}
+.main_title2{ width:743px; height:45px; overflow:hidden;}
+.main_title2 strong{ font-size:18px; line-height:45px; padding-left:20px;}
+.main_content2{ width:743px; padding-bottom:20px;}
+.main_content2 ul{ margin-left:18px;}
+.main_content2 ul li{ width:162px; float:left;margin-right:19px; display:inline;}
+.main_content2 ul li .img{ width:160px; height:124px; border:solid 1px #6c6c6c; float:left;}
+.main_content2 ul li .title{ width:162px; height:20px; float:left;margin-top:5px;}
+.main_content2 ul li .title a, .main_content_l .title a, .main_content3 ul li .title a{ font-size:14px; font-weight:bold;}
+.main_content2 ul li .infor{width:162px;float:left; margin-top:5px;}
+.main_content2 ul li .infor b, .main_content_l .infor b, .main_content3 ul li b, .main_content4 ul li .infor span b{ color:#FF0000; font-weight:normal;}
+.main_content2 ul li .buttom2, .main_content_l .buttom2, .main_content3 ul li .buttom2{ width:73px; height:27px; float:left;margin-top:10px;}
+.main_content2 ul li .buttom2 a, .main_content_l .buttom2 a, .main_content3 ul li .buttom2 a, #msg_fk .but2 a, #msg_fk .but a, #msg_fk .but3 a, #msg_fk1 .but a{width:73px; height:27px; float:left; background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px top; text-align:center; line-height:27px; color:#FFFFFF;}
+.main_content2 ul li .buttom2 a:hover, .main_content_l .buttom2 a:hover, .main_content3 ul li .buttom2 a:hover, #msg_fk .but2 a:hover, #msg_fk .but a:hover, #msg_fk .but3 a:hover{background:url(http://mall.49you.com/user/images/shop/shop_img.gif) no-repeat -100px -38px;}
+.main_top4_r{ width:205px; height:290px;}

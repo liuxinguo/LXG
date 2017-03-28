@@ -1,0 +1,120 @@
+
+/*游戏中心*/
+
+.content{width: 100%;margin-top:10px;}
+
+.cont{width: 1200px;overflow: hidden;margin: 0 auto;}
+
+/*轮播图*/
+.cont-price{width: 100%;overflow: hidden;height:402px;}
+.cont-lunbo{position: relative;height:402px;overflow: hidden;}
+.cont-price img{width: 100%;height: 100%;}
+.price-1{position:absolute;}
+.game-xx{position: absolute;top:0;right: 0;width:27%;height: 100%;}
+.game-xx li{z-index: 99;position: relative;margin-left: 20px;color: #fff;}
+.game-xx li a{color: #fff;}
+.game-view{background-color: #000;opacity: 0.3;filter:alpha(opacity=30);width: 100%;height:99%;position: absolute;z-index: 90;}
+.game-name{font-size: 25px;margin: 15px 0;}
+.game-name a{color:#fff;}
+.game-name a:hover{color: #ff9509;}
+.game-brief{width: 90%;height:172px;border: 1px solid #fff;border-radius: 5px;margin: 10px auto;text-indent: 2em;word-wrap:break-word;overflow: hidden;}
+.game-guan,.game-gift{width:40%;height: 40px;text-align: center;line-height: 40px;background-color:#ff6501;border-radius: 5px;display: inline-block;
+	margin-left:6%;
+}
+
+.games-listing{overflow: hidden;}
+
+
+.cont-xiao {padding: 0 10px;}
+.cont-xiao ul li{float: left;width: 24%;height:55px;overflow: hidden;margin-left: 1%;border-radius:3px;border:1px solid #fff;}
+.cont-xiao ul li a{display: block;width: 100%;height: 100%;}
+.cont-xiao ul li img{width: 100%;height: 100%;}
+.cont-xiao ul .active{border:1px solid #ff6501;}
+.cont-xiao{position:absolute;right: 0;bottom:5px;z-index: 999;width: 27%;}
+
+.speeach{padding: 0 18px;overflow: hidden;}
+.speeach div{width: 200px;height: 30px;border:1px solid #ccc;float: right;}
+.speeach input{outline: none;line-height:24px;width: 170px;border:none;display: inline-block;height: 28px;padding-left: 5px;}	
+.speeach div i{background: url(../img/images/game_03.png) no-repeat;display: inline-block;width: 14px;height: 15px;cursor: pointer;float: right;margin: 5px 5px 0 0;}
+
+/*游戏列表*/
+.listing-left{width: 72%;overflow: hidden;float: left;}
+.listing-right{width:28%;overflow:hidden;float: right;margin-top: 15px;}
+.listing-left > p,.cont-gift>p{
+	background: url(../img/liebiao.png) no-repeat;font-size:22px;font-weight:bold;padding-left: 50px;margin:10px 0 0 27px;
+}
+
+.new-listbox{margin-top: 0px !important;}
+
+.games-list{width:96%;overflow:hidden;padding: 20px;border:1px solid #ccc;margin: 20px auto;border-top:2px solid #0000ff;}
+.games-list p{margin-bottom: 10px;overflow:hidden;}
+
+.games-list p a{color: #3c3c3c;padding:0 5px;}
+.games-list p .all-games-theme,.games-list p .all-games-letter{background-color: #3fb2e8;color:#fff;}
+.games-list p a:hover{background-color: #3fb2e8;color:#fff;}
+.animate{transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;}
+
+.all-games-icon-leix{top:45px;left:20px;font-size: 14px;color: #fff;}
+
+
+.all-games-icon li{width: 31%;overflow: hidden;float: left;margin-left:1%;margin-right: 1%;margin-top: 10px;position: relative;border:1px solid #eaeaea;box-shadow:0 0 5px rgba(0,0,0,.1);}
+.all-games-icon li img{width: 100%;height: 100%;}
+.all-games-icon-hide{width: 100%;height: 100%;overflow: hidden;position: absolute;top:150px;left: 0;}
+.all-games-icon-hide>a{width: 100%;height: 100%;display: block;background-color: #000;opacity:.7;filter:alpha(opacity=70);position: absolute;top:0;left: 0;}
+.all-games-icon-hide p{position:absolute;z-index: 999;}
+
+.all-games-icon-hide p a{color: #fff;font-size: 14px;}
+
+.all-games-icon-name{font-size: 18px;padding: 20px;}
+.all-games-icon-start{position: absolute;bottom:10px;left:0;}
+.all-games-icon-start a{margin-left:6px;}
+.all-games-icon-hide .all-games-icon-name a{font-size: 17px;} 
+
+.value{overflow: hidden;}
+.value li{float: left;margin-right:10px;}
+.games-list div{overflow: hidden;line-height: 30px;}
+.games-list div strong,.value{float: left;}
+.games-list div strong{width: 80px;}
+.value a{color: #999;display: block;padding:0 6px;line-height: 22px;border:1px solid #fff;} 
+
+.value a.selected{color:#fff;background-color:#ff7a00;border-color:#ff7a00;}
+
+.game-yuan{width:80px;height: 26px;display: inline-block;text-align: center;line-height: 26px;border-radius: 4px;}
+.start-game{background-color: #ff9300;}
+.start-game:hover{background-color: #ff6e00;}
+
+.gift-gw{background-color: #5bce00;}
+.gift-gw:hover{background-color: #40b000;}
+
+.all-games-icon-hide .all-games-icon-start .enter-gw{background-color: #f7f7f7;color: #6f6e6e;}
+.enter-gw:hover{background-color: #f1f1f1;}
+
+
+
+
+
+
+/*开服列表*/
+.cont-least{background: url(../img/liebiao.png) no-repeat;font-size:27px;padding-left: 50px;}
+.new-listbox{width:332px;position: relative;}
+
+
+
+
+/*响应式*/
+@media screen and (max-width: 1200px){
+	.cont,.cont-next{width: 100%;}
+	.new-listbox{width:282px;}
+	.game-brief{height: 110px;}
+	.cont-xiao{bottom:26px;}
+	.cont-lunbo{height: 348px;}
+}
+
+
+
+
+
+
+
+
+

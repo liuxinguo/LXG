@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header{ _height: 649px;}
+/* 开始游戏 */
+.starGame, .starGame a{display:block;width:300px;height:146px;overflow:hidden;}
+.starGame a{background:url(../img/playBtn.jpg) 0 0 no-repeat;/**/line-height:133px;text-align:center;font-size:42px;font-weight:bold;text-indent:-99em;}
+.starGame a:hover{background-position:0 -146px;}
+/* 登录框 */
+.loginField{height:195px;padding:5px 0 15px;overflow:hidden;background:url(../img/loginBg.jpg) 0 -21px no-repeat;}
+.loginField .logDiv{ width:300px; height:216px; margin:0 auto;}
+.container1{ position: relative;}
+.container1 .main{ height:361px; overflow:hidden; display:block; position: absolute; top: 0;right: 0;} 
+/*===最新服务器===*/
+/* 最新服务器 */
+.newSer, .newSer h3, .newSer ul, .newSer ul li, .newSer ul li a{height:20px;line-height:20px;overflow:hidden;}
+.newSer{padding:16px 0 0;background:url(../img/newSerBG.png); width:900px; height:36px;}	
+.newSer h3, .newSer ul, .newSer ul li, .newSer ul li a{float:left;}
+.newSer h3, .newSer ul li{white-space:nowrap;font-size:14px;}
+.newSer h3{width:95px;text-align:right;color:#FFF;font-weight:normal;}
+.newSer ul{width:500px;}
+.newSer ul li{padding:0 0 0 20px;}
+.newSer ul li a{_line-height:22px;color:#B5B5B5;}
+.newSer ul li a:hover{color:#B75F11;}
+.newSer ul li var{float:left;_display:inline;width:32px;height:15px;overflow:hidden;margin:3px 0 0 5px;text-indent:-999em;vertical-align:middle;background:url(../img/serstate.gif);}
+.newSer ul li var.s4,.newSer ul li var.s2,.newSer ul li var.s5,.newSer ul li var.s6{width:56px;}
+.newSer ul li var.s1{background-position:0 -15px;} 
+.newSer ul li var.s2{background-position:0 -90px;}
+.newSer ul li var.s3{background-position:0 -75px;}
+.newSer ul li var.s4{background-position:0 -45px;}
+.newSer ul li var.s5{background-position:0 -105px;}
+.newSer ul li var.s6{background-position:0 -120px;}
+.newSer ul li var.s7{background-position:0 -30px;} 
+.newSer ul li var.s8{background-position:0 -60px;}
+.newSer ul li var.s9{background-position:0 -135px;}
+.newSer ul li var.s10{width:70px;background-position:0 0;}
+
+/* 快速选择 */
+.quik, .quik label, .quik input, .quik span, .quik button{height:22px;line-height:22px;}
+.quik label,.quik span,.quik button{float:left;}
+.quik{float:right;width:295px;}
+.quik label{width:66px;text-align:right;}
+.quik input{width:40px;padding:0px 5px;border:0px;background-color:#CECECE;}
+.quik span{_display:inline;margin:0 10px;}
+.quik span.i{width:50px;overflow:hidden;margin:0 0 0 5px;padding:0px;}
+.quik button{display:block;width:46px;height:22px;border:none;background:url(../img/intoBtn.gif) no-repeat;color:#3f1902; text-indent:-999em;}
+.quik button:hover,.quik button.bOn{background:url(../img/intoBtn.gif) no-repeat 0 -22px;}
+.quik .more{float:right;margin-right:10px;line-height:20px;font-size:14px;color:#B5B5B5;}
+.quik .more:hover{color:#B75F11;}
+/* 最新服务器.??? */
+.serSel, .serSel a.serA, .selCon a, .selBox2 a{height:22px;line-height:22px;}
+.serSel{float:left;width:110px;position:relative;}
+.serSel a.serA{display:block;width:75px;padding:0 25px 0 10px;}
+.serSel a.serOn{}
+.selBox{width:106px;height:100px;padding:1px;background-color:#f9f9f9;border:1px solid #dcd5cd;position:absolute;right:0;top:22px;}
+.selList{width:106px;height:95px;overflow:hidden;padding-top:5px;margin:0 auto;position:relative;}
+.selCon{width:106px;position:absolute;left:0;}
+.selCon a,.selBox2 a{display:inline-block;width:98px;margin:0 0 3px;padding-left:8px;text-align:center;color:#606060;}
+.selCon a:hover,.selBox2 a:hover{color:#af8632;background-color:#e8e8e8;}
+
+.focusBanner, .focusNews{height:309px;background-color:#212428;overflow:hidden;}
+/*= 焦点大图.基本 =*/
+.focusBanner, .focusBanner .picList, .focusBanner .picList li{display:block;width:600px;height:309px;overflow:hidden;}
+.focusBanner{float:left;position:relative;}
+.focusBanner .picList li img{ cursor:pointer;}
+/*= 焦点大图.上下翻页 =*/
+.focusBanner a.prev, .focusBanner a.next{display:none;width:18px;height:35px;line-height:35px;overflow:hidden;text-indent:-99em;background-image:url(../img/focuSBTN.gif);background-repeat:no-repeat;position:absolute;z-index:9;top:46%;}
+.focusBanner:hover a{display:block;}
+.focusBanner a.prev{left:25px;background-position:-18px 0;}
+.focusBanner a.next{right:25px;background-position:0 0;}
+.focusBanner a.prev:hover{background-position:-18px -35px;}
+.focusBanner a.next:hover{background-position:0 -35px;}
+/*= 焦点大图.页码 =*/
+.focusBanner ul.ggBtns{display:inline;width:96%;height:1px;_height:12px;text-align:right;position:absolute;bottom:20px;_bottom:10px;left:0;z-index:9;font-size:0;}
+.focusBanner ul.ggBtns li, .focusBanner ul.ggBtns li a{width:28px;heilght:8px;line-height:8px;}
+.focusBanner ul.ggBtns li{display:inline-block;zoom:1;*display:inline;margin:0 6px 0 0;}
+.focusBanner ul.ggBtns li a{display:block;overflow:hidden;border-top:solid 4px #818181;text-indent:-99em;}
+.focusBanner ul.ggBtns li.on a{display:inline-block;zoom:1;*display:inline;border-top:solid 4px #FD8C14;}
+
+/*= 焦点新闻.基本 =*/
+.focusNews, .focusNews .focusTit, .focusNews .focusContent{width:300px;}
+.focusNews{float:right;}
+.focusNews .focusTit{height:52px;line-height:50px;/*border-bottom:solid 2px #CECECE;*/background:url(../img/newsTitleBg.gif) bottom repeat-x;}
+.focusNews .focusTit .more{padding:0 8px;}
+.focusNews .focusTit ul li, .focusNews .focusTit ul li a{float:left;width:60px;text-align:center;font-size:16px;font-family:"\5FAE\8F6F\96C5\9ED1",tahoma,Arial,"\5b8b\4f53",sans-serif;}
+.focusNews .focusTit ul li{display:inline;}
+.focusNews .focusTit ul li a{display:block; font-weight:bold;}
+.focusNews .focusTit ul li.on a{border-bottom:solid 2px #FD8C14;color:#FD8C14;}
+/*= 焦点新闻.新闻列表 =*/
+.focusNews .focusContent, .focusNews .tempWrap, .focusContent .newsList li{width:264px;}
+.focusNews .tempWrap{height:234px;padding:5px 0;overflow:hidden;margin:0 18px;}
+.focusContent .newsList{}
+.focusContent .newsList li, .focusContent .newsList li a, .focusContent .newsList li em, .focusContent .newsList li .date{height:33px;line-height:33px;white-space:nowrap; overflow:hidden;}
+.focusContent .newsList li{position:relative; display:inline-block; float:left;}
+.focusContent .newsList li a{display:block;color:#6C6C6C;width:228px; height:33px; line-height:33px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.focusContent .newsList li a:hover{color:#D2D2D2;}
+.focusContent .newsList li a:after{content:"";}
+.focusContent .newsList li em, .focusContent .newsList li .date{float:right;position:absolute;top:0;right:0;}
+/*= 焦点新闻.新闻列表.特殊(头条) =*/
+.focusContent .newsList li.st, .focusContent .newsList li.st a{height:58px;line-height:58px;font-size:14px;font-weight:bold;}
+.focusContent .newsList li.st{margin-bottom:10px;border-bottom:dotted 1px #6C6C6C;}
+.focusContent .newsList li.st a{float:left;display:block;width:264px;text-indent:1.8em; background:url(../img/hNewsICO.gif) 0 22px no-repeat;}
+.focusContent .newsList li.st em, .focusContent .newsList li.st .date{display:none;}
+
+/* 游戏资料 */
+.dataGroup{float:left;width:300px;height:183px;overflow:hidden;background:url(../img/threeBG.gif);position:relative;}
+.dataGroup dl{padding:20px 24px;position:relative;z-index:9;}
+.dataGroup dl dt{display:block;height:36px;line-height:36px; overflow:hidden;margin:5px 0; text-indent:-99em;font-size:24px;color:#1E1E1E;font-weight:bold; background:url(../img/h3Title.gif) 0 0 no-repeat;}
+.dateG1 dl dt{background-position:0 0;}
+.dateG2 dl dt{background-position:0 -36px;}
+.dateG3 dl dt{background-position:0 -72px;}
+.dataGroup dl dd, .dataGroup dl dd a{float:left;height:32px;line-height:32px;}
+.dataGroup dl dd{display:inline;margin-right:32px;position:relative;z-index:9;}
+.dataGroup dl dd a{display:block;white-space:nowrap;width:48px; white-space:nowrap;}
+/* 游戏资料.图标 */
+.dataGroup .dateICO{display:block;width:194px;height:183px;background-image:url(../img/ghreeICO.gif);background-repeat:no-repeat;position:absolute;z-index:1;top:0;left:192px;}
+.dateG1 .dateICO{background-position:-5px -5px;}
+.dateG2 .dateICO{background-position:-5px -199px;}
+.dateG3 .dateICO{background-position:-5px -393px;}
+
+.systemGroup{float:left;display:block;width:299px;height:100px;padding-top:41px;overflow:hidden;background-color:#f5f5f5;border-right:solid 1px #e9e9e9;position:relative;}
+.system3{width:300px;border:none;}
+.systemGroup dt, .systemGroup dd{display:block;padding-left:28px;position:relative;z-index:9;}
+.systemGroup dt{height:36px;line-height:36px;overflow:hidden;margin-bottom:10px;font-size:24px;color:#1E1E1E;font-weight:bold; text-indent:99em; background:url(../img/h3Title.gif) 0 0 no-repeat;}
+.system1 dt{ background-position:28px -108px;}
+.system2 dt{ background-position:28px -144px;}
+.system3 dt{ background-position:28px -180px;}
+.systemGroup dd a{display:block;width:72px;height:21px;line-height:21px;text-align:center;color:#B75F11;background:url(../img/armBTN.gif) 0 0 no-repeat;}
+.systemGroup dd a:hover{ background-position:0 -21px;color:#3F1902;}
+.systemGroup dd.weapon{width:209px;height:141px;padding:0;background-image:url(../img/arms.jpg);background-repeat:no-repeat;position:absolute;top:0;left:120px;z-index:1;}
+.system1 dd.weapon{background-position:0 0;}
+.system2 dd.weapon{background-position:0 -141px;}
+.system3 dd.weapon{background-position:0 -282px;}
+
+/* 角色说明 */
+.roleGroup, .roleGroup .roleContent{width:900px;height:376px;overflow:hidden;}
+.roleGroup{position:relative;background-color:#FBFAFA;}
+.roleGroup .roleContent .roleInfo{width:840px;height:302px;padding:64px 30px 30px;background-color:#FBFAFA;background-image:url(../img/roleBg.jpg);background-repeat:no-repeat;}
+.roleGroup .roleContent .role1{background-position:0 0;}
+.roleGroup .roleContent .role2{background-position:-900px 0;}
+.roleGroup .roleContent .role3{background-position:0 -376px;}
+.roleGroup .roleContent .role4{background-position:-900px -376px;}
+.roleGroup .roleContent .roleInfo h3{display:block;width:200px;height:180px;line-height:180px;text-indent:-99em;background-image:url(../img/roleName.gif);background-repeat:no-repeat;position:absolute;left:428px;top:64px;}
+.roleGroup .roleContent .role1 h3{background-position:0 0;}
+.roleGroup .roleContent .role2 h3{background-position:0 -180px;}
+.roleGroup .roleContent .role3 h3{background-position:0 -360px;}
+.roleGroup .roleContent .role4 h3{background-position:0 -540px;}
+.roleGroup .roleContent .roleInfo .roleIntro{width:420px;line-height:20px;}
+.roleGroup .roleContent .roleInfo .roleIntro h4{margin:10px 0;line-height:24px;font-size:14px;color:#212428;font-weight:normal;}
+.roleGroup .roleContent .roleInfo .roleIntro p{margin:5px 0;text-indent:2em;}
+.roleGroup .roleContent .roleInfo .roleIntro .clear{margin:15px 0;border-top:dotted 1px #cecece;}
+.roleGroup .roleName{margin-left:30px;position:absolute;z-index:9;}
+.roleGroup .roleName li, .roleGroup .roleName li a{float:left;width:92px;height:50px;line-height:50px;text-align:center;font-size:20px;font-family:"\5FAE\8F6F\96C5\9ED1",tahoma,Arial,"\5b8b\4f53",sans-serif;}
+.roleGroup .roleName li a{border-bottom:solid 2px #CECECE;}
+.roleGroup .roleName li.on a{border-bottom:solid 2px #FD8C14;color:#FD8C14;}
+/* 新闻盒子 */
+.newsBox{float:left;width:410px;height:233px;overflow:hidden;padding:0 15px;margin-left:10px;_margin-left:5px;background-color:#FBFAFA;}
+.newsBox2{margin-left:10px;}
+.newsBox .newsTit, .newsBox .newsTit li, .newsBox .newsTit li a{height:48px;line-height:48px;}
+.newsBox .newsTit{height:50px;/*border-bottom:solid 2px #CECECE;*/ background:url(../img/newsTitleBg.gif) bottom repeat-x;}
+.newsBox .newsTit li, .newsBox .newsTit li a{float:left;width:92px;text-align:center;font-size:16px;font-weight:bold;font-family:"\5FAE\8F6F\96C5\9ED1",tahoma,Arial,"\5b8b\4f53",sans-serif;}
+.newsBox .newsTit li{display:inline;}
+.newsBox .newsTit li a{display:block;border-bottom:solid 2px #CECECE;}
+.newsBox .newsTit li.on a{border-bottom:solid 2px #FD8C14;color:#FD8C14;}
+.newsBox .newsContent{height:165px;overflow:hidden;padding-top:8px;}
+.newsBox .newsContent .newsList{}
+.newsBox .newsContent .newsList li, .newsBox .newsContent .newsList li a, .newsBox .newsContent .newsList li em, .newsBox .newsContent .newsList li .date{height:32px;line-height:32px;overflow:hidden;}
+.newsBox .newsContent .newsList li{border-bottom:dotted 1px #cfcdc9; position:relative;*margin-bottom:-3px;}
+.newsBox .newsContent .newsList li a{float:left;display:inline-block;*display:inline;text-indent:0.8em;background:url(../img/newsICO.gif) 0 12px no-repeat;}
+.newsBox .newsContent .newsList li a:hover{background-position:0 -20px;}
+.newsBox .newsContent .newsList li em, .newsBox .newsContent .newsList li .date{float:right;position:absolute;top:0;right:0;}
+.newsBox .newsContent .newsList li.moreNews{text-align:right;border-bottom:none;}
+.newsBox .newsContent .newsList li.moreNews a{float:none;text-indent:0; background:none;}
+
+/* 活动区域 */
+.activFocus, .activVote{height:112px;overflow:hidden;background-color:#E3E3E3;}
+/* 活动焦点.基本 */
+.activFocus{position:relative;margin-bottom:10px;}
+.pics, .pics ul, .pics ul li{display:block;width:200px;height:86px;overflow:hidden;}
+.pics{margin:13px auto;position:relative;z-index:6}
+.pics ul li img{cursor:pointer;}
+/* 活动焦点.上下翻页 */
+.activFocus .preNext{width:300px;position:absolute;z-index:3;top:0;left:0;}
+.activFocus a.prev, .activFocus a.next{display:block;width:18px;height:35px;line-height:35px;overflow:hidden;margin:35px 14px;_margin:35px 7px;text-indent:-99em;background-image:url(../img/focuSBTN.gif);background-repeat:no-repeat;}
+.activFocus a.prev{float:left;background-position:-18px 0;}
+.activFocus a.next{float:right;background-position:0 0;}
+.activFocus a.prev:hover{background-position:-18px -35px;}
+.activFocus a.next:hover{background-position:0 -35px;}
+/* 活动泡沫 */
+.activVote{height:84px; padding:14px 38px;position: relative;}
+.activVote p{ background-color: #e3e3e3; height:22px; line-height: 22px; width: 116px; position: absolute; top: 30px; left: 138px; text-align: center; font-family: "宋体";}
+/* 友情链接 */
+.container5, .container5 .content, .container5 .content .tempWrap{height:30px;line-height:30px;overflow:hidden; position:relative;background-color:#fafafa;}
+.container5{padding:10px 0;}
+.friendLink{padding:0 12px;}
+.friendLink li, .friendLink li a{float:left;height:20px;line-height:20px;white-space:nowrap;}
+.friendLink li{display:inline;margin:5px 24px;}
+.friendLink li a{display:block;}

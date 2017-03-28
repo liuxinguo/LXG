@@ -1,0 +1,11 @@
+.generalEl{
+   position:absolute;
+   overflow: hidden;
+}
+
+.self_textBlock{
+    overflow:visible
+}
+
+
+

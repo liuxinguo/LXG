@@ -1,0 +1,12 @@
+.mod_server{float:left;width:600px;height:205px;margin:0 auto;margin-top:29px;text-align:left;border:0px;}
+.serverTab{border:0px;margin:0px;margin-bottom:-1px;}
+.serverTab a{width:80px;height:31px;line-height:31px;display:inline-block;padding:0px;margin-right:10px;text-align:center;background-image:url(http://img.dwstatic.com/yytmld/builder/5747cb25c0e50a1c798b5b26/img/55a5fc1cc0e50ad7518b4af5.jpg);background-repeat:no-repeat;background-position:-89px 0px;color:#793b00;cursor:pointer;}
+.serverTab a.on{background-position:0px 0px;padding:0px;color:#793b00;font-weight:bold;}
+/*.serverTab a.tab2{margin-left:10px;}*/
+.serverBox{padding:10px;width: 586px;height: 148px;overflow:auto;}
+/*微端区服模块*/
+
+/*单个区服按钮样式*/
+.serverItem{float:left;width:124px;height:30px;line-height:30px;display:inline-block;margin:5px 4px 0 0;color:#622e0f;text-align:center;background-image:url(http://img.dwstatic.com/yytmld/builder/5747cb25c0e50a1c798b5b26/img/55a5fc1cc0e50ad7518b4af3.jpg);background-repeat:no-repeat;background-position:0px 0px;}
+.serverItem:hover{background-position:0px -30px;color:#000;}
+.serverItem .ico{color:#795229;display:inline-block;margin-right:10px;line-height:11px;margin-left:10px;}

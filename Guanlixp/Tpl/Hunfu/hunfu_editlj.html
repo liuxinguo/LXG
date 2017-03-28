@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+
+<script  language="JavaScript">  
+<!--  
+function  chg(t,a,o,s,str){  
+var  tt=document.getElementById(t)  
+var  aa=document.getElementById(a)
+tt.style[s]=o.checked?str:'none'
+aa.style[s]=o.checked?'none':str
+}  
+
+function gotoserver(){
+    $.get(APP+"/public/server_list?gid="+$("#gid").val(),function(data){
+        $("#sid").html(data);
+		$("#d_sid").val('');
+    });    
+    /*var game_id = $('#gid').val();
+    $.ajax({url: APP+'/public/paylist/',
+    type: 'POST',data:{gid:game_id},async: false,timeout: 1000,success: function(result){
+        $("#sid").html(result);
+    }
+    });
+    */
+}
+
+
+
+function change_select(obj,field){
+	$("#d_"+field).val($(obj).val());
+}
+
+function check(){
+
+  
+}
+
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var TPL = '__TPL____MANAGETPL__';
+
+//-->
+</SCRIPT>
+  <table class="table set_table">
+  <form action="__URL__/{$act}" method="post" name="Form1" onSubmit="return check()">
+  <tr>
+    <td width="12%" height="30" align="right" valign="middle">游戏官网：</td>
+    <td width="88%" valign="middle" class="huise_font"><input name="game" type="text" id="game" size="50"  class="inputclass inputtitle" value="{$vo.game}" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right" valign="middle">支付地址：</td>
+    <td valign="middle" class="huise_font"><input name="pay" id="pay" type="text" size="50" class="inputclass inputtitle" value="{$vo.pay}" /></td>
+  </tr> 
+  <tr>
+    <td height="30" align="right" valign="middle">论坛地址：</td>
+    <td valign="middle" class="huise_font"><input name="bbs" id="bbs" type="text" size="50" class="inputclass inputtitle" value="{$vo.bbs}" /></td>
+  </tr>  
+  <tr>
+    <td height="30" align="right" valign="middle">客服地址：</td>
+    <td valign="middle" class="huise_font"><input name="kefu" id="kefu" type="text" size="50" class="inputclass inputtitle" value="{$vo.kefu}" /></td>
+  </tr> 
+  <tr>
+    <td height="30" align="right" valign="middle">服务器列表：</td>
+    <td valign="middle" class="huise_font"><input name="server" id="server" type="text" size="20" class="inputclass inputtitle" value="{$vo.server}" /></td>
+  </tr>   
+    <tr>
+    <td height="30" align="right" valign="middle">新手卡地址：</td>
+    <td valign="middle" class="huise_font"><input name="card" id="card" type="text" size="50" class="inputclass inputtitle" value="{$vo.card}" /></td>
+  </tr> 
+    <tr>
+    <td height="30" align="right" valign="middle">错误返回：</td>
+    <td valign="middle" class="huise_font"><input name="error" id="error" type="text" size="50" class="inputclass inputtitle" value="{$vo.error}" /></td>
+  </tr> 
+      <tr>
+    <td height="30" align="right" valign="middle">游戏收藏地址：</td>
+    <td valign="middle" class="huise_font"><input name="favorites" id="favorites" type="text" size="50" class="inputclass inputtitle" value="{$vo.favorites}" /></td>
+  </tr> 
+      <tr>
+    <td height="30" align="right" valign="middle">防沉迷地址：</td>
+    <td valign="middle" class="huise_font"><input name="fcm" id="fcm" type="text" size="50" class="inputclass inputtitle" value="{$vo.fcm}" /></td>
+  </tr> 
+    <tr>
+    <td height="30" align="right" valign="middle">三方支付返回地址：</td>
+    <td valign="middle" class="huise_font"><input name="return" id="return" type="text" size="50" class="inputclass inputtitle" value="{$vo.return}" /></td>
+  </tr> 
+<tr>
+    <td height="30" align="right" valign="middle">三方支付异步通知：</td>
+    <td valign="middle" class="huise_font"><input name="notify" id="notify" type="text" size="50" class="inputclass inputtitle" value="{$vo.notify}" /></td>
+  </tr> 
+
+  <tr>
+    <td height="50" colspan="2" align="center" valign="middle">
+		<input name="id" type="hidden" id="id" size="20" value="{$vo.id}"/>
+        <input type="submit" class="btn btn-primary btn-small" name="Submit" id="submit" value="确认提交">
+    </td>
+  </tr>
+  </form>
+</table>
+
+
+ <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+html,body,div,ul,li,a,form,input,span,img,p,h3{margin:0;padding:0}
+body{font:12px/24px "SimSun";color:#8C8989;background:#fefefe}
+a{color:#8C8989;text-decoration:none}
+a:hover{color:#FF0000}
+ul,li{list-style:none}
+input,img{border:0}
+.login,.reg,.server{width:609px;height:301px;overflow:hidden;position:relative}
+.login{ background:url(login.jpg) no-repeat}
+.server{ background:url(server.jpg) no-repeat}
+.reg{ background:url(reg.jpg) no-repeat}
+.tool{ float:left;width:553px;height:35px;overflow:hidden}
+.tool a{ float:left;width:138px;height:33px;margin-top:1px;text-indent:-9999em}
+.tool a:hover{ background:url(toolhover.jpg) no-repeat}
+.tool a.t_1:hover{ background-position:0 -1px}
+.tool a.t_2:hover{ background-position:-138px -1px}
+.tool a.t_3:hover{ background-position:-276px -1px}
+.tool a.t_4:hover{ background-position:-414px -1px}
+.tool2 a{ position:absolute;text-indent:-9999em}
+.tool2 a.t2-1{ width:19px;height:19px;top:1px;right:32px}
+.tool2 a.t2-2{ width:30px;height:30px;top:3px;right:1px}
+.tool2 a.t2-1:hover,.tool2 a.t2-2:hover{ background:url(toolh.jpg) no-repeat}
+.tool2 a.t2-1:hover{ background-position:-2px -1px}
+.tool2 a.t2-2:hover{ background-position:-22px -3px}
+.frombox{width:270px;position:absolute;top:65px;left:41px}
+.frombox .text{width:188px;height:25px;color:#EFEFEF;background:none;line-height:25px}
+#login_box{position:relative;height:150px}
+#login_box .user,#login_box .pwd,#login_box .btn_login,#login_box .checkname,#login_box .checktex,#login_box a.global_reg,#login_box a.getpwd{position:absolute}
+#login_box .user,#login_box .pwd{top:4px;left:52px}
+#login_box .pwd{top:64px}
+#login_box a.btn_login{cursor:pointer;width:187px;height:60px;top:150px;left:40px;background:none;text-indent:-9999em}
+#login_box a.btn_login:hover{ background:url(btnloginh.jpg) no-repeat}
+#login_box .checkname{top:119px;left:30px;width:14px;height:14px;background:#000000;border:none}
+#login_box .checktex{top:115px;left:52px;height:22px;line-height:22px}
+#login_box a.getpwd{height:22px;line-height:22px;left:190px;top:115px}
+#login_box a.global_reg{width:70px;left:110px;top:210px}
+.news{position:absolute;left:330px;top:195px;width:265px;overflow:hidden;height:97px}
+.news li{height:19px;line-height:19px;overflow:hidden}
+.news li a{color:#8C8989}
+.news li span{float:right}
+.reg .frombox{top:50px;left:236px;width:350px}
+#reg_form{width:350px;position:relative}
+#reg_form .btn_reg,#reg_form a.btn_reg_login,#reg_form .user,#reg_form .pwd,#reg_form .rpwd,#reg_form .email,#reg_form .code,#reg_form .nex_pic_btn{position:absolute}
+#reg_form .user,#reg_form .pwd,#reg_form .rpwd,#reg_form .email,#reg_form .code{top:5px;left:17px}
+#reg_form .pwd{top:44px}
+#reg_form .rpwd{top:83px}
+#reg_form .email{top:122px}
+#reg_form .code{top:161px;width:98px}
+#reg_form .nex_pic_btn{top:160px;left:135px;cursor:pointer;height:30px}
+#reg_form a.btn_reg{top:198px;left:1px;width:143px;height:45px;text-indent:-9999em;background:none;float:left}
+#reg_form a.btn_reg:hover{ background:url(btnregh.jpg) no-repeat}
+#reg_form a.btn_reg_login{top:215px;left:162px;height:20px;line-height:20px}
+.server .info{position:absolute;top:0;left:10px;width:553px;height:35px;line-height:35px;color:#fff;overflow:hidden}
+.server .info p{float:left}
+.server .info .p1{ width:240px}
+.server .info .p1 a{text-decoration:underline}
+.server .info .p1 a:hover{color:#FF0000}
+.server .info .p2{ width:140px}
+.server .info .p1 span{color:#fa8b13;width:10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.server .info .p2 a,.server .info .p1 a,.server .info .p3 a{color:#fff}
+.server .info #sid,.server .info .btnss{height:18px;line-height:18px;width:40px}
+.server .info .btnss{width:30px}
+.server .pubTab{position:absolute;top:47px;left:10px;width:585px;height:32px;line-height:32px;font-weight:100;font-size:12px;overflow:hidden}
+.server .pubTab a{margin-left:2px;float:left;width:81px;height:28px;text-align:center;line-height:31px;background:url(h.gif) no-repeat;color:#efa413;_display:inline}
+.server .pubTab a.on{color:#37ff01;background:url(h1.gif) no-repeat}
+.server .server_list{position:absolute;top:81px;left:18px;width:570px;height:207px;overflow:auto}
+.server .server_list a{float:left;height:26px;line-height:26px;width:89px;overflow:hidden;background:url(sa.jpg) no-repeat;text-align:center;margin-left:2px;margin-bottom:3px;margin-top:5px;color:#ffb647}
+.server .server_list a:hover{color:#37ff01;background-position:0 -26px}
+#form_mark{display:block;position:absolute;z-index:999;background:#000000;filter:alpha(opacity=70);opacity:0.7}
+#form_mark_content{position:absolute;z-index:1000;color:#FFFFFF;text-align:center;padding:3px;min-height:100px}

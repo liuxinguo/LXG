@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-11-02 11:15:49
+ * @version $Id$
+ */
+.da-va{
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	*display: inline;
+    *zoom: 1;
+ }
+.ico{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/ico.png) no-repeat -239px -180px;
+	margin-right: 10px;
+}
+.body-bj{
+   background: #e3e8e8;
+ }
+.content{
+ 	width: 1200px;
+ 	margin: 0 auto;
+ }
+.wrapper_html{
+	width: 100%;
+	background: url(../images/header-bj.jpg) center top no-repeat;
+ }
+.herder-bj1{
+	background: url(../images/header-bj1.jpg) center top no-repeat !important;
+}
+header{
+    width: 100%;
+    position: relative;
+    height: 650px;
+}
+.nav{
+	height: 30px;
+    position: relative;
+}
+.nav .logo{
+   width: 264px;
+   height: 118px;
+   position: absolute;
+   left:53px;
+   top:26px;
+   background: url(../images/xy-logo.png) center top no-repeat;
+}
+.nav ul{
+	width: 100%;
+	height: 30px;
+	padding-top: 64px;
+	overflow: hidden;
+}
+.nav li{
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin-left: 58px;
+    text-align: center;
+}
+.nav li a{
+    font-size: 18px;
+    color: #000;
+}
+.game-job{
+	padding-top:459px;
+}
+.ks-game{
+	width: 289px;
+	height: 161px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/ks-but.png) no-repeat 0px 0px;
+}
+.ks-game a{
+	display: block;
+	width: 289px;
+    height: 161px;
+}
+.ks-game:hover{
+	background: url(../images/ks-but.png) no-repeat -298px 0px;
+}
+.load{
+	width: 911px;
+	height: 120px;
+	background: url(../images/load.png) no-repeat -1px 0px;
+	float: right;
+	margin-top: 41px;
+}
+.box-a{
+    width: 171px;
+    height: 120px;
+    float: left;
+    position: relative;
+}
+.box-a a{
+	width: 171px;
+    height: 120px;
+	display: block;
+}
+.box-a div{
+	width: 55px;
+	height: 50px;
+	position: absolute;
+	top:23px;
+	left: 50%;
+	margin-left:-26px;
+}
+.box-a a:hover div, .sectionA .box-1 a:hover span, .cover .box-1 .bm li:hover span{
+	transform: rotateY(360deg);
+	transition: all 0.3s linear; 
+}
+.box-a .logger{
+	background: url(../images/ico.png) no-repeat -9px -9px;
+}
+.box-a .pack{
+	background: url(../images/ico.png) no-repeat -74px -9px;
+}
+
+.box-a p{
+	position: absolute;
+	left: 0px;
+	top:74px;
+	width: 171px;
+	text-align: center;
+	color: #fff;
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 34px;
+}
+.box-b{
+	width: 569px;
+	height: 120px;
+	float: right;
+}
+.box-b .cont{
+	height: 70px;
+	width: 538px;
+	position: relative;
+	margin: 26px 0px 0px 10px;
+}
+.box-b dl{
+	width: 172px;
+	height: 70px;
+	float: left;
+	margin-left:10px;
+	margin-top: 5px;
+	position: relative;
+}
+.box-b dd{
+	background: #fff;
+	width: 172px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.box-b dd label{
+   color: #584068;
+   font-family:"宋体";
+   font-size: 12px;
+   position: absolute;
+   left: 0px;
+   top:0px;
+   height: 40px;
+   line-height: 40px;
+   width: 46px;
+   text-align: right;
+}
+.box-b dd input{
+	font-family:"宋体";
+	color: #8e779c;
+	width: 126px;
+	height: 40px;
+	line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    font-size: 13px;
+}
+.box-b dt{
+	color: #ada0b6;
+	font-size: 12px;
+	font-family:"宋体";
+	width: 172px;
+	height: 24px;
+	position: relative;
+}
+.box-b dt input{
+	position: absolute;
+	left: 0px;
+	top:8px;
+	width: 14px;
+	height: 14px;
+}
+.box-b dt label{
+	position: absolute;
+	left: 20px;
+	top:6px;
+}
+.box-b dt a{
+	color: #ada0b6;
+	position: absolute;
+	right: 0px;
+	top:6px;
+}
+.box-b .dr-but{
+	width: 158px;
+	height: 70px;
+	float: right;
+}
+.box-b .dr-but input{
+	width: 158px;
+	height: 70px;
+	cursor: pointer;
+	background: url(../images/ico.png) no-repeat -128px -75px;
+}
+.box-b .tt{
+	color: #fff;
+	font-family: "宋体";
+
+}
+.box-b .tt a{
+	color: #ada0b6;
+}
+.zj-fu{
+	height: 26px;
+	width: 422px;
+	margin-top: 16px;
+}
+.zj-fu span{
+   color: #cfae69;
+   font-family: "宋体";
+   float: left;
+   line-height: 26px;
+}
+.zj-fu div{
+	width: 174px;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	font-family: "宋体";
+	position: relative;
+	background: #fff;
+}
+.zj-fu b{
+	position: absolute;
+	left: 3px;
+	top:0px;
+	color: #584068;
+	font-weight: normal;	
+}
+.zj-fu li{list-style: none;}
+.zj-fu a{
+	position: absolute;
+	right: 65px;
+	top:5px;
+	color: #ada0b6;
+}
+.cz-but{
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.cz-but input{
+    width: 110px;
+    height: 70px;
+	cursor: pointer;
+	background: url(../images/ico.png) no-repeat 0px -75px;
+}
+
+footer{
+	height: 80px;
+	width: 100%;
+	padding-top: 10px;
+}
+footer p{
+	text-align: center;
+	color: #b1b1b1;
+	font-family: "宋体";
+	line-height: 24px;
+}
+
+/*左侧客服*/
+.aside-left {
+  position: fixed;
+  top: 80%;
+  right:4px;
+  z-index: 1000;
+  width: 40px;
+  background: #555;
+}
+.aside-left i, .aside-left span {
+  position: absolute;
+}
+.aside-left span {
+  display: none;
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+  line-height: 16px;
+  padding: 10%;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #03b4f5;
+  color: #FFF;
+  font-family: "宋体";
+}
+.aside-left-qr span {
+  right: 40px;
+  bottom: -17px;
+  width: 184px;
+  height: 201px;
+  padding: 0;
+  letter-spacing: 0;
+  background: none;
+}
+.aside-left-qr-con {
+  float: left;
+  width: 150px;
+  padding: 11px;
+  background: #FFF;
+  box-shadow: 0 0 10px #888;
+}
+.aside-left-qr-con div {
+  width: 151px;
+  height: 151px;
+  background: url(http://static.menle.com/static/images/aside-left/qr-weixin.jpg) no-repeat;
+}
+.aside-left-qr-con p {
+  line-height: 16px;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+.aside-left-qr-con b {
+  position: absolute;
+  right: 2px;
+  bottom: 28px;
+  width: 10px;
+  height: 16px;
+  background: url(http://static.menle.com/static/images/aside-left/aside-left.png) no-repeat 0 -48px;
+}
+.aside-left-customer, .aside-left-qr, .aside-left-top {
+  display: block;
+  position: relative;
+  z-index: 2;
+  height: 39px;
+  background: #666;
+}
+.aside-left-customer, .aside-left-top {
+  cursor: pointer;
+}
+.aside-left-qr, .aside-left-top {
+  margin-top: 1px;
+}
+.aside-left-customer i {
+  top: 11px;
+  left: 10px;
+  width: 19px;
+  height: 18px;
+  background: url(http://static.menle.com/static/images/aside-left/aside-left.png) no-repeat 0 -18px;
+}
+.aside-left-customer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.aside-left-qr i {
+  top: 10px;
+  left: 11px;
+  width: 18px;
+  height: 18px;
+  background: url(http://static.menle.com/static/images/aside-left/aside-left.png) no-repeat;
+}
+.aside-left-top {
+  height: 40px;
+}
+.aside-left-top i {
+  top: 14px;
+  left: 9px;
+  width: 22px;
+  height: 12px;
+  background: url(http://static.menle.com/static/images/aside-left/aside-left.png) no-repeat 0 -36px;
+}
+.aside-left-top:hover span, .aside-left-customer:hover span, .aside-left-qr:hover span {
+  display: block;
+}
+.aside-left-qr:hover {
+  background: #03b4f5;
+}

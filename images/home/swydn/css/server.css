@@ -1,0 +1,69 @@
+body,div,ul,ol,li,dl,dt,dd,p,span,a,img,em,input,tr,th,td,h1,h2,h3,h4,h5,h6,h7{margin:0px; padding:0px;}
+body{font-size:12px; background:#fff;}
+ul,ol,li,dl,dt,dd,p,span,a,img,em,input,tr,th,td,h1,h2,h3,h4,h5,h6,h7{list-style-type:none; border:none; font-style:normal; background:none; outline:none;}
+a{color:#403f3f;}
+.clearfix{*zoom:1;}
+.clearfix:after{height:0; font-size:0; display:block; clear:both; overflow:hidden; visibility:hidden; content:"";}
+.f_l{float:left;}
+.f_r{float:right;}
+.indent{text-indent:-999px; overflow:hidden;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f22{font-size:22px;}
+.f24{font-size:24px;}
+.f28{font-size:28px;}
+.f30{font-size:30px;}
+.f32{font-size:32px;}
+.yellow{color:#f5f1b4;}
+
+
+.content{background:url(../images/server/bg.jpg?201603281424) center top no-repeat;}
+.wrap{width:644px; height:1100px; background:url(../images/server/main_bg.jpg?201603281424) no-repeat; padding-left:356px; margin:0 auto; position:relative;}
+.logo{width:242px; height:144px; position:absolute; top:108px; left:-226px; z-index:99;}
+
+.nav{height:60px; height:60px; color:#fff; padding:66px 0 84px 0;}
+.nav a{width:154px; line-height:60px; color:#fff; background:url(../images/server/nav.jpg?201603281424) no-repeat; text-align:center; margin:0 3px; float:left;}
+
+.user_box{height:50px; padding:15px 20px; margin-bottom:80px; position:relative;}
+.user_box label{color:#8b8b8b; display:block; margin-right:10px; float:left; display:inline; position:relative;}
+.user_box .wz{line-height:30px; position:absolute; top:0; left:6px;}
+.user_box .input{width:160px; height:30px; line-height:24px; color:#7c7c7c; background:#fff; border:1px solid #7e878e; display:inline-block; padding:0 2px 0 44px; *margin-top:-1px;}
+.user_box .btn{width:164px; height:50px; background:url(../images/server/start.jpg?201603281424) no-repeat; cursor:pointer; position:absolute; top:15px; right:20px;}
+.user_box .btn:hover{background-position:0 -50px;}
+.user_box .links{height:26px; color:#535353; overflow:hidden; position:absolute; left:0; bottom:10px;}
+.user_box .links a{line-height:36px; color:#535353; display:inline-block; margin-right:20px; position:relative;}
+.user_box .links a:hover{color:#000; text-decoration:underline;}
+.user_box .links .qq{width:17px; height:17px; background:url(/images/jz/qq.gif?201603281424) no-repeat; display:inline-block; vertical-align:middle; margin-right:6px;}
+#se_list{line-height:24px; color:#000;}
+#se_list .infor{width:260px; padding-right:20px;}
+#se_list .logout{margin-left:20px;}
+#se_list p a{color:#e4433a; display:inline-block; margin-right:20px;}
+#se_list p a:hover{color:#000;}
+#se_list li a{color:#e4433a}
+#se_list li a:hover{text-decoration:underline;}
+/*最近登录的游戏*/
+.last_game { position: absolute; top: 16px; left: 320px;}
+/*最近登录的游戏*/
+
+.quick_select{height:20px; line-height:20px; text-align:right; padding:20px 0;}
+.quick_select span{padding:0 4px;}
+.quick_select .input{width:40px; height:24px; line-height:24px; color:#fff; background:#000; text-align:center; padding:0 3px; *margin-top:-1px;}
+.quick_select .quick_enter{width:60px; height:24px; line-height:23px; color:#fff; background:#39363e; text-align:center; display:inline-block;}
+.quick_select .quick_enter:hover{color:#fff; background:#e4433a;}
+
+.list{height:600px; color:#000; overflow:hidden; padding:15px 20px; position:relative;}
+.list .btn{width:190px; height:40px; line-height:40px; color:#fff; background:#898fb0; text-align:center;}
+.list .btn:hover{background:#e4433a;}
+.list .btn span{margin-left:10px;}
+.list .recom{height:40px; line-height:40px;}
+.list .recom .btn{margin-left:6px; float:left;}
+.list .inHd{color:#fff; margin-bottom:20px;}
+.list .inHd li{width:80px; line-height:20px; color:#fff; text-align:center; margin-right:4px; float:left;}
+.list .inHd li a{height:20px; color:#fff; background:#000; border-radius:4px; display:block; cursor:pointer;}
+.list .inHd li a:hover,.list .inHd li.on a{background:#e4433a; text-decoration:none;}
+.list .inBd{height:460px; overflow:hidden;}
+.list .inBd ul{height:454px; overflow-y:auto; scrollbar-arrow-color:#6c5b31; scrollbar-face-color:#95824a; scrollbar-base-color:#6c5b31; scrollbar-darkshadow-color:#6c5b31; scrollbar-track-color:#6c5b31; scrollbar-highlight-color:#95824a; position:relative;}
+.list .inBd li{margin:0 5px 6px 0; float:left; display:inline;}
+.list .inBd li a{display:block;}

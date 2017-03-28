@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS  */
+
+/* 开服表 */
+
+.package{width:718px;border:solid 1px #a2d3e9; float:right; background:#fff;}
+.package .title{ width:718px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border-bottom:solid 1px #a2d3e9;}
+.package .title h3, .package_list .title h3{padding-left:20px; font-size:14px; float:left; color:#369fe0;}
+
+.tableCont{ width:100%; text-align:center; margin-bottom:-1px;}
+.tableCont th, .tableCont td {height:34px;text-align:center;}
+.tableCont tr:hover {background:#c1edfb;}
+.tableCont .areaColor{color:#b90004;text-decoration:underline;}
+.tableCont .drawColor{color:#feb300;text-decoration:underline;}
+.tableCont .areaColor:hover, .tableCont .drawColor:hover{color:#02aefe;}
+.tableCont .loginGame{ width:61px; height:20px; margin:0px auto; line-height:20px; display:block; background:url(../images/box_img.gif) no-repeat left -75px; color:#FFFFFF;}
+.tableCont .loginGame:hover{background:url(../images/box_img.gif) no-repeat -65px -75px;}
+
+.b_c{ background:#f3f3f3;}
+
+
+/* 网页游戏攻略大全 最新网页游戏资讯 网页游热门问答 */
+
+.zx_main1_m_news{width:415px;margin-top:9px;}
+.zx_main1_m_lies{margin:0px 10px 0px 10px;padding:0;}
+.zx_main1_m_news ul li{border-bottom:1px dashed #a2d3e9;padding:8px 0px 5px 0px; line-height:14px;}
+.zx_main1_m_news ul li a{font-size:14px;}
+.zx_main1_m_news ul li .date, .zx_content_1 ul li .date, .zx_content_2 ul li .date, .game_tj_title .date, .game_tj_title2 .date, .game_liens ul li .date{color:#999999;}
+.zx_main1_m_news ul li .hot{background:url(../images/zx_hot_ico.gif) right center no-repeat;padding-right:30px;}
+.zx_main1_m_wd{width:377px;margin-top:20px;}
+.zx_title_1{width:413px;height:36px; border:solid 1px #a2d3e9;background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top;}
+.zx_title_1 strong, .zx_title_2 strong, .zx_main2_title strong, .zx_title3 strong, .zx_title_3 strong{color:#0574ae;padding-left:20px;float:left;font-size:14px;line-height:36px;}
+.zx_title_1 .more, .zx_title_2 .more, .zx_main2_title .more, .zx_title3 .more, .zx_title_3 .more{float:right;margin-right:10px;display:inline;color:#0574ae;line-height:35px;}
+.zx_content_1{width:415px;}
+.zx_content_1 ul{margin-top:5px;}
+.zx_content_1 ul li, .zx_content_2 ul li, .zx_main2_content ul li, .zx_content_4 ul li{border-bottom:1px dashed #a2d3e9;padding:8px 0px 5px 15px;background:url(../images/zx_li_ico.gif) left center no-repeat;}
+#zx_main1_r{width:258px;float:right;}
+.zx_news, .zx_game{width:258px;}
+.zx_title_2{width:256px;height:36px;border:solid 1px #a2d3e9;background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px;}
+.zx_content_2{width:256px;height:177px;*height:180px;border:solid 1px #a2d3e9;border-top:none;  background:#ffffff;}
+.zx_img{width:258px;height:100px;background:#999999;margin-top:15px;margin-bottom:15px;display:inline;}
+#zx_main2{width:998px;float:left;display:inline;}
+#zx_main2_img{width:1000;height:80px;}
+.zx_main2_l, .zx_main2_m{width:326px;margin-top:10px;margin-right:10px;display:inline;}
+.zx_main2_r{width:324px;margin-top:10px;display:inline;}
+.zx_main2_title{width:324px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border:solid 1px #a2d3e9;}
+.zx_main2_content{width:324px;height:246px;border:solid 1px #a2d3e9;border-top:none;}

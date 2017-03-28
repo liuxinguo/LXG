@@ -1,0 +1,92 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		 $(".sidebar_nav li span").click(
+		function(){
+			if($(this).next("ul").is(":hidden")) 
+				{	
+					$(".sidebar_nav li ul").slideUp(300);
+					$(this).next("ul").slideDown(300);
+				}
+			else
+				{
+					$(this).next("ul").slideUp(300);
+				};
+	});	
+	});
+</script>
+
+
+      <div class="content">
+        <div class="sidebar_nav">
+          <ul class="unstyled">
+          
+
+
+            <li><span><a href="#"><i class="icon-file"></i>新闻管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+				 <li><a href="{:U('Setting/article')}" target="myframe"><i class="caret_left"></i>新闻管理</a></li>
+                 <li><a href="{:U('Setting/article_add')}" target="myframe"><i class="caret_left"></i>增加新闻</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li> 
+
+            <li><span><a href="#"><i class="icon-list-alt"></i>游戏管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/game')}" target="myframe"><i class="caret_left"></i>游戏管理</a></li>
+				 <li><a href="{:U('Setting/game_add')}" target="myframe"><i class="caret_left"></i>添加游戏</a></li>
+                 <li><a href="{:U('Setting/server')}" target="myframe"><i class="caret_left"></i>服务器管理</a></li>
+				 <li><a href="{:U('Setting/server_add')}" target="myframe"><i class="caret_left"></i>添加服务器</a></li>
+				 <li><a href="{:U('Setting/server_pladd')}" target="myframe"><i class="caret_left"></i>批量配服</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+            <li><span><a href="#"><i class="icon-th-large"></i>新手卡管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                 <li><a href="{:U('Setting/card_detail')}" target="myframe"><i class="caret_left"></i>新手卡列表</a></li>
+                 <li><a href="{:U('Setting/card_detail_add')}" target="myframe"><i class="caret_left"></i>添加新手卡类别</a></li>
+				 <li><a href="{:U('Setting/card_log')}" target="myframe"><i class="caret_left"></i>已发放列表</a></li>
+                 <li><a href="{:U('Setting/card_unused')}" target="myframe"><i class="caret_left"></i>库存列表</a></li>
+				 <li><a href="{:U('Setting/card_add')}" target="myframe"><i class="caret_left"></i>新手卡导入</a></li>
+				 <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>  
+
+
+   
+            <li><span><a href="#"><i class="icon-user"></i>CPS渠道管理</a></span>  <!--菜单大类-->
+              <ul class="unstyled hide">
+                <li><a href="{:U('Setting/qudaotongji')}" target="myframe"><i class="caret_left"></i>渠道统合统计</a></li>
+				 <li><a href="{:U('Setting/qudao')}" target="myframe"><i class="caret_left"></i>渠道列表</a></li>
+				 <li><a href="{:U('Setting/qudao_add')}" target="myframe"><i class="caret_left"></i>添加渠道</a></li>
+				 <li><a href="{:U('Setting/qudao_genurl')}" target="myframe"><i class="caret_left"></i>推广链接</a></li>
+				 <li><a href="{:U('Setting/jiesuan')}" target="myframe"><i class="caret_left"></i>结算管理</a></li>
+				 <li><a href="{:U('Setting/jiesuangl')}" target="myframe"><i class="caret_left"></i>结算统计</a></li>				
+				  <li class="hide"><span><a href="#"><i class="icon-folder-open"></i>隐藏内容</a></span></li>
+              </ul>
+            </li>      
+ 
+        <li><span><a href="#"><i class="icon-refresh"></i>混服管理</a></span>
+             	<ul class="unstyled hide">
+                	<li><a href="{:U('Hunfu/hunfu')}" target="myframe"><i class="caret_left"></i>混服商管理</a></li>
+                	<li><a href="{:U('Hunfu/login_log')}" target="myframe"><i class="caret_left"></i>登陆统计</a></li>
+                	<li><a href="{:U('Hunfu/register_log')}" target="myframe"><i class="caret_left"></i>注册统计</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_nei')}" target="myframe"><i class="caret_left"></i>直冲值统计</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_wai_log')}" target="myframe"><i class="caret_left"></i>第三方冲值日志</a></li>
+                	<li><a href="{:U('Hunfu/pay_game_wai')}" target="myframe"><i class="caret_left"></i>第三方冲值统计</a></li>
+                	<li><a href="{:U('Hunfu/index')}" target="myframe"><i class="caret_left"></i>可微端游戏</a></li>
+                	<li><a href="{:U('Hunfu/index')}" target="myframe"><i class="caret_left"></i>微端审核</a></li>
+              	</ul>
+             </li>
+ 
+      
+		
+            
+          </ul>
+
+          
+        </div>
+        <!--end sidebar_nav--> 
+      </div>
+      <!--end Left content--> 

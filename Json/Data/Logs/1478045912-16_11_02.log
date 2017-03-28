@@ -1,0 +1,22 @@
+[ 2016-11-02T08:18:32+08:00 ] 42.103.221.172 /Json/index/footerGameList?callback=apiFooterGameList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Dispatcher.class.php 第 120 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Common/common.php 第 242 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.001270s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.000931s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `ai_game` [ RunTime:0.001485s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 571 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) /www/newwan.752g.com/Source/ThinkPHP/Lib/Core/Db.class.php 第 196 行.
+SQL: SELECT * FROM `ai_game` WHERE isdisplay=1 and status=1 ORDER BY id desc LIMIT 8   [ RunTime:0.001964s ]
+NOTIC: [8] Undefined variable: arr /www/newwan.752g.com/Json/Lib/Action/IndexAction.class.php 第 176 行.
+

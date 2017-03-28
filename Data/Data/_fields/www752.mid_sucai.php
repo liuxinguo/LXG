@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'mid', 2 => 'urlname', 3 => 'gid', 4 => 'x', 5 => 'y', 6 => 'url', 7 => 'addtime', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'mid' => 'int(11)', 'urlname' => 'varchar(255)', 'gid' => 'varchar(20)', 'x' => 'varchar(10)', 'y' => 'varchar(10)', 'url' => 'varchar(255)', 'addtime' => 'varchar(255)', ), );?>

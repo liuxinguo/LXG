@@ -1,0 +1,123 @@
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+fieldset, images , input , button{
+	border: 0;
+} 
+:link, :visited {
+	text-decoration: none;
+}
+ul{
+	list-style-type:none;
+}
+body{
+	font-size:12px;
+	font-family:微软雅黑;
+	overflow-x:hidden;
+	position:relative;
+}
+strong, em{
+	font-weight:normal;
+	font-style:normal;
+}
+.content{width:755px; height:544px; overflow:hidden; background:url(../images/bg.jpg) no-repeat center center;}
+.title{ height:42px; width:100%;}
+.title li{ float:left; margin-left:25px;}
+.title li a{ display:block; width:142px; height:42px; line-height:42px; }
+.title li a.index{ background:url(../images/txt2_03.png) no-repeat center center;}
+.title li a.pay{ background:url(../images/txt2_05.png) no-repeat center center;}
+.title li a.bbs{ background:url(../images/txt2_07.png) no-repeat center center;}
+.title li a.service{ background:url(../images/txt2_09.png) no-repeat center center;}
+
+.title li a.index:hover{ background:url(../images/txt1_03.png) no-repeat center center;}
+.title li a.pay:hover{ background:url(../images/txt1_05.png) no-repeat center center;}
+.title li a.bbs:hover{ background:url(../images/txt1_07.png) no-repeat center center;}
+.title li a.service:hover{ background:url(../images/txt1_09.png) no-repeat center center;}
+
+.login{ height:500px; width:100%}
+
+.login_top{ text-align:right; padding:50px 20px }
+.login_top a{ color:#666}
+
+.login_left{ width:414px; height:212px; background:url(../images/login.png) no-repeat center; margin-left:30px; margin-top:20px; position:relative; float:left}
+.reg{ text-align:right; line-height:34px; height:34px; margin-right:20px;}
+.reg a{color:#E2871A; font-size:13px;}
+.user{ position:absolute;top:63px;left:138px;width:240px; height:34px; line-height:34px; background:none; color:#FFF}
+.pass{position:absolute;top:121px;left:138px;width:240px; height:34px; line-height:34px; background:none; color:#FFF}
+.checbox{ position:absolute;top:167px;left:108px; color:#C7A645; width:150px;}
+.checbox input.che{ float:left; margin-top:2px;}
+.checbox span{ display:block;}
+.lostpass{ position:absolute;top:167px;left:320px; font-size:13px; }
+.lostpass a{color:#F00; text-decoration:underline}
+
+.login_right{float:right; position:relative; top:57px; right:15px;}
+.sub{width:306px; height:117px; background:url(../images/btn1.png) no-repeat center center ; border:0; cursor:pointer}
+.sub:hover{ background:url(../images/btn2.png) no-repeat center center ; }
+
+
+
+.user_info{ height:50px; width:250px; background:url(../images/user_03.png) no-repeat center left; margin-top:60px; color:#FFF; line-height:50px;font-size:14px; padding-left:20px; float:left}
+.user_info .username{ color:#F9ED01; font-weight:bold}
+.user_info a{ color:#CCC}
+.user_info a:hover{ color:#F00}
+
+.ts{ width:197px; height:16px; background:url(../images/ts_03.png) no-repeat center center; float:right; margin-top:78px; margin-right:40px;}
+
+.zjdl{ background:url(../images/zjdl_03.png) no-repeat center center; width:194px; height:30px; margin-top:15px; margin-left:20px;}
+.zjdl_list{ width:164px; height:30px; overflow:hidden;background:url(../images/sitem_03.png) no-repeat center center;margin-top:10px; margin-left:20px;}
+.zjdl_list:hover{ background:url(../images/sitem_hover_03.png) no-repeat center center;}
+.itme{ display:block;  color:#666; line-height:30px; float:left; width:110px;}
+.itme:hover{color:#FFF}
+
+.fll{ float:left; overflow:hidden}
+.flr{ float:right; overflow:hidden; padding-left:20px;}
+
+.tjfwq{ background:url(../images/tjfwq_03.png) no-repeat center left; width:400px; height:26px; margin-top:15px;}
+.tj_list{ width:164px; height:30px; overflow:hidden;background:url(../images/sitem_03.png) no-repeat center center;margin-top:10px;  float:left}
+.tj_list:hover{ background:url(../images/sitem_hover_03.png) no-repeat center center; color:#FFF}
+
+.clr{ clear:both}
+
+.new{ background:url(../images/new.png) no-repeat center center; width:10px; height:30px; float:left; margin-left:20px; padding-left:10px;}
+.hot{ background:url(../images/hot.png) no-repeat center center; width:10px; height:30px; float:left; margin-left:20px; padding-left:10px;}
+.null{ width:10px; height:30px; float:left; margin-left:20px; padding-left:10px;}
+
+
+.server{ width:689px; height:250px;background:url(../images/server_bg_03.png) no-repeat center 30px ; margin:20px auto;}
+.server_title{ width:100%; height:30px; overflow:hidden}
+.server_title li{ float:left; padding:0 5px; line-height:30px; text-align:center; background:#050503; color:#464646; cursor:pointer}
+.server_title li.on{ background:#2D2C2A; color:#fff; border:1px solid #454545}
+
+.server_div{ height:200px; width:100%; position:relative; overflow:hidden}
+.server_list{width:100%; padding-left:15px; padding-top:10px; position:absolute;}
+.server_list li{background:url(../images/sitem_03.png) no-repeat center center;width:164px; height:30px; float:left; margin-top:8px;}
+.server_list li:hover{ background:url(../images/sitem_hover_03.png) no-repeat center center;}
+.server_list li a{ display:block;color:#666; line-height:30px; float:left; width:100%;text-align: center;}
+.server_list li a:hover{color:#FFF}
+
+.scroll{ width:6px; height:195px; background:url(../images/scroll_03.png) no-repeat center center; position:absolute; right:0; top:12px;}
+.selects{ width:6px; height:10px; background:#A98257; position:absolute;top:5px; cursor:pointer}
+
+
+
+/*注册*/
+.register{width: 600px; height: 367px; background: url(../images/reg_bg.png) no-repeat 0 0; margin: 10px auto 0; position: relative; overflow: hidden;}
+.register li{ margin-left:175px; margin-top: 22px}
+.register li span{color: #8F6129}
+#gologin{ margin-top: 15px;height:34px;line-height: 34px; text-align: right; font-size: 13px; color: #8F6129;width: 390px}
+#gologin a{ color: #CF8017; font-weight: bold;}
+.first{ margin-top: 60px;}
+.inputs{width: 282px; height: 30px;background: none; border: 0; color: #fff; padding-left: 5px; line-height: 30px}
+.code{ margin-top: 5px; width: 182px; position: absolute;left: 180px;height: 31px; background: none;border: 0;color: #fff}
+#codeimg{float:left;margin-left:5px;margin-top:28px;overflow: hidden;}
+#codeimg img{ float: left;}
+#codeimg a{ color: #CF8017;display: block; float: right;width: 100px; height: 30px;line-height: 30px;text-align: center;font-size: 13px}
+#cler{ clear: both;margin-top: 26px; height: 26px;width: 300px; margin: 0 auto; padding-top: 15px; color: #8F6129 }
+#cler input{ float: left; margin-top: 3px; margin-left: 30px; margin-right: 5px;}
+#cler a{color: #CF8017}
+
+.regbtn{ width: 246px;height: 92px; display: block; background: url(../images/reg_btn.png) no-repeat center center; margin: 0 auto; cursor:pointer}

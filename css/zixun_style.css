@@ -1,0 +1,115 @@
+/* CSS Document */
+
+/* 游戏资讯 */
+
+.sub_nav-con-main ul li{float:left;overflow:hidden; margin-top:1px;}
+.sub_nav-con-main ul li span{float:left;}
+.sub_nav-con-main ul li a{width:85px;height:23px;float:left;text-align:center;}
+.sub_nav-con-main ul li a:hover{background:url(../images/sprite_zixun.gif) no-repeat left -169px; color:#FFFFFF;}
+
+#zx_main1{width:998px;float:left;}
+#zx_main1_l{width:305px;float:left;margin-right:10px;display:inline;}
+.zx_main1_l_hdp{width:285px;padding:9px;border:1px solid #a2d3e9;background-image:url(../images/sprite_zixun2.gif);background-repeat:repeat-x;background-position:center bottom;}
+.sylhBigtuzu{padding:0;position:relative;zoom:1;height:271px;overflow:hidden;}
+.sylhBigtuzu .sylhbanner{padding:0;margin:0;height:271px;overflow:hidden;}
+.sylhBigtuzu .sylhbiaoyudi{position:absolute;z-index:33;left:0;bottom:0;width:285px;height:30px;background:#000;filter:Alpha(Opacity = 70);opacity:0.7;}
+.sylhBigtuzu .sylhbiaoyutxt{position:absolute;z-index:33;left:0;bottom:2px;}
+.sylhBigtuzu .sylhbiaoyutxt a{display:block;width:319px;font-size:14px;color:#fff;padding:6px 0px 6px 12px;}
+.sylhBigtuzu .sylhbiaoyutxt a:hover{text-decoration:none;}
+.sylhXiaotuZU{padding:9px 0px 0px;margin:0;position:relative;zoom:1;}
+.sylhXiaotuZU .Xiaotushowzu{padding:0px 0px 0px 18px;}
+.sylhXiaotuZU .Xiaotushowzu li{padding:11px 5px 10px 5px;*padding:10px 5px 10px 5px;float:left;margin:0;}
+.sylhXiaotuZU .Xiaotushowzu li.current{background-image:url(../images/sprite_zixun.gif);background-repeat:no-repeat;background-position:left -1px;}
+.sylhXiaotuZU .leftPost{position:absolute;z-index:3;left:0;top:41px;width:12px;}
+.sylhXiaotuZU .rightPost{position:absolute;z-index:3;right:0;top:41px;width:12px;}
+.sylhXiaotuZU .leftPost a{display:block;width:13px;height:22px;font-size:0px;line-height:158px;background:url(../images/sprite_zixun.gif) -113px 0px no-repeat;overflow:hidden;}
+.sylhXiaotuZU .rightPost a{display:block;width:13px;height:22px;font-size:0px;line-height:158px;background:url(../images/sprite_zixun.gif) -136px 0px no-repeat;overflow:hidden;}
+.zx_main1_l_gldq{width:303px;height:158px;border:solid 1px #a2d3e9;border-top:none;}
+.zx_title_3{background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; width:303px;height:36px; border-bottom:solid 1px #a2d3e9;}
+#zx_main1_m{width:415px;float:left;background:url(../images/zx_tj_bg.gif) no-repeat;}
+.zx_main1_m_tj{width:413px;height:84px;}
+.zx_main1_m_tj strong{width:377px;float:left;margin-top:15px;display:inline;text-align:center;font-family:"微软雅黑";}
+.zx_main1_m_tj strong a{font-size:20px;font-weight:bold;color:#0574ae;}
+.zx_main1_m_tj strong a:hover{color:#f76e09;}
+.zx_main1_m_tj p{width:377px;float:left;margin-top:10px;display:inline;text-align:center;}
+.zx_main1_m_tj p a{margin-left:5px;margin-right:5px;}
+.zx_main1_m_news{width:415px;margin-top:9px;}
+.zx_main1_m_lies{margin:0px 10px 0px 10px;padding:0;}
+.zx_main1_m_news ul li{border-bottom:1px dashed #a2d3e9;padding:8px 0px 5px 0px; line-height:14px;}
+.zx_main1_m_news ul li a{font-size:14px;}
+.zx_main1_m_news ul li .date, .zx_content_1 ul li .date, .zx_content_2 ul li .date, .game_tj_title .date, .game_tj_title2 .date, .game_liens ul li .date{color:#999999;}
+.zx_main1_m_news ul li .hot{background:url(../images/zx_hot_ico.gif) right center no-repeat;padding-right:30px;}
+.zx_main1_m_wd{width:377px;margin-top:20px;}
+.zx_title_1{width:413px;height:36px; border:solid 1px #a2d3e9;background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top;}
+.zx_title_1 strong, .zx_title_2 strong, .zx_main2_title strong, .zx_title3 strong, .zx_title_3 strong{color:#0574ae;padding-left:20px;float:left;font-size:14px;line-height:36px;}
+.zx_title_1 .more, .zx_title_2 .more, .zx_main2_title .more, .zx_title3 .more, .zx_title_3 .more{float:right;margin-right:10px;display:inline;color:#0574ae;line-height:35px;}
+.zx_content_1{width:415px;}
+.zx_content_1 ul{margin-top:5px;}
+.zx_content_1 ul li, .zx_content_2 ul li, .zx_main2_content ul li, .zx_content_4 ul li{border-bottom:1px dashed #a2d3e9;padding:8px 0px 5px 15px;background:url(../images/zx_li_ico.gif) left center no-repeat;}
+#zx_main1_r{width:258px;float:right;}
+.zx_news, .zx_game{width:258px;}
+.zx_title_2{width:256px;height:36px;border:solid 1px #a2d3e9;background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px;}
+.zx_content_2{width:256px;height:177px;*height:180px;border:solid 1px #a2d3e9;border-top:none;  background:#ffffff;}
+.zx_img{width:258px;height:100px;background:#999999;margin-top:15px;margin-bottom:15px;display:inline;}
+#zx_main2{width:998px;float:left;margin-top:15px;display:inline;}
+#zx_main2_img{width:1000;height:80px;}
+.zx_main2_l, .zx_main2_m{width:326px;margin-top:15px;margin-right:10px;display:inline;}
+.zx_main2_r{width:324px;margin-top:15px;display:inline;}
+.zx_main2_title{width:324px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border:solid 1px #a2d3e9;}
+.zx_main2_content{width:324px;height:246px;border:solid 1px #a2d3e9;border-top:none;}
+#zx_main3{width:998px;float:left;margin-top:15px;display:inline;}
+.tabmenu, .zx_title3{width:996px;height:28px;border:solid 1px #a2d3e9;padding:1px;background:#ffffff url(../images/subnav_bg2.jpg) no-repeat left top;}
+.tabmenu ul{height:28px;font-size:14px;font-weight:bold;text-align:center;position:absolute;}
+.tabmenu li{float:left;width:100px;height:28px;_height:28px;line-height:28px;overflow:hidden;cursor:pointer;margin-left:-2px;}
+.tabmenu .cli{border-left:solid 1px #a2d3e9;border-right:solid 1px #a2d3e9;background:#FFFffF;color:#f76e09;height:30px;position:relative;}
+.tabmenu li a{color:#0574ae;}
+.tabmenu li a:hover{color:#f76e09;}
+#tabcontent{width:998px;overflow:hidden;border:solid 1px #a2d3e9;border-top:none;}
+#tabcontent ul{margin-left:35px;margin-top:20px;padding:0;}
+#tabcontent ul li{float:left;margin-right:30px;margin-bottom:15px;}
+#tabcontent ul li .mm_img{width:124px;height:92px;overflow:hidden;border:solid 1px #a2d3e9;padding:2px;}
+#tabcontent ul li .mm_title{width:130px;height:25px;text-align:center;line-height:28px;margin-top:2px;}
+#tabcontent .hidden{display:none;}
+#zx_main4{width:960px;float:left;margin-top:15px;display:inline;}
+.zx_content_3{width:938px;border:solid 1px #e1e1e1;border-top:none;padding:20px 0px 10px 20px;overflow:hidden;}
+.zx_content_3 a{width:110px;height:25px;line-height:25px;float:left;margin-right:5px;margin-bottom:1px;}
+.zx_footr_3{text-align:center;}
+
+.game_box{width:720px;border:solid 1px #a2d3e9; background:#ffffff;/**height:980px;**/}
+.game_box_title{width:700px;height:36px;  background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top;  line-height:36px; border-bottom:solid 1px #a2d3e9; padding-left:20px; }
+.game_box_title a{margin-left:5px;margin-right:5px;}
+.game_box_content{}
+.game_tj{width:650px;height:95px;margin:20px auto 0px auto;}
+.game_tj2{width:650px;height:95px;margin:20px auto 0px auto;border-bottom:solid 1px #dfdfdf;}
+.game_tj_title{width:650px;height:40px;line-height:40px;}
+.game_tj_title2{width:650px;height:50px;line-height:50px;margin:0px auto;border-bottom:dashed 1px #dfdfdf;padding-top:5px}
+.game_tj_title2 h1{color:#0574AE;font-size:16px}
+.game_tj_title strong{font-size:16px;font-weight:bold;float:left;}
+.game_tj_title2 strong{font-size:19px;font-weight:bold;float:left;}
+.game_tj_title strong a, .game_tj p a, .news_title .more a, .game_tj_title2 strong a{color:#0574ae;}
+.game_tj_title strong a:hover, .game_tj p a:hover, .news_title .more a:hover, .game_tj_title2 strong a:hover{color:#f76e09;}
+.game_tj p, .game_tj2 p{line-height:22px;text-indent:40px;}
+.game_liens{width:650px;margin:20px auto 0px auto;}
+.game_liens ul li{border-top:1px solid #dfdfdf;padding:15px 0px;}
+
+.hot_tj{width:701px;height:170px;margin:0px auto;background:#eeeeee;padding:1px;border-bottom:solid 1px #e1e1e1;}
+.hot_tj2{width:676px;height:145px;margin:12px auto;background:#FFFFFF;}
+.hot_tj2 p{width:650px;height:65px;margin:10px auto;line-height:22px;text-indent:40px;}
+
+.news_title{width:650px;height:31px;margin:20px auto 10px auto;overflow:hidden;line-height:31px;background:#eeeeee;}
+.news_title strong{width:82px;height:31px;float:left;background:url(../images/sprite_zixun.gif) no-repeat left -130px;text-align:center;font-weight:bold;color:#FFFFFF;font-size:14px;padding-top:2px;overflow:hidden;}
+.news_title .more{float:right;margin-right:10px;display:inline;}
+
+.zw_title{width:650px;height:100px;margin:30px auto;text-align:center;}
+.zw_title h1{font-size:18px;color:#0d99e0;}
+.zw_title p{margin-top:15px;}
+.zw_title p span{margin-left:10px;margin-right:10px;}
+.news_content{width:650px;margin:0px auto;line-height:24px;}
+.news_next{width:650px;height:36px;margin:30px auto;border:solid 1px #a2d3e9;background:#e9f2f4;line-height:36px;}
+.news_next .pav{margin-left:20px;display:inline;}
+.news_next .next{margin-right:20px;display:inline;}
+.news_infor{width:650px;height:180px;margin:0px auto 20px auto;border:solid 1px #a2d3e9;}
+.news_infor_t{width:630px;height:36px;background:#e9f2f4;border-bottom:solid 1px #a2d3e9;line-height:36px;padding-left:20px;overflow:hidden;}
+.news_infor_t h3{font-size:12px;}
+.news_infor_c ul{margin-left:20px;margin-top:15px;}
+.news_infor_c ul li {width:300px;float:left;padding:8px 0px 5px 15px;background:url(../images/zx_li_ico.gif) left center no-repeat;}

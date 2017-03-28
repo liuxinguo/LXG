@@ -1,0 +1,11 @@
+.mod-carousel-s4{position:relative;padding:20px;width:432px}.mod-carousel-s4
+.scrollable{overflow:hidden;position:relative;height:146px}.mod-carousel-s4 .scrollable-bd
+ul{position:absolute;float:left;padding-top:0;width:450px}.mod-carousel-s4 .scrollable-bd
+li{margin:0
+18px 0 0}.mod-carousel-s4 .btn-prev,
+.mod-carousel-s4 .btn-next{cursor:pointer;position:absolute;top:0;width:26px;height:20px;background:url(/lego/1.0.0/img/bg_imagescroll_v3.png) no-repeat 0 -30px}.mod-carousel-s4 .btn-prev{left:0}.mod-carousel-s4 .btn-next{right:0;background-position:-26px -30px}.mod-carousel-s4 .scrollable-nav{text-align:center}.mod-carousel-s4 .navi-box{display:inline-block;*display:inline;*zoom:1;position:relative;padding:0
+34px;text-align:center}.mod-carousel-s4
+.navi{display:inline-block;*display:inline;*zoom:1;height:20px;text-align:left}.mod-carousel-s4 .navi
+a{display:block;overflow:hidden;float:left;margin:6px
+2px 0;width:20px;height:8px;background:url(/lego/1.0.0/img/bg_imagescroll_v3.png) 0 -65px no-repeat}.mod-carousel-s4 .navi a:hover{background-position:-20px -65px}.mod-carousel-s4 .navi
+a.selected{background-position:-20px -65px}

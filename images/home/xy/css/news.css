@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-11-04 09:54:24
+ * @version $Id$
+ */
+.new{
+/* padding-bottom: 24px; */
+}
+/*新闻资讯*/
+.news-list {
+    width: 890px;
+    float: left;
+    min-height: 650px;
+}
+.news-title {
+    width: 890px;
+    height: 100px;
+    position: relative;
+    background: url(../images/tt-bj.png) repeat;
+}
+.news-title h2{
+    font-size: 28px;
+    color: #fff;
+    line-height: 100px;
+    padding-left: 40px;
+}
+.news-title span {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-height: 26px;
+    line-height: 26px;
+    color: #cfae69;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    right: 36px;
+}
+.news-title span a{
+    color: #cfae69;
+}
+.news-title .ico{
+    margin-top: 4px;
+    margin-right: 3px; 
+}
+.news-con {
+    width: 890px;
+    background: #fff;
+    min-height: 640px;
+}
+.news-nav {
+    text-align: center;
+    width: 850px;
+    margin: 0 auto;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    cursor: pointer;
+    padding-top: 14px;
+}
+.news-nav .tt-ico{
+    float: left;
+    margin-top:16px;
+    margin-right: 0px;
+}
+.news-nav ul {
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #dbdbdb;
+}
+.news-nav .on {
+    color: #584068;
+}
+.news-nav .on .tt-ico{
+    background-position: -6px -10px!important;
+} 
+.news-nav li {
+    float: left;
+    width: 90px;
+    height: 42px;
+    color: #666;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    text-indent: 5px;
+}
+.tags-bar {
+    position: absolute;
+    top: 63px;
+    left: 0px;
+    width: 90px !important;
+    height: 7px;
+    border-top: 4px solid #584068;
+    overflow: hidden;
+    text-align: center;
+    z-index: 999;
+}
+.lst-lst {
+    padding-top: 22px;
+    width: 850px;
+    margin: 0 auto;
+    max-height: 916px;
+}
+.tags-con .tags-block {
+  overflow: hidden;
+  display: none;
+}
+.tags-con .on, .tags-cons .tags-block {
+  display: block;
+}
+
+.lst-lst ul {
+    width: 850px;
+    max-height: 870px;
+    overflow: hidden;
+}
+.lst-lst li {
+    color: #666;
+    height: 42px;
+    max-height: 42px;
+    line-height: 42px;
+    #line-height: 42px;
+    padding: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: dashed 1px #dddcdc;
+}
+.lst-lst li:hover a{
+    color: #584068;
+}
+.lst-lst li:hover span{
+    color: #584068;
+}
+.lst-lst li a {
+    color: #666;
+    cursor: pointer;
+
+ }
+ .lst-lst li span {
+    float: right;
+    font-size: 12px;
+    color: #666;
+    line-height: 42px;
+    #line-height: 42px;
+    cursor: pointer;
+    font-family: "宋体";
+}
+.lst-lst li p {
+    width: 660px;
+    float: left;
+    cursor: pointer;
+    font-family: "宋体";
+}
+.overflowfix {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lst-lst li b {
+    font-weight: normal;
+}
+/*列表页码*/
+.page{
+margin-top: 40px;
+text-align: center;
+margin-bottom: 20px;
+}
+.page span{
+color: #918e8e;
+line-height: 36px;
+font-size: 12px;
+margin-left: 3px;
+height: 34px;
+display: inline-block;
+padding: 0px 4px;
+font-family: Tahoma, Geneva, sans-serif;
+}
+.page .curr{
+  color: #584068;
+}
+.page a{
+  color: #333;
+}
+.page a:hover{
+  color:#584068!important;
+}
+/*右侧列表*/
+.r-lst{
+ width: 300px;
+ float: right;
+}
+.r-lst .box-2, .r-lst .box-3{
+  margin-top: 10px;
+}
+/*文章内容*/
+.article{
+    width: 810px;
+    margin: 0 auto;
+}
+.article-title{
+    width: 100%;
+    text-align: center;
+    border-bottom:dashed 1px  #dddcdc;
+    padding-bottom: 10px;
+}
+.article-title h3{
+    padding: 40px 0px 0px 0px;
+    line-height: 40px;
+    color: #584068;
+    font-size: 20px;
+    font-weight: bold;
+}
+.article-title p{
+    line-height: 26px;
+    color: #333;
+    font-size: 12px;
+}
+.article-con{
+    width: 810px;
+    margin: 0 auto;
+    color: #333;
+    font-size:14px;
+    font-size: "微软雅黑";
+    padding-bottom: 20px;
+    padding-top: 20px;
+    min-height: 460px;
+}
+
+.article-con p{
+    margin-top: 20px;
+    line-height: 30px;
+
+}
+.article-con a{
+    color: #333;
+}
+.article-con img{
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+.article-bm{
+    width: 100%;
+    height: 50px;
+    color: #333;
+    border-top:dashed 1px  #dddcdc;
+}
+.article-bm span{
+    width: 380px;
+    height: 30px;
+    text-overflow:ellipsis; 
+   overflow:hidden; 
+   white-space:nowrap;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.article-bm a{
+    color: #333;
+}
+.article-bm .pa{
+    float: left;
+}
+.article-bm .ne{
+    float: right;
+    text-align: right;
+}

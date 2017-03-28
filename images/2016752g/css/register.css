@@ -1,0 +1,248 @@
+
+
+
+
+body{font:12px/1.5 Microsoft YaHei,SimHei,simsun, Arial, Helvetica, sans-serif;color:#666;}
+a{color: #666;}
+#content{background-color: #f3f3f3;padding-bottom: 30px;}
+.content{width: 1000px;margin:0 auto;overflow: hidden;}
+
+.cont-head{width: 100%;height:160px;padding: 10px;border:1px solid #ccc;background-color: #fff;margin-top: 18px;}
+
+.head-left,.head-right{float: left;height: 140px;}
+.head-left{border-right:1px dotted #ccc;width: 510px;padding: 0 0 0 15px;}
+.user-infor-left {width: 112px;text-align: center;margin-right: 10px;}
+.user-infor-left ,.user-infor-right{float: left;}
+.user-infor-left .btn-img{width: 100px;height: 100px;display:block;overflow: hidden;}
+.user-infor-left img{width: 100%;height: 100%;}
+.user-infor-left .btn-a{width:80px;display: block;height: 22px;background-color: #03b4f5;margin: 14px auto 0;line-height: 22px;text-align: center;color: #fff;border-radius:6px;position: relative;cursor: pointer;}
+.btn-a label{cursor: pointer;}
+.btn-a span{width: 300px;height:300px;border:1px solid #ccc;position: absolute;z-index: 99;background-color: #fff;display: none;}
+.btn-a span a{width:80px;height:80px;overflow: hidden;float: left;margin: 15px 0 0 15px;}
+.btn-a span a img{width: 100%;height: 100%;}
+/*.btn-a span i{display: inline-block;position: absolute;background: url(../img/dengji.png) no-repeat;background-position:  -293px -61px;width: 22px;height: 22px;cursor: pointer;top:-11px;right:-11px;}*/
+
+.user-infor-right{width: 350px;margin: 10px 0 0 8px;}
+.user-infor-right ul li{line-height: 24px;}
+.user-infor-name{max-width: 280px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-weight: bold;}
+.db{display: inline-block;vertical-align: middle;zoom:1;}
+.quit{color: red;margin: 0 5px;}
+
+.user_reg a{display: inline-block;margin: 0 8px;color: #0091ce;}
+.user_reg a:hover{color: red;}
+.user_reg .c_get_card{width: 80px;height: 19px;line-height: 19px;text-align: center;color: #fff;border-radius: 2px;background-color: #03b4f5;}
+.user_reg .c_get_card:hover{background-color: #39a5cb;color: #fff;}
+
+.hot-game{padding-top:7px; }
+.hot-game a{margin-left: 10px;}
+.hot-game a:hover{color: red;}
+
+.head-right{width: 400px;margin-left: 50px;}
+.head-right h3{color: #333;font-size: 14px;padding:8px 0;}
+.last-name li{line-height: 28px;margin-bottom: 10px;}
+.game-name{width: 150px;display: inline-block;margin-right: 12px;vertical-align: top;}
+.game-name img{float: left;padding-right: 6px;width:34px;height: 28px;}
+.last-name li .serv{width: 140px;display: inline-block;margin-right: 12px;}
+.last-name li a:hover{color: red;}
+.btns{width:70px;height: 20px;text-align: center;line-height: 20px;display: inline-block;color: #fff !important;border-radius: 3px;background-color: #03b4f5;}
+.btns:hover{background-color: #39a5cb;}
+
+
+
+.protect_crazy p span{position: relative;display: inline-block;font: 14px;color: #828282;padding: 5px 15px;margin-right: 10px;border-bottom: 6px solid #828282;}
+#we-a-a-saft  .focus{border-bottom: 6px solid #ff8b05;}
+.shezi{margin: 20px 0 0 20px;}
+.shezi li{height: 60px;}
+.shezi li i.tb{display: inline-block;float: left;margin-right: 26px;vertical-align: middle;width: 28px;height: 30px;}
+.shezi li i.certif1{background: url(../img/icon0.jpg) no-repeat 0 -628px;}
+.shezi li span{width: 450px;float: left;}
+.shezi li a.button{display: block;float: left;width: 83px;height: 30px;background: url(../img/icon0.jpg) no-repeat -28px -628px;text-align: center;line-height: 30px;}
+.shezi li i.tel{background: url(../img/icon0.jpg) no-repeat 0 -658px;}
+.shezi li i.mail{background: url(../img/icon0.jpg) no-repeat 0 -688px;}
+.shezi li i.secret{background: url(../img/icon0.jpg) no-repeat 0 -718px;}
+.shezi li span h4 i{font-style: normal;font-weight: normal;color: red;margin-left: 5px;}
+
+
+
+
+
+.cont-body{width: 998px;border:1px solid #e2e2e2;background-color: #fff;margin-top: 20px;overflow: hidden;}
+.user-sidebar{width: 250px;float: left;}
+.user-sidebar li i{display: inline-block;width: 60px;height: 60px;background: url(../img/csp-menu.png);background-repeat: no-repeat;}
+.user-sidebar li .hd{width: 250px;height: 60px;line-height: 60px;font-size: 16px;position: relative;color: #666;border-bottom:1px solid #f0f0f0;text-align: center;cursor: pointer;}
+.user-sidebar li .hd span{display: inline-block;}
+
+
+.user-sidebar .active .icon_menu_data{background-position:-40px 18px;}
+.user-sidebar .active .icon_menu_safe{background-position:-40px -48px;}
+.user-sidebar .active .icon_menu_manage{background-position:-40px -116px;}
+.user-sidebar .active .icon_menu_info{background-position:-40px -182px;}
+
+.user-sidebar .active .icon_menu_status{background-position:-40px -244px;}
+.user-sidebar .icon_menu_status{background-position:26px -244px;}
+
+.user-sidebar .icon_menu_data{background-position:26px 18px;}
+.user-sidebar .icon_menu_safe{background-position:26px -48px;}
+.user-sidebar .icon_menu_manage{background-position:26px -116px;}
+.user-sidebar .icon_menu_info{background-position:26px -182px;}
+
+.icon_menu_data,.icon_menu_safe,.icon_menu_info,.icon_menu_manage{position: absolute;top:0;left: 0;}
+.icon_menu_status{position: absolute;top: 0;right: 0;}
+.user-sidebar .active .hd{background-color:#03b4f5;color:#fff;}
+.user-sidebar .hd:hover{background-color:#03b4f5;color: #fff;}
+
+.user-sidebar .hd:hover .icon_menu_data{background-position:-40px 18px;}
+.user-sidebar .hd:hover .icon_menu_safe{background-position:-40px -48px;}
+.user-sidebar .hd:hover .icon_menu_manage{background-position:-40px -116px;}
+.user-sidebar .hd:hover .icon_menu_info{background-position:-40px -182px;}
+.user-sidebar .hd:hover .icon_menu_status{background-position:-40px -244px;}
+
+
+.fen-db a{width:250px;display:block;height:34px;text-align: center;line-height: 34px;border-bottom: 1px solid #f0f0f0;}
+.fen-db .db-active{color:#03b4f5;background-color: #fbfbfb;}
+.fen-db li a:hover{color:#03b4f5;background-color: #fbfbfb;}
+.fen-db li{width: 250px;}
+
+
+
+
+.user-main_area{width:746px;float: left;border-left:1px solid #e2e2e2;min-height: 532px;padding: 23px 23px 40px 24px;position: relative;}
+.user_main_area_tit{border-bottom:4px solid #ebebeb;font-size: 16px;padding-bottom: 10px;color: #3c3c3c;}
+.user_info_list{padding: 25px 20px 0;width: 698px;}
+.nicheng{margin-left:70px;}
+.info_list label{margin-left: 5px;margin-right: 15px;color:#03b4f5;}
+.info_list a:hover{color:#03b4f5;}
+
+.info_vip{width:517px;height:38px;background-color: #f1efef;border:1px solid #d6d5d5;padding: 4px 10px;margin-top: 20px;float: left;}
+.info_vip i{display: inline-block;background:url(../img/dengji.png) no-repeat;width: 33px;height:10px;margin-top:9px;float:left;}
+.info_vip p{width: 85%;background-color: #fff;border:1px solid #d6d5d5;border-radius: 8px;height: 10px;float: left;margin:8px 4px 0 4px;}
+.info_vip p span{display: block;height: 10px;background-color: #d71c00;border-radius: 8px;}
+.user_info_list .vip_num{display: inline-block;float:left;margin-top:28px;margin-left: 10px;}
+.info_vip .vip0{background-position:  0 0;}
+.info_vip .vip1{background-position:  0 -11px;}
+.info_vip .vip2{background-position:  0 -22px;}
+.info_vip .vip3{background-position:  0 -33px;}
+.info_vip .vip4{background-position:  0 -44px;}
+.info_vip .vip5{background-position:  0 -55px;}
+.info_vip .vip6{background-position:  0 -66px;}
+.info_vip .vip7{background-position:  0 -77px;}
+.info_vip .vip8{background-position:  0 -88px;}
+.info_vip .vip9{background-position:  0 -99px;}
+.info_vip .vip10{background-position:  0 -110px;}
+
+.c_txt_width{display: inline-block;width: 290px;margin-top:20px;}
+.c_txt_width02{display: inline-block;width: 150px;font-weight: normal;}
+.org_color{color: #03b4f5;}
+.user_info_list ul li a.c_txt_btn{display: inline-block;width: auto;height: 30px;line-height: 30px;width: 70px;text-align: center;border:1px solid #c9c9c9;border-radius:5px;}
+.user_info_list ul li a.c_txt_btn:hover{color:#03b4f5;}
+
+.user_main_tit02{border-bottom: 1px solid #ebebeb;font-size: 14px;padding-bottom: 8px;margin-top: 30px;}
+.protect_crazy{padding: 15px 20px;}
+.p_input, .sel_ques{border:1px solid #d7d7d7;width: 235px;height: 30px;line-height: 30px;text-indent: 4px;vertical-align: middle;color: #666;}
+.protect_crazy label{color: #666;}
+.ml50{margin-left:50px;}
+.mt20{margin-top: 20px;}
+.p_submit_btn{background-color: #03b4f5;}
+.p_submit_btn,.p_submit_blue_btn{width: 139px;height:36px;display: inline-block;border-radius: 2px;color: #fff;font-weight: bold;font-size: 13px;border:none;margin-top:20px;cursor: pointer;text-align: center;line-height:36px;}
+
+#footer{margin-top: 0;}
+
+
+/*个人资料*/
+.user_main_detail ul{padding: 5px 65px;}
+.user_main_detail ul li{margin-top:30px;}
+.user_main_detail .name{width:60px;text-align: right;display: inline-block;}
+.user_main_detail li span{margin-right: 15px;}
+.user_main_detail  input[type="text"]{width: 235px;height: 30px;text-indent: 4px;color: #666;border:1px solid #d7d7d7;outline: none;margin-right: 15px;font-size: 12px;}
+.user_main_detail  .user_main_ID input{width: 470px;}
+.user_main_detail li input[type="radio"]{margin-right: 5px;display: inline-block;vertical-align: middle;}
+.user_main_hpe{color: #03b4f5;}
+.user_main_btn a{width:139px;height: 42px;display: inline-block;text-align: center;line-height: 42px;color: #fff;font-weight: bold;border-radius: 4px;font-size: 15px;margin-left: 50px;}
+.user_main_btn_tijiao{background-color:#03b4f5;}
+.user_main_btn_tijiao:hover{background-color: #00bbff;}
+.user_main_btn_bianji{background-color: #3ea6cd;}
+.user_main_detail select{width:108px;height: 30px;border:1px solid #d7d7d7;margin-right: 5px;}
+
+/*我的游戏*/
+.user_main_c{width: 100%;height:auto;padding: 15px;}
+.games_hode{border-bottom: 1px dotted #ccc;height: 26px;font-size: 15px;font-weight: 700;}
+.user_games_list li{width:100%;height: 160px;background-color:#fff;border:1px solid #d7d7d7;margin-bottom: 5px;}
+.user_games_list li:hover{background-color:#f3f3f3;}
+.user_games_list .toux{width:292px;height:131px;display:block;float: left;margin-left: 5px;margin-top: 15px;}
+.user_games_list_txt{float:right;line-height: 26px;margin-right: 15px;margin-top: 10px;}
+.p_submit_blue_btn{width:70px;background-color: #3ea6cd}
+
+.host-game{margin-top: 20px;}
+.clearfix li{width: 222px;height: 130px;float: left;margin-top: 8px;padding: 5px;overflow: hidden;position: relative;}
+.clearfix li img{width: 100%;height: 100%;}
+.clearfix li p{position: absolute;top:10px;left:10px;font-size: 15px;font-weight: 700;}
+.clearfix_box{position: absolute;bottom:5px;left:5px;width:96%;height:27px;line-height: 26px;}
+.clearfix_box div{position: absolute;background-color: #000;opacity: .5;width: 100%;height: 100%;}
+.clearfix_box a{position: relative;z-index: 99;color: #fff;display: inline-block;background:url(../img/dengji.png) no-repeat;}
+.clearfix_box .clearfix_box_guanw{background-position: -35px -119px;padding-left: 17px;margin-left:5px;}
+.clearfix_box .clearfix_box_gift{margin-left: 15px;background-position: -89px -118px;padding-left: 17px;}
+.clearfix_box .clearfix_box_info{float: right;margin-right: 15px;background-position: -166px -117px;padding-left: 17px;}
+.clearfix_box a:hover{color: #03b4f5;}
+
+
+/*防沉迷设置*/
+.user_main_c .chenmi label{color: red;margin-right:2px;}
+.user_main_c .chenmi{margin:20px 0 0 30px;}
+.user_main_c .chenmi .mi_name{margin-top: 10px;}
+.user_main_c .chenmi .mi_name input{width:200px;height: 26px;border:1px solid #d7d7d7;text-indent: 4px;margin:0 5px;outline: none;}
+.mi_btn{display:block;width:80px;height: 26px;text-align: center;line-height: 26px;background-color:#03b4f5;border-radius: 5px;color: #fff;margin:20px 0 0 60px;}
+.user_main_c .h3{margin: 10px 0;}
+.user_main_c  .mi-txt{text-indent: 2em;line-height: 22px;}
+.yanz{width:80px;height: 26px;text-align: center;line-height: 26px;background-color: #03b4f5;display: inline-block;color: #fff;border-radius: 5px;cursor: pointer;margin-left: 10px;}
+.bangding{color: red;margin-left:10px;}
+
+.mi_name .psd_name{width:80px;display: inline-block;text-align: right;}
+
+/*我的任务*/
+ul.task_con{margin-top: 10px;}
+ul.task_con li{height: 75px;border-bottom: 1px dashed #d8d8d8;}
+ul.task_con li .task1{float: left;width: 522px;line-height: 24px;}
+ul.task_con li .task1 span{font-weight: 14px;font-weight: bold;color: #0ca3ce;}
+ul.task_con li .task1 p i{font-style: normal;color: red;}
+ul.task_con li .task_r{float: right;width: 150px;}
+
+ul.task_con li .task_r a{display: block;width: 134px;height: 31px;position: relative;top:25px;left: 0;background-color: #03b4f5;color: #fff;text-align: center;line-height: 31px;border-radius: 5px;}
+ul.task_con li .task_r a:hover{background-color:#39a5cb;}
+
+ul.task_con li .task_r .go{background-color: #ccc;}
+ul.task_con li .task_r .go:hover{background-color: #ccc;}
+
+/*我的信息*/
+
+.message{overflow: hidden;}
+.user_main_area_tit span{float: right;font-size: 12px;display: inline-block;margin-top: 5px;width:100px;height: 24px;background-color:#ff8b05;color: #fff;text-align: center;line-height: 24px;}
+ul.message_con{margin-bottom: 20px;}
+ul.message_con li{width:698px;border:1px solid #f2f2f2;background-color:#fff;padding: 15px;margin-top: 10px;position: relative;}
+ul.message_con li:hover{background-color:#fafafa;border:1px solid #ffb83b;}
+ul.message_con li i{display: inline-block;background:url(../img/dengji.png) no-repeat;background-position:-293px -61px;width:22px;height: 22px;
+	position: absolute;top: -10px;right: -10px;cursor: pointer;display: none;
+}
+
+.message_con_left{float: left;width: 80%;}
+.message_con_right{float: right;}
+.click_read{margin-top: 5px;display: block;}
+.click_read:hover{color:#03b4f5}
+
+.message_con_left span{display:block;width:49px;height: 47px;float: left;overflow: hidden;}
+.message_con_photo{float:right;width: 87%;}
+.message_con_photo label{display: block;margin-bottom: 5px;font-size: 18px;color: #3c3c3c;font-weight: bold;}
+
+
+.message_cont{margin-top: 20px;border-top:1px solid #03b4f5;display: none;}
+.message_cont h3{margin-top: 20px;margin-bottom: 10px;}
+.message_cont p{text-indent: 2em;}
+
+
+
+.fy_nav{text-align: center;height: 30px;padding: 30px 0 12px;}
+.fy_nav a{padding: 7px 10px;border:1px solid #cecece;margin-right: 10px;}
+
+.mbwt{border:1px solid #d7d7d7;margin-left: 5px;color: #ccc;}
+
+.user_main_c .chenmi .mi_name .btn_yz{width: 100px;border-radius: 4px;}
+

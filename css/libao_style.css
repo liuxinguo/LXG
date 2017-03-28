@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 礼包专区 */
+#main{ width:1000px; margin:10px auto 0px auto;}
+#main_left{ width:275px;float:left;}
+#main_right{ width:720px;float:right; background:#FFFFFF;}
+.more a {float: right; padding-right: 10px; color:#369fe0;}
+
+.package{width:718px;border:solid 1px #a2d3e9;}
+.package .title{ width:718px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border-bottom:solid 1px #a2d3e9;}
+.package .title h3, .package_list .title h3{padding-left:20px; font-size:14px; float:left; color:#369fe0;}
+.package .con{}
+.package .con .banner{width:678px; height:160px; margin-top: 10px; margin-left:19px;}
+.package .con .con_box{ width:718px; overflow:hidden;}
+.package .con .con_box ul{ margin-left:19px;}
+.package .con .con_box ul li{ float:left; width:162px; height:166px; margin-right:10px; margin-top: 9px;}
+.package .con .con_box ul li .img a{ width:162px; height:126px;  display:block;}
+.package .con .con_box ul li .name{ width:79px; height:26px;margin-top:12px;float:left;line-height:26px; font-size:14px; font-weight:bold; text-align:center;}
+.package .con .con_box ul li .buttom{width:83px; height:26px; float:left;margin-top:12px; line-height:26px;}
+.package .con .con_box ul li .buttom a{width:75px; height:26px; float:left; background:url(../images/outtime.gif) no-repeat left -64px; padding-left:8px; color:#FFFFFF;}
+.package .con .con_box ul li .buttom a:hover{background:url(../images/outtime.gif) no-repeat left -95px; text-decoration:none;}
+.infor_box{ width:265px;border:solid 1px #a2d3e9; }
+.infor_box .title{width:265px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border-bottom:solid 1px #a2d3e9;}
+.infor_box .title h3{padding-left:20px; font-size:14px; float:left; line-height:36px; color:#369fe0;}
+.infor_box .con{padding:10px;}
+.infor_box .con ul li{line-height:25px;}
+
+/* 礼包专区详细页 */
+.package_list{width:998px;border:solid 1px #a2d3e9; background:#ffffff;}
+.package_list .title{width:998px;height:36px; background:#ffffff url(../images/subnav_bg2.jpg) no-repeat 1px top; line-height:36px; border-bottom:solid 1px #a2d3e9;}
+.package_list .con{ padding:15px;}
+.tableCont{ width:100%; text-align:center; margin-bottom:-1px;}
+.tableCont th, .tableCont td {height:34px;text-align:center;}
+.tableCont .checkcolor{color:#f2830c;text-decoration:underline;}
+.tableCont .clickcolor{color:#e10505;text-decoration:underline;}
+.tableCont .checkcolor:hover, .tableCont .clickcolor:hover{color:#02aefe;}
+
+
+
+
+
+
+.content,.fast_road{ background:#f2f2f2;}
+.new_list{ background:#f3f3f3;}
+.cred ,a.red ,.back a:hover,a.bred,a.bred:hover,.login_help a:hover,.game_style a:hover,a.gred:hover,.game_center_list li a:hover,.game_style2 a:hover,.logined_usename span{ color:#F00;}
+a:hover ,.broadcast a:hover ,.title_brue a:hover,.back a,.new_list_ul li a:hover{text-decoration:underline;}
+.broadcast a ,a.hot_txt_t:hover,.car_get_tit1 a,.menu a:hover,.enter_red a:hover,.enter_blue a:hover,.page a,.page a:hover,.title a:hover,.logined_bnt a:hover{ text-decoration:none;}
+.hot_game ,.hot_game2,.list_tab li,.content,.fast_road,.new_list,.bottom_service,.service,.friends_link,.new_list_left,.card_left,.register,.service_right{border:solid 1px #d3d3d3;}
+.hot_game ul li p,.game_style_bg,.game_style_bg2,.game_center_list li p,.content table tr td,.enter_red a,.enter_blue a,.number_red ,.number_blue,.page,.choice_game,.card_hot,.card_new,.car_get_tit1 i,.logined_bnt a{text-align:center;}
+.fast_road,.service,.content,.new_list,.friends_link,.hot_game,.hot_game2,.new_list_left,.card_adv,.card_right,.card_left,.bottom_service,.register{ margin:0px 0 0 0;}
+.hot_game2_ul li ,.center_left,.hot_game ul li,.hot_game2_ul li,.img,.list_tab li,.fast_road ul li,.new_list,.new_list ul li a ,.service_li li img ,.new_list_ul li a ,.card_left,.bottom_service ul li,.card_content,.game_detail_img,.game_center_list li{float:left;}
+.new_list ul li span,.center_right,.new_list_ul span,.card_right{ float:right;}
+a.hot_txt_t ,.tel,.service_tel,.car_get_tit1 a,.game_center_t,.logined_usename span,.logined_bnt a{font-weight:bold;}
+.alpha,.broadcast,.list_tab,.more,.go_left,.go_right,.logo,.menu,.login,.back,.all_game,.login_bg,.roud_bg,.round_70,.game_detail_img em,.news_ico,.hot_ico{position:absolute;}
+.title_brue,.game_list li,.classify_list,.hot_game2_ul li,.game_detail_img,.game_center_list li{ position:relative;}
+.card_hot,.card_new,.go_left,.go_right{display: block; }
+.go_left,.go_right{cursor:pointer;}
+.slide_circle a{ display:inline-block;}
+.tit1 span{ font-size:14px;}
+.blue_f{ font-weight:bold;}
+/******新手卡********/
+.card_right{ width:718px;}
+.choice_game{ height:36px; line-height:36px; border-bottom:solid 1px #bfd9f0;  position:relative;}
+.card_hot,.card_new{height:11px;line-height:11px;_height:7px;_line-height:7px;width:25px;position:absolute;right:10px;top: 20px;}
+.card_hot{background:url(../../images/cms_style_2012_new/card_circle.jpg) 0px -60px; }
+.card_new{background:url(../../images/cms_style_2012_new/card_circle.jpg) 0px -71px;}
+.go_left{height:15px;width:15px;background:url(../../images/cms_style_2012_new/card_circle.jpg) 0px -82px;top:10px;left: 20px;}
+.go_right{height:15px;width:15px;background:url(../../images/cms_style_2012_new/card_circle.jpg) -14px -82px;top:10px;right: 20px;}
+.card_left .game_list_wrap{width:168px;  margin:0; overflow:hidden;  position:relative;}
+.game_list{maring:0;width:10000px; background:#fff;}
+.game_list ul{width:168px;float:left; margin:0px; overflow:hidden !important;}
+.game_list li{ line-height:20px; border-bottom:solid 1px #CCC; padding:10px; background:#f4f8ff;}
+.game_list li:hover, .game_list li.hover{ background:#ebe9e9;}
+.game_list li img{  width:28px; height:28px; margin-right:15px; vertical-align:middle;}
+.card_right_tile{ border:solid 1px #003a6a; height:37px; line-height:35px; background:#0360b3;}
+.card_right_tile .tit1{height:35px; line-height:33px; background:#0360b3;border:solid 1px #0287d6; }
+.tit1 a{margin-left:30px; color:#c3e2ff !important;}
+.tit1 span{ font-weight:bold; color:#fff; }
+.car_get_one{ margin-bottom:20px; background:#fff;}
+.car_get_tit1{height:36px; line-height:36px; border-bottom:solid 1px #dedede; background:#eeeeee;}
+.car_get_tit1 a{  color:#015198; height:19px; font-family: Arial, Helvetica, sans-serif; }
+.car_get_tit1 i{background:url(../../images/cms_style_2012_new/card_circle.jpg) no-repeat;  display:inline-block; margin:8px 10px;vertical-align:middle; width:20px; height:19px; overflow:hidden; line-height:10px; }
+.car_get_tit1  i.two{ background-position:-20px 0px;}
+.car_get_tit1  i.select_c{ background-position:0px -19px;}
+.car_get_tit1  i.select_t{ background-position:-20px -19px;}
+.car_get_tit1  i.tit_ico{ background-position:0px -40px;}
+.card_content{ padding: 25px 10px !important; width: 335px; height: 160px;line-height:25px;}
+.card_select{ border-right:solid 1px #dedede;}
+.card_select span{ width: 100px; display: inline-block; text-align:right;}
+.card_select i{ margin:0px 3px;}
+.card_select option{ width:80px;}
+.card_btn a{ display:block; background:url(../images/login_reg_btn.jpg) 0px -117px; height:25px; width:67px; margin:8px 0 10px 105px;}
+.card_btn a:hover{ background:url(../images/login_reg_btn.jpg) -67px -117px; }
+.card_select label input{height:24px; line-height:24px;_height:24px; _line-height:24px; width:150px; border:solid 1px #bcbcbc;  padding-left:3px;}
+.card_select img{ vertical-align:middle;margin:0px 0px 2px 0px;*margin:-12px 0px 2px 0px;}
+.car_get_one div{ padding:10px; line-height:25px;}

@@ -1,0 +1,50 @@
+﻿.sign-dialog .icon{display:inline-block;*display:inline;*zoom:1;font-size:0;text-indent:-99em;vertical-align:top}
+.sign-dialog .icon-error{background:url("../images/dialog-sprite.png") no-repeat 0 -54px;width:14px;height:14px;margin:2px 5px 0 0;*float:left;*display:inline}
+.sign-dialog{display:none;width:541px;height:394px;border:1px solid #ccc;background:#fff;position:fixed;_position:absolute;top:50%;left:50%;margin:-197px 0 0 -270px;color:#555;z-index:999;}
+.sign-dialog .header-tab{height:60px;background:#fff url("../images/dialog-title-bg.jpg") repeat-x 0 0}
+.sign-dialog .tab-area{float:left;display:inline;width:249px;height:42px;line-height:42px;text-align:center}
+.sign-dialog .tab-area-current{border-bottom:2px solid #0099ff;height:40px;line-height:40px}
+.sign-dialog .tab-area a{color:#555;font-size:16px;text-decoration:none;display:block;height:27px;line-height:27px;margin-top:7px;border-right:1px solid #ddd}
+.sign-dialog .tab-area-current a{color:#0099ff}
+.sign-dialog .tab-area a:hover{color:#0099ff;text-decoration:none}
+.sign-dialog .dialog-close{float:right;display:inline;width:43px;height:42px;text-align:center;cursor:pointer;text-indent:-999em;background:url("../images/dialog-sprite.png") no-repeat 14px 14px}
+.sign-dialog .dialog-close:hover{border-bottom:2px solid #f36;height:40px}
+.sign-dialog .signin-content{padding:30px 0 0 120px}
+.sign-dialog .input-region{display:block;height:52px}
+.sign-dialog .input-title{font-size:14px;margin-right:20px;letter-spacing:6px;*position:relative;*top:-8px}
+.sign-dialog .base-input{width:230px;height:31px;line-height:31px;padding-left:6px;border:1px solid #ccc;transition:border linear .2s,box-shadow linear .2s}
+.sign-dialog .base-input:hover,.sign-dialog .base-input:focus,.sign-dialog .base-input-focus{border:1px #07f solid;box-shadow:0 0 3px #8cddff}
+.sign-dialog .base-input:focus{outline:none}
+.sign-dialog .form-options{overflow:hidden;padding:0 122px 0 64px}
+.sign-dialog .form-options .auto-login span{}
+.sign-dialog .forget-pwd{float:right;display:inline;color:#09f;text-decoration:none}
+.sign-dialog .forget-pwd:hover{text-decoration:underline}
+.sign-dialog .form-options .auto-login input{vertical-align:text-bottom;margin-right:5px;*position:relative;*top:2px;_top:0}
+.sign-dialog .form-options .login-errors{clear:both;margin-top:15px;color:#fe0024;zoom:1;*width:235px;*height:18px}
+.sign-dialog .form-options .login-errors .error-msg{*float:left;*display:inline;*position:relative;*top:1px}
+.sign-dialog .common-btn{display:block;width:133px;height:38px;background:url("../images/dialog-sprite.png") no-repeat 0 0;text-indent:-999em}
+.sign-dialog .login-btn{background-position:0 -98px;margin-top:15px}
+.sign-dialog .login-btn:hover{background-position:-143px -98px}
+.sign-dialog .login-btn-ing{background-position:-286px -98px !important}
+.sign-dialog .signup-content{padding:10px 0 0 100px}
+.sign-dialog .signup-content .input-title{letter-spacing:0;display:inline-block;*display:inline;*zoom:1;width:60px;text-align:right}
+.sign-dialog .signup-content .tips,.sign-dialog .signup-content .errors{padding:6px 0 0 84px}
+.sign-dialog .signup-content .tips{color:#999}
+.sign-dialog .signup-content .input-region{height:62px}
+.sign-dialog .signup-content .form-options{padding:15px 122px 0 85px}
+.sign-dialog .signup-content .signup-btn{background-position:0 -166px;margin-top:20px}
+.sign-dialog .signup-content .signup-btn:hover{background-position:-143px -166px}
+.sign-dialog .signup-content .errors{color:#fe0024}
+.sign-dialog .user-protocol{color:#09f;text-decoration:none}
+.sign-dialog .fcm-content{padding:10px 0 0 100px}
+.sign-dialog .fcm-content .input-title{letter-spacing:0;display:inline-block;*display:inline;*zoom:1;width:60px;text-align:right}
+.sign-dialog .fcm-content .tips,.sign-dialog .fcm-content .errors{padding:6px 0 0 84px}
+.sign-dialog .fcm-content .tips{color:#999}
+.sign-dialog .fcm-content .input-region{height:62px}
+.sign-dialog .fcm-content .form-options{padding:15px 122px 0 85px}
+.sign-dialog .fcm-content .save-btn{background-position:0 -234px;margin-top:20px;float:left;display:inline;}
+.sign-dialog .fcm-content .save-btn:hover{background-position:-143px -234px}
+.sign-dialog .fcm-content .errors{color:#fe0024}
+.sign-dialog .fcm-content .skip-this-step{float:right;display:inline;color:#09f;margin-top:30px;}
+.mask-layer{display:none;position:absolute;top:0;left:0;z-index:99;background-color:#000;opacity:.25;filter:alpha(opacity=25);width:100%;}
+

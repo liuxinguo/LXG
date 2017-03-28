@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dataPage .bg01{background:url(../img/bg01-02.jpg) top center no-repeat;}
+.dataPage .wraper{background:url(../img/bg02-02.jpg) top center no-repeat;}
+.newsPage .bg01{background:url(../img/bg01-03.jpg) top center no-repeat;}
+.newsPage .wraper{background:url(../img/bg02-03.jpg) top center no-repeat;}
+.serPage .bg01, .wallPage .bg01{background:url(../img/bg01-04.jpg) top center no-repeat;}
+.serPage .wraper, .wallPage .wraper{background:url(../img/bg02-04.jpg) top center no-repeat;}
+.banner{height:313px;}
+.content{width:786px;min-height:542px;padding:20px 57px;overflow:hidden;line-height:21px;background-color:#FFF;}
+.container2{margin-bottom:0;}
+
+.serPage .starGame,.serPage .starGame a{display:block;width:300px;height:146px;overflow:hidden;}
+.serPage .starGame a{background:url(../img/downLoad.jpg) 0 0 no-repeat;/**/line-height:146px;text-align:center;font-size:42px;font-weight:bold;text-indent:-99em;}
+.serPage .starGame a:hover{background-position:0 -146px;}
+.serPage .quickLink li.downLink a{background-image:url(../img/downBTN.jpg);background-repeat:no-repeat;text-indent:-99em;}
+.serPage .quickLink li.downLink a{height:91px;background-position:0 -183px;}
+.serPage .quickLink li.downLink a:hover{background-position:-300px -183px;}
+
+/*******************************************/
+/****************游戏数据********************/
+/*******************************************/
+
+/* 游戏目录 */
+.gameNav, .gameNav ul, .gameNav ul li, .gameNav ul li a{height:215px;}
+.gameNav{background-color:#FFF;}
+.gameNav ul{display:block;width:864px;margin:0 auto;background:url(../img/gameData.jpg) 0 0 no-repeat;}
+.gameNav ul li, .gameNav ul li a{float:left;width:216px;}
+.gameNav ul li{display:inline;}
+.gameNav ul li a{display:block;overflow:hidden;text-indent:-99em;}
+.gameNav ul li a:hover{background-image:url(../img/gameData.jpg);background-repeat:no-repeat;}
+.gameNav ul li.nav1 a:hover{background-position:0 -215px;}
+.gameNav ul li.nav2 a:hover{background-position:-216px -215px;}
+.gameNav ul li.nav3 a:hover{background-position:-432px -215px;}
+.gameNav ul li.nav4 a:hover{background-position:-648px -215px;}
+
+/* 角色说明 */
+.roleGroup, .roleGroup .roleContent{width:900px;height:376px;overflow:hidden;}
+.roleGroup{margin-bottom:10px;position:relative;background-color:#FBFAFA;}
+.roleGroup .roleContent .roleInfo{width:840px;height:302px;padding:64px 30px 30px;background-color:#FBFAFA;background-image:url(../img/roleBg.jpg);background-repeat:no-repeat;}
+.roleGroup .roleContent .role1{background-position:0 0;}
+.roleGroup .roleContent .role2{background-position:-900px 0;}
+.roleGroup .roleContent .role3{background-position:0 -376px;}
+.roleGroup .roleContent .role4{background-position:-900px -376px;}
+.roleGroup .roleContent .roleInfo h3{display:block;width:200px;height:180px;line-height:180px;text-indent:-99em;background-image:url(../img/roleName.gif);background-repeat:no-repeat;position:absolute;left:428px;top:64px;}
+.roleGroup .roleContent .role1 h3{background-position:0 0;}
+.roleGroup .roleContent .role2 h3{background-position:0 -180px;}
+.roleGroup .roleContent .role3 h3{background-position:0 -360px;}
+.roleGroup .roleContent .role4 h3{background-position:0 -540px;}
+.roleGroup .roleContent .roleInfo .roleIntro{width:420px;line-height:20px;}
+.roleGroup .roleContent .roleInfo .roleIntro h4{margin:10px 0;line-height:24px;font-size:14px;color:#212428;font-weight:normal;}
+.roleGroup .roleContent .roleInfo .roleIntro p{margin:5px 0;text-indent:2em;}
+.roleGroup .roleContent .roleInfo .roleIntro .clear{margin:15px 0;border-top:dotted 1px #cecece;}
+.roleGroup .roleName{margin-left:30px;position:absolute;z-index:9;}
+.roleGroup .roleName li, .roleGroup .roleName li a{float:left;width:92px;height:50px;line-height:50px;text-align:center;font-size:20px;}
+.roleGroup .roleName li a{border-bottom:solid 2px #CECECE;}
+.roleGroup .roleName li.on a{border-bottom:solid 2px #FD8C14;color:#FD8C14;}
+
+/* 游戏系统*4 */
+.gameSystem, .gameSystem .systemGroup{height:103px;background-color:#F5F5F5;}
+.gameSystem{margin-bottom:10px;}
+.gameSystem .systemGroup{float:left;display:block;width:204px;height:83px;padding:20px 10px 0;overflow:hidden;border-right:solid 1px #E9E9E9;position:relative;}
+.gameSystem .system4{width:205px;border-right:none;}
+.gameSystem .systemGroup dt{position:absolute;z-index:3;top:0;right:0;}
+.gameSystem .systemGroup dd{position:relative;z-index:6;}
+.gameSystem .systemGroup dd{line-height:24px;}
+.gameSystem .systemGroup dd h3, .gameSystem .systemGroup dd h3 a{display:block;height:36px;line-height:36px;font-size:24px;font-weight:bold;color:#1E1E1E;overflow:hidden;}
+.gameSystem .systemGroup dd h3{text-indent:-99em;background:url(../img/systemTitle.gif) 0 0 no-repeat;}
+.gameSystem .systemGroup:hover dd h3{color:#B75F11;}
+.gameSystem .systemGroup dd.sysLink, .gameSystem .systemGroup dd.sysLink a{display:block;width:204px;height:83px;padding:20px 10px 0;overflow:hidden;}
+.gameSystem .systemGroup dd.sysLink a{text-indent:-99em; background:url(../img/clear.gif);}
+.gameSystem .systemGroup dd.sysLink{position:absolute;left:0;top:0;z-index:99;}
+.gameSystem .system1 dd h3{background-position:0 0;}
+.gameSystem .system2 dd h3{background-position:0 -36px;}
+.gameSystem .system3 dd h3{background-position:0 -72px;}
+.gameSystem .system4 dd h3{background-position:0 -108px;}
+.gameSystem .system1:hover dd h3{background-position:0 -144px;}
+.gameSystem .system2:hover dd h3{background-position:0 -180px;}
+.gameSystem .system3:hover dd h3{background-position:0 -216px;}
+.gameSystem .system4:hover dd h3{background-position:0 -252px;}
+
+/* 数据池 */
+.dataGroup{width:876px;height:117px;padding:15px 0 0 24px;overflow:hidden;margin-bottom:10px;background:url(../img/dataBG.gif) 0 0 no-repeat;}
+.dateG1{background-position:0 0;}
+.dateG2{background-position:0 -134px;}
+.dateG3{background-position:0 -268px;}
+.dataGroup dl{width:896px;}
+.dataGroup dl dt{display:block;height:36px;line-height:36px;margin-bottom:5px;font-size:24px;color:#1E1E1E;font-weight:bold;text-indent:-99em;}
+.dataGroup dl dd, .dataGroup dl dd a{float:left;height:32px;line-height:32px;}
+.dataGroup dl dd{display:inline;margin-right:62px;}
+.dataGroup dl dd a{display:block;white-space:nowrap;}
+
+/* 侧栏数据列表 */
+.dataSList{}
+.dataSList li, .dataSList li a{float:left;width:88px;line-height:32px;white-space:nowrap;overflow:hidden;text-align:center;}
+.dataSList li{display:inline;}
+.dataSList li a{display:block;}
+
+/*******************************************/
+/****************新闻中心********************/
+/*******************************************/
+
+/* 新闻风向标 */
+.newsVane, .newsVane li, .newsVane li a{height:42px;line-height:42px;}
+.newsVane, .newsVane li a{display:block;}
+.newsVane{margin-bottom:10px;border-bottom:solid 2px #CECECE;}
+.newsVane li, .newsVane li a{float:left;font-size:16px;}
+.newsVane li{display:inline;}
+.newsVane li a{padding:0 16px;}
+.newsVane li.cur a, .newsVane li a:hover{border-bottom:solid 2px #FD8C14;color:#FD8C14;}
+/* 新闻列表 */
+.newsList{padding:10px 0;margin-bottom:10px;}
+.newsList li, .newsList li a, .newsList li em, .newsList li .data{height:41px;line-height:41px;overflow:hidden;white-space:nowrap;font-size:14px;}
+.newsList li{border-bottom:dotted 1px #d1d0cc;position:relative;}
+.newsList li a{float:left;display:block;text-indent:1.5em; background:url(../img/newsICO.gif) 4px 18px no-repeat;}
+.newsList li em, .newsList li .data{ position:absolute; top:0; right:0;}
+/* 页码 */
+.page{text-align:center;padding:0 14px;margin:20px 0 10px;}
+.page a{display:-moz-inline-stack;display:inline-block;*display:inline;vertical-align:middle;*vertical-align:auto;zoom:1;height:20px;line-height:20px;color:#6f6f6f;padding:0 6px;margin:0 3px; background-color:#F3F3F3;border:solid 1px #E3E3E3;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;cursor:pointer;}
+.page a.cur, .page a:hover{color:#FFF; background-color:#d6b63c;border:solid 1px #d6b63c;}
+
+.content h1, h1.newsTitle{display:block;line-height:36px;margin:10px auto 5px;text-align:center; font-family:"\5b8b\4f53";font-size:24px;color:#b75f11;}
+.content p{line-height:30px;font-size:14px; text-indent:2em;}
+.content img{text-align:center; display:block; margin:0 auto;}
+/*= 新闻信息.属性 =*/
+.newsInfo{clear:both;display:block;text-align:center;padding:5px 0 15px;margin-bottom:15px; background:url(../img/hr.gif) bottom no-repeat;}
+.newsInfo, .newsInfo li{line-height:24px;}
+.newsInfo li{display:-moz-inline-stack;display:inline-block;*display:inline;vertical-align:middle;*vertical-align:auto;zoom:1;margin:0 15px;}
+/* 新闻.上下篇 */
+.newsBridge{clear:both;display:block;padding:10px 0;margin:15px auto 10px;background:url(../img/hr.gif) top no-repeat;}
+.newsBridge li, .newsBridge li a{line-height:24px;}
+.newsBridge li.sPrev{float:left;}
+.newsBridge li.sNext{float:right;}
+
+.wallList{width:828px;margin:0 -21px 10px;padding:10px;*padding:10px 0 28px; overflow:hidden;}
+.wallList li, .wallList li a{float:left;}
+.wallList li{display:inline;margin:18px 12px;}
+.wallList li a, .wallList li a img{width:252px;height:142px;}
+.wallList li a{display:block;}
+
+.hr{height:1px;line-height:1px;margin:10px 0;background:url(../img/hr.gif) top no-repeat;}
+

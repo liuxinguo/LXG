@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+<!--全选反选JS-->
+<script>
+function CheckAll(value,obj)  {
+var form=document.getElementsByTagName("form")
+ for(var i=0;i<form.length;i++){
+    for (var j=0;j<form[i].elements.length;j++){
+    if(form[i].elements[j].type=="checkbox"){ 
+    var e = form[i].elements[j]; 
+    if (value=="selectAll"){e.checked=obj.checked}     
+    else{e.checked=!e.checked;} 
+       }
+    }
+ }
+}
+
+function setPL() {
+	j = 0;
+	for ( i = 0; i < document.getElementsByName("duoxuan").length; i++){
+		if (document.getElementsByName("duoxuan").item(i).checked) {
+			if ( j == 0 ) {
+				document.getElementById("duoxuanHidden").value = document.getElementsByName("duoxuan").item(i).value;
+			} else {
+				document.getElementById("duoxuanHidden").value = document.getElementById("duoxuanHidden").value + "," + document.getElementsByName("duoxuan").item(i).value;
+			}
+			j++;
+		}
+	}
+	document.getElementById("piliangHidden").value = document.getElementsByName("piliang").item(0).value;
+	if ( j==0 || document.getElementById("piliangHidden").value==0 ) {
+		return;
+	}
+	document.form1.submit();
+}
+</script>
+</head>
+<body>
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$act_title}</h3>  
+<form action="{:U('game')}" name="Form2" method="post">
+          <div class="user_message fr"><i class="icon-wrench"></i><input type="text" class="inputclass" name="search" value="{$get.search}" /> <input type="submit" name="submit" value='搜 索' class="btn btn-primary btn-small" /></div>
+		  </form>
+          <div class="cl"></div>
+        </div>
+<!--<table class="pagination-i">
+   <tr >
+   <td height="25">
+   <a href=""  class="ona">全部</a>
+   <a href="?py=A" >A</a>
+   <a href="?py=B" >B</a>
+   <a href="?py=C" >C</a>
+   <a href="?py=D" >D</a>
+   <a href="?py=E" >E</a>
+   <a href="?py=F" >F</a>
+   <a href="?py=G" >G</a>
+
+   <a href="?py=H" >H</a>
+   <a href="?py=I" >I</a>
+   <a href="?py=J" >J</a>
+   <a href="?py=K" >K</a>
+   <a href="?py=L" >L</a>
+   <a href="?py=M" >M</a>
+
+   <a href="?py=N" >N</a>
+   <a href="?py=O" >O</a>
+   <a href="?py=P" >P</a>
+   <a href="?py=Q" >Q</a>
+   <a href="?py=R" >R</a>
+   <a href="?py=S" >S</a>
+
+   <a href="?py=T" >T</a>
+   <a href="?py=W" >W</a>
+   <a href="?py=X" >X</a>
+   <a href="?py=Y" >Y</a>
+   <a href="?py=Z" >Z</a>   </td>
+
+   </tr>
+</TABLE> -->
+  <form action="{:U('game_del')}" method="post" name="form1">
+<table class="table table-bordered table-striped">
+<thead>
+  <tr >
+    <th nowrap class="table-textcenter">选择</th>
+    <th class="table-textcenter"><a href="{:U('game',array('sort'=>$get['sort']))}">排序显示</a></th>
+    <th class="table-textcenter">标签</th>
+    <th class="table-textcenter">gid</th>
+    <th class="table-textcenter">游戏名称</th>
+    <th class="table-textcenter">游戏类型</th>
+    <th class="table-textcenter">游戏类别</th>
+    <th class="table-textcenter">游戏状态</th>
+    <th class="table-textcenter">ICON图片</th>
+    <th class="table-textcenter">游戏单位</th>
+    <th class="table-textcenter">游戏比率</th>
+    <th class="table-textcenter">自定义属性</th>
+    <th class="table-textcenter">充值</th>
+    <th class="table-textcenter">显示</th>
+    <th class="table-textcenter">状态</th>
+    <th  class="table-textcenter">编辑</th>
+  </tr>
+  </thead>
+  <volist name="list" id="vo">
+  <tr onMouseOver="this.className='mouseon'" onMouseOut="this.className='';">    
+    <td class="table-textcenter"><input type="checkbox" name="duoxuan" value="{$vo.id}"></td>
+    <td class="table-textcenter" >{$vo.sort}</td>
+    <td class="table-textcenter">{$vo.tag}</td>
+    <td class="table-textcenter">{$vo.id}</td>
+    <td class="table-textcenter">{$vo.gamename}</td>
+    <td class="table-textcenter">{$vo.gametype}</td>
+    <td class="table-textcenter">{$vo.category}</td>
+    <td class="table-textcenter">{$vo.statetype}</td>
+    <td class="table-textcenter">{$vo.pic.icon}</td>
+    <td class="table-textcenter">{$vo.unit}</td>
+    <td class="table-textcenter">{$vo.rate}</td>
+    <td class="table-textcenter">{$vo.flag}</td>
+    <td <if condition="$vo.ispay == 0 "> class="table-textcenter red"<else/>class="table-textcenter"</if>>{$vo.ispay}</td>
+    <td <if condition="$vo.isdisplay == 0 "> class="table-textcenter red"<else/>class="table-textcenter"</if>>{$vo.isdisplay}</td>
+    <td <if condition="$vo.status == 0 "> class="table-textcenter red"<else/>class="table-textcenter"</if>>{$vo.status}</td>
+    <td class="table-textcenter"><a href="{:U('game_edit',array('id'=>$vo['id']))}">修改</a></td>
+  </tr>
+  </volist>
+       <input type="hidden" name="duoxuanHidden" id="duoxuanHidden" value="" />
+       <input type="hidden" name="piliangHidden" id="piliangHidden" value="" />
+</table>
+  </form>
+            <div class="batch_edit">
+            <span><input name="" type="checkbox" onclick=CheckAll('selectAll',this)></span>
+            <select class="input-small" name="piliang" onChange="setPL();">
+            	<option value="0">批量设置</option>
+                <option value="3">批量删除</option>
+            </select>
+            </div>
+            <div class="pagination-i">
+               {$ShowPage}
+            </div>
+
+ <div class="copyright"></div>
+</div>
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

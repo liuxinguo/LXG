@@ -1,0 +1,25 @@
+.safe_con{margin:79px auto;clear:both;width:998px;padding-bottom: 40px;background:#fff url(../images/safe_bg.jpg) no-repeat left top;}
+.safe_con h3{width:978px;height:36px;line-height:36px;padding-left: 20px;font-size:14px;}
+.safe_con .con{/*border-left:1px solid #E4E7E9;border-right:1px solid #E4E7E9;border-bottom:1px solid #E4E7E9;*/padding-bottom:40px;}
+.safe_con .lmid_mo{margin: 0 auto;width: 700px;overflow:hidden;padding-top: 30px;}
+.mima_lb{height:214px;background: url(../images/mima-1.png);width: 288px;padding: 25px 0px 0px 18px;font-size: 12px;font-family: "微软雅黑";color: #20769F;margin: 12px 20px 0px 28px;float: left;line-height: 24px;}
+.mima_2b{height:214px;background: url(../images/mima-2.png);width: 288px;padding: 25px 0px 0px 18px;font-size: 12px;font-family: "微软雅黑";color: #20769F;margin: 12px 20px 0px 28px;float: left;line-height: 24px;}
+.lbj1{background:url(../images/pbj1.jpg) no-repeat 4px 32px;padding-top: 0px;padding-bottom: 12px;}
+.entryitem{padding-top: 4px;height: 48px;line-height: 24px;margin-top: 2px;}
+.cl{clear: both;}
+.entrytext{width: 240px;height:30px;padding: 4px 3px;border: 1px solid #BBB;font-size: 14px;font-family: arial,"";line-height: 30px;}
+.entrylabel{width: 386px;text-align: right;font-size: 12px;float: left;text-align: right;font-family: "微软雅黑";color: #666;}
+.entrylabel p{color: #666;}
+.red{color: red;}
+.entryfl{width:292px;float: left;color: #1C1B1B;}
+.entrytext-1{width:100px;}
+.entryitem a:link｛text-decoration: underline;｝
+.btn｛height: 34px;float: left;｝
+.btn-personal2{width: 87px;height: 34px;background: url(../images/bg_regist0.gif) no-repeat;line-height: 34px;margin: 0px 0 0 381px;font-weight: bold;font-size: 14px;float: left;color: white;text-align: center;}
+.btn-n{width: 155px;height: 34px;background: url(../images/btn-n.gif) no-repeat;line-height: 34px;margin: 2px 10px 2px 400px;font-weight: bold;font-size: 14px;float: left;text-align: center;color: #666;}
+.btn-personal2{width: 87px;height: 34px;background: url(../images/bg_regist0.gif) no-repeat;line-height: 34px;margin: 0px 0 0 384px;font-weight: bold;font-size: 14px;float: left;color: white;text-align: center;}
+.btn-link:hover{color:#FC0;}
+.l_btnn{margin-left: 10px;}
+.btn-personal2:hover{text-decoration: none;color: yellow;}
+h4{margin-bottom: 12px;height: 27px;line-height: 27px;padding: 0 12px;font-size: 14px;font-family: "微软雅黑";font-weight: bold;color: #555;border-bottom: 1px dashed #DDDFEA;}
+.seletext{width: 248px;height: 28px;padding: 4px 3px;border: 1px solid #BBB;font-size: 14px;font-family: arial,"";}

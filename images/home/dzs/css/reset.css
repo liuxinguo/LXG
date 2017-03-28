@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{_background-attachment:fixed;_background-image:url(../img/clear.gif);}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,dl,dt,dd{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,button{border:0px;}
+address,caption,cite,code,dfn,em,var{font-weight:normal;font-style:normal;}
+ol,ul ,dl{list-style:none;}
+caption{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img{vertical-align:top;}
+input,button{vertical-align:middle;}
+button{cursor:pointer;}
+*:focus{/*outline:0;*/}
+input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,input[type="file"] > input[type="button"]::-moz-focus-inner{border:none;padding:0;}
+.clearfix:after{content:".";clear:both;display:block;height:0;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;height:0;line-height:0;overflow:hidden;font:0/0 sans-serif;}
+/*--------------------*/
+a,a:link{text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+a:visited{}
+a:hover{}
+a:active{}
+
+
+/* 这块是我经常用的,也给整合进来-ZERKI */
+/* 绝对固定 */
+.topFix,.bottomFix{position:fixed;_position:absolute;}
+.topFix{top:0;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop));}
+.bottomFix{bottom:0;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));/*修正高度*/}
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决页面滚动时元素闪动现象*/
+/* 链接池组 */
+.linkPool{height:24px;}
+.linkPool li{float:left;display:inline;height:12px;line-height:12px;border-left:solid 1px #666;margin:6px 0;}
+.linkPool li.st,.linkPool dt.st,.linkPool dd.st{border-left:none;}
+.linkPool li a,.linkPool dt a,.linkPool li dd a{float:left;display:block;height:24px;line-height:24px;margin:-6px 0;padding:0 8px;white-space:nowrap;overflow:hidden;_position:relative;}
+/* 水平排列 */
+.horizontal{}
+.horizontal .hold,.horizontal li{float:left;display:inline-block;*display:inline;}
+.horizontal li a{float:left;display:block;}
+/*=	水平居中 =*/
+.center{text-align:center;/*IE7、火狐等li会有间隙,所以设字体大小为0*/font-size:0;}
+.center .hold,.center li,.center li a{float:none;font-size:12px;/*display:inline-block兼容通用*/display:-moz-inline-stack;display:inline-block;vertical-align:middle;*vertical-align:auto;zoom:1;*display:inline;}

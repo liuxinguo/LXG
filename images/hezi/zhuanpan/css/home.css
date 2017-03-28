@@ -1,0 +1,72 @@
+/* CSS Document */
+
+/* ================页面设置=================== */
+* { margin:0px; padding:0px; border:0px;}
+body { margin:0 auto; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#ffffff; background:#ffffff;  }
+img { border:0px; vertical-align:top;}
+li { list-style:none;}
+a { text-decoration:none; color:#011b22; }
+a:hover { text-decoration:none; color:#02aefe;}
+.clear { clear:both;}
+.fl { float:left;}
+
+
+/* ================基本设置=================== */
+.container { margin:0 auto; }
+.content { margin:0 auto;}
+
+
+
+/* ================活动=================== */
+.event2_pan { height:500px; position:relative; }
+.event2_pan .sp {  display:block; height:500px;  background:url(../images/ev2_off.jpg) 0px 0px no-repeat; cursor:default;}
+.event2_pan .sp2  { display:block;  width:700px; height:500px;  background:url(../images/ev2_on.gif) no-repeat;}
+.event2_pan .sp3 {
+	width:138px;
+	height:85px;
+	display:block;
+	position:absolute;
+	top:211px;
+	left:184px;
+}
+.event2_zhi { height:110px; background:#23b7d2;}
+.event2_zhi p { font-size:14px; line-height:24px; padding-left:160px;}
+
+
+.denglu { background:url(../images/pan_deng_bg.png) no-repeat; width:232px; height:231px; position:absolute; left:473px; top:10px;}
+.denglu_nei { width:165px; height:163px; margin:40px 0px 0px 0px; padding-left:33px;}
+.denglu_nei h1 { font-size:16px; font-family:"微软雅黑"; text-align:center;}
+.denglu_nei input { background:url(../images/pan_input.jpg) no-repeat; width:158px; height:32px; margin-top:10px; color:#999; line-height:32px; margin-left:0px; padding-left:5px;}
+.reg_img { float:left; width:78px; margin-right:8px; margin-top:10px; cursor:pointer;}
+.login_img { float:left; width:78px;  margin-top:10px; cursor:pointer;}
+.denglu_nei_hou {  width:226px; height:163px; margin:20px 0px 0px 0px;}
+.denglu_nei_hou p { font-size:16px; text-align:center; line-height:24px; padding-bottom:10px;}
+.denglu_nei_hou p span { color:#fff99a;}
+.tui_img { margin-left:60px;}
+ 
+
+
+
+
+
+.rule_up{ display: none; font-family: "microsoft yahei"; }
+.up_top{background:url(../images/rule_top.png) no-repeat; /* for ie6 */_background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/rule_top.png");/* for ie6 */ height:50px; width:581px; }
+.up_bottom{background:url(../images/rule_bottom.png) no-repeat; /* for ie6 */_background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/rule_bottom.png");/* for ie6 */  margin-left:14px;  height:25px; width:553px; }
+.rule_title{ background:url(../images/ruel_title.jpg) no-repeat; height:80px; width:514px;} 
+.up_content{ background:#ffffff; width:493px; margin-left:14px; padding:0px 30px 20px 30px; line-height:25px; max-height:350px; overflow: auto; color:#f0bc06;}
+.up_content p{ font-size:14px; color:#DE9249; }
+.up_close{ position:absolute;background:url(../images/closed.gif) no-repeat; height:30px; width:31px; right:3px; top:4px;  cursor:pointer;}
+
+.login_tit{ padding:10px 0px; font-size:20px; color:#986a02; text-align:center;font-family:microsoft yahei;font-weight:bold;}
+#login .up_content p{ padding-left:120px; line-height:30px!important;}
+#login .up_content p a{ color:#f0bc06;}
+#login .up_content input{ background:#d3d4d5; height:25px; line-height:25px; margin:5px 0px; padding:2px; width:200px; }
+#alert_msg .up_content a{ color:#f0bc06;}
+.bgColor { display:none; background-color:#000; width:100%; height: 100%; left:0; top:0;/*FF IE7*/ filter:alpha(opacity=70);/*IE*/ opacity:0.7;/*FF*/ z-index:98; position:fixed!important;/*FF IE7*/ position:absolute;/*IE6*/ 
+}
+.up_btn{ display:inline-block; height:25px; width:70px; border:solid 1px #8a0605; background:#f0bc06; font-size:14px; font-weight:bold; color:#fff!important;}
+.login_btns{  height:34px!important; width:87px!important; border:0px!important; font-size:14px; font-weight:bold; color:#ffffff!important; text-align:center;  cursor:pointer;  float:left;}
+
+
+
+.gray{width:100%; position:absolute;left:0;top:0;z-index:100; filter:alpha(opacity=20); opacity:0.2; background:#000;}
